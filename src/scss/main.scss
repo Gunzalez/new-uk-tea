@@ -1,4 +1,18 @@
-.active {
-  font-weight: bold;
-  color: red;
+@import "colours";
+@import "furniture";
+@import "mixins";
+@import "form";
+
+body {
+  
+}
+
+.page {
+
+}
+
+.container {
+  max-width: $breakpoint3;
+  margin: 0 auto;
+  background: red;
 }

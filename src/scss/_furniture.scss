@@ -1,0 +1,23 @@
+@import "colours";
+@import "fonts";
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    color: $brand-black;
+    font-size: 16px;
+    font-family: $bodyFont;
+    font-weight: 100;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
