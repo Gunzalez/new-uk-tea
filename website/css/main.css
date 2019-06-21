@@ -21,11 +21,12 @@ p {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 10px; }
+  padding: 15px; }
 
 .row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-direction: row; }
 
 form {
   margin: 10px 0;
@@ -138,16 +139,23 @@ form {
     .home-link img {
       width: 200px; } }
 
-.nav-social a {
-  background-color: #b8b8b8;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 2px;
-  color: white;
-  line-height: 26px;
-  text-align: center;
-  transition: background 250ms; }
-  .nav-social a:hover {
-    background-color: #393939; }
+.navs {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row; }
+
+.nav-social {
+  margin: 15px 15px 0 0; }
+  .nav-social a {
+    background-color: #b8b8b8;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    transition: background 250ms; }
+    .nav-social a:hover {
+      background-color: #393939; }

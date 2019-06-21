@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="js/vendor/mmenu.css" />
+    <link rel="stylesheet" href="js/vendor/mburger.css" />
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -26,14 +27,24 @@
 <div class="page">
     <div id="header" class="container">
         <div class="row">
+        
             <a href="index.html" class="home-link"><img src="images/logo-uk-tea.png" alt="UK Tea & Infusions Association" /></a>
-            <div class="nav-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
 
-            <a href="#" id="my-open-button">Button</a>
+            <div class="navs">
+        
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <a id="open-nav" class="mburger mburger--collapse" href="#nav-main">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                </a>
+
+            </div>
 
             <nav id="nav-main">
                 <ul>
@@ -54,8 +65,6 @@
 </div>
 
 {% block content %} {% endblock %}
-
-
 
 <script src="js/vendor/domready.js"></script>
 <script src="js/vendor/mmenu.js"></script>

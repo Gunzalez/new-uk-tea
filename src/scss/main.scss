@@ -16,7 +16,14 @@
   }
 }
 
+.navs {
+  display: flex;
+  align-content: flex-end;
+  flex-direction: row;
+}
+
 .nav-social {
+  margin: 15px 15px 0 0;
 
   a {
     background-color: $brand-grey;

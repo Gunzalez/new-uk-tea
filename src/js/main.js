@@ -1,4 +1,6 @@
 DomReady.ready(function() {
+    'use strict';
+
     var main = {};
 
     var props = {
@@ -86,6 +88,7 @@ DomReady.ready(function() {
     };
 
     main.navigation = {
+
         init: function(){
             var menu = new Mmenu( "#nav-main", {
                     "extensions": [
@@ -96,25 +99,31 @@ DomReady.ready(function() {
                         {
                            "position": "bottom",
                            "content": [
-                              "<a class='fa fa-envelope' href='#/'></a>",
-                              "<a class='fa fa-twitter' href='#/'></a>",
-                              "<a class='fa fa-facebook' href='#/'></a>"
+                              "<a class='fab fa-facebook-f' href='#/'></a>",
+                              "<a class='fab fa-twitter' href='#/'></a>",
+                              "<a class='fab fa-instagram' href='#/'></a>"
                            ]
                         }
                      ]
                 });
             var api = menu.API;
 
-            document.querySelector( "#my-open-button")
+            document.querySelector( "#open-nav")
                 .addEventListener(
                     "click", function(evnt){
                         evnt.preventDefault();
                         api.open();
                 });
+        },
+
+        resize: function(){
+            
         }
     };
 
     
+
+    // init calls
 
     main.navigation.init();
 
