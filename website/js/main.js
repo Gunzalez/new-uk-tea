@@ -87,7 +87,22 @@ DomReady.ready(function() {
 
     main.navigation = {
         init: function(){
-            var menu = new Mmenu( "#nav-main" );
+            var menu = new Mmenu( "#nav-main", {
+                    "extensions": [
+                       "position-right"
+                    ],
+                    "counters": true,
+                    "navbars": [
+                        {
+                           "position": "bottom",
+                           "content": [
+                              "<a class='fa fa-envelope' href='#/'></a>",
+                              "<a class='fa fa-twitter' href='#/'></a>",
+                              "<a class='fa fa-facebook' href='#/'></a>"
+                           ]
+                        }
+                     ]
+                });
             var api = menu.API;
 
             document.querySelector( "#my-open-button")
