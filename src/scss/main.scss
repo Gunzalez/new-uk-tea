@@ -2,16 +2,18 @@
 @import "furniture";
 @import "mixins";
 @import "form";
+@import "breakpoints";
 
-.container {
-  max-width: $breakpoint3;
-  margin: 0 auto;
-  padding: 10px;
-}
+.home-link {
 
-.row {
-  display: flex;
-  justify-content: space-between;
+  img {
+    width: 271px;
+    transition: all 250ms;
+
+    @media (max-width: $breakpoint2){
+      width: 200px;
+    }
+  }
 }
 
 .nav-social {
