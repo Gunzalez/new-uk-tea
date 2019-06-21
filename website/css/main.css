@@ -135,7 +135,7 @@ form {
 .home-link img {
   width: 271px;
   transition: all 250ms; }
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     .home-link img {
       width: 200px; } }
 
@@ -146,6 +146,9 @@ form {
 
 .nav-social {
   margin: 15px 15px 0 0; }
+  @media (max-width: 576px) {
+    .nav-social {
+      display: none; } }
   .nav-social a {
     background-color: #b8b8b8;
     width: 26px;

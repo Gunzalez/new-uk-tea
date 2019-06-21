@@ -10,7 +10,7 @@
     width: 271px;
     transition: all 250ms;
 
-    @media (max-width: $breakpoint2){
+    @media (max-width: $breakpoint1){
       width: 200px;
     }
   }
@@ -24,6 +24,9 @@
 
 .nav-social {
   margin: 15px 15px 0 0;
+  @media (max-width: $breakpoint1){
+    display: none;
+  }
 
   a {
     background-color: $brand-grey;
