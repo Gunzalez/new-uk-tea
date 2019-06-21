@@ -3,16 +3,33 @@
 @import "mixins";
 @import "form";
 
-body {
-  
-}
-
-.page {
-
-}
-
 .container {
   max-width: $breakpoint3;
   margin: 0 auto;
-  background: red;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-social {
+
+  a {
+    background-color: $brand-grey;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    color: white;
+    line-height: 26px;
+    text-align: center;
+    transition: background 250ms;
+
+    &:hover {
+      background-color: darken($brand-grey, 50%);
+    }
+  }
 }
