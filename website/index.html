@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="js/vendor/mmenu.css" />
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -31,6 +32,22 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+
+            <a href="#" id="my-open-button">Button</a>
+
+            <nav id="nav-main">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About us</a>
+                        <ul>
+                            <li><a href="/about/history/">History</a></li>
+                            <li><a href="/about/team/">The team</a></li>
+                            <li><a href="/about/address/">Our address</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
   
         </div>
     </div>
@@ -83,6 +100,7 @@
 
 
 <script src="js/vendor/domready.js"></script>
+<script src="js/vendor/mmenu.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

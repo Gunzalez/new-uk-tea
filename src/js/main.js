@@ -86,60 +86,16 @@ DomReady.ready(function() {
     };
 
     main.navigation = {
-        el: document.querySelector("#page-navigation"),
+        init: function(){
+            var menu = new Mmenu( "#nav-main" );
+            var api = menu.API;
 
-        init: function() {
-            var trigger = document.querySelector("#trigger"),
-                closeBtn = document.querySelector("#close");
-
-            if (trigger) {
-                trigger.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    main.navigation.show();
+            document.querySelector( "#my-open-button")
+                .addEventListener(
+                    "click", function(evnt){
+                        evnt.preventDefault();
+                        api.open();
                 });
-            }
-
-            if (closeBtn) {
-                closeBtn.addEventListener("click", function(e) {
-                    e.preventDefault();
-                    main.navigation.hide();
-                });
-            }
-        },
-
-        show: function() {
-            if (main.navigation.el) {
-                var screenWidth = window.innerWidth,
-                    pageWith = document.querySelectorAll(".page")[0].offsetWidth;
-
-                var rightMargin = (screenWidth - pageWith) / 2 - 7;
-                rightMargin = rightMargin > 0 ? rightMargin : 0;
-
-                main.navigation.el.style.marginRight = rightMargin + "px";
-
-                main.navigation.el.classList.add("show");
-                setTimeout(function() {
-                    main.navigation.el.classList.add("on");
-                }, 0);
-            }
-        },
-
-        hide: function() {
-            if (main.navigation.el) {
-                main.navigation.el.classList.remove("on");
-                setTimeout(function() {
-                    main.navigation.el.classList.remove("show");
-                }, 250);
-            }
-        },
-
-        resize: function() {
-            if (
-                main.navigation.el &&
-                main.navigation.el.classList.contains("show")
-            ) {
-                main.navigation.hide();
-            }
         }
     };
 
