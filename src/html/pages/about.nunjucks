@@ -1,0 +1,14 @@
+<!-- index file -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<h1>About</h1>
+<h2>It was an own goal vRA</h2>
+
+{% include "partials/navigation.nunjucks" %}
+<br />
+{% import 'macros/nav-macro.nunjucks' as nav %}
+{{nav.active('about')}}
+
+{% endblock %}
