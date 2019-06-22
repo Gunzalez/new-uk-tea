@@ -3,23 +3,14 @@
 
 {% block content %}
 
-<h1>Home time</h1>
+<div class="section">
+    <div class="carousel">
+        <div class="centre-stage">
+            <div class="slide" style="background-image: url('/images/slide-1.jpg')">&nbsp;</div>
 
-<div class="gallery">
-    <!-- Loops through "images" array -->
-    {% for image in images %}
-    <div class="gallery__item">
-        <img src="{{image.src}}" alt="{{image.alt}}">
+
+        </div>
     </div>
-    {% endfor %}
 </div>
-
-<!-- static -->
-{% include "partials/navigation.nunjucks" %}
-<br />
-
-<!-- dynamic -->
-{% import 'macros/nav-macro.nunjucks' as nav %}
-{{nav.active('home')}}
 
 {% endblock %}

@@ -151,6 +151,9 @@ form {
     text-align: right; }
   .slogan-animated .bottom {
     font-size: 0.7em; }
+  @media (max-width: 576px) {
+    .slogan-animated {
+      display: none; } }
 
 .navs {
   display: flex;
@@ -179,3 +182,12 @@ form {
     transition: background 250ms; }
     .nav-social a:hover {
       background-color: #393939; }
+
+.slide {
+  height: 354px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  @media (max-width: 576px) {
+    .slide {
+      height: 280px; } }

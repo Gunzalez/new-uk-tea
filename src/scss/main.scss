@@ -29,6 +29,10 @@
   .bottom {
     font-size: 0.7em;
   }
+  
+  @media (max-width: $breakpoint1){
+    display: none;
+  }
 }
 
 .navs {
@@ -63,5 +67,16 @@
     &:hover {
       background-color: darken($brand-grey, 50%);
     }
+  }
+}
+
+.slide {
+  height: 354px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint1){
+    height: 280px;
   }
 }
