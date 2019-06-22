@@ -214,14 +214,18 @@ form {
       height: 280px; } }
   .slide > a {
     position: absolute;
-    top: 50%;
-    margin-top: -40px;
+    top: 40%;
     width: 36px;
     height: 36px;
     color: white;
     font-size: 4.0em;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
-    transition: all 250ms; }
+    transition: all 250ms;
+    z-index: 5; }
+    @media (max-width: 576px) {
+      .slide > a {
+        top: auto;
+        bottom: 50px; } }
     .slide > a:hover {
       color: #b8b8b8; }
     .slide > a.prev {
@@ -239,7 +243,11 @@ form {
       display: block;
       color: white;
       font-weight: bold;
-      font-size: 3.0em; }
+      font-size: 3.0em;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.95); }
+      @media (max-width: 576px) {
+        .slide .content .text {
+          font-size: 2.0em; } }
     .slide .content a {
       display: inline-block;
       text-transform: uppercase;
@@ -254,3 +262,6 @@ form {
       margin: 40px 0 90px 0; }
       .slide .content a:hover {
         background: black; }
+      @media (max-width: 576px) {
+        .slide .content a {
+          margin: 18px 0 120px 0; } }
