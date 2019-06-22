@@ -143,12 +143,14 @@ form {
       width: 200px; } }
 
 .slogan-animated {
-  margin-top: -8px;
+  margin-top: -5px;
   color: #7a7250; }
   .slogan-animated .top {
     font-size: 2.0em;
     font-weight: bold;
     text-align: right; }
+  .slogan-animated P {
+    padding: 0; }
   .slogan-animated .bottom {
     font-size: 0.7em; }
   @media (max-width: 576px) {
@@ -187,7 +189,16 @@ form {
   height: 354px;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-position: center center; }
   @media (max-width: 576px) {
     .slide {
       height: 280px; } }
+
+.slide-left {
+  background-repeat: no-repeat;
+  background-position: left; }
+
+.slide-right {
+  background-repeat: no-repeat;
+  background-position: right; }
