@@ -188,6 +188,9 @@ form {
 .stage {
   height: 334px;
   position: relative; }
+  @media (max-width: 576px) {
+    .stage {
+      height: 280px; } }
 
 .cloak {
   background: white;
@@ -204,21 +207,50 @@ form {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
   @media (max-width: 576px) {
     .slide {
       height: 280px; } }
-  .slide a {
+  .slide > a {
     position: absolute;
     top: 50%;
-    margin-top: -32px;
+    margin-top: -40px;
     width: 36px;
     height: 36px;
     color: white;
     font-size: 4.0em;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.35); }
-    .slide a.prev {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    transition: all 250ms; }
+    .slide > a:hover {
+      color: #b8b8b8; }
+    .slide > a.prev {
       left: 15px; }
-    .slide a.next {
+    .slide > a.next {
       right: 15px;
       text-align: right; }
+  .slide .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .slide .content .text {
+      display: block;
+      color: white;
+      font-weight: bold;
+      font-size: 3.0em; }
+    .slide .content a {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      padding: 8px 10px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid white;
+      text-decoration: none;
+      color: white;
+      border-radius: 2px;
+      transition: background 500ms;
+      margin: 40px 0 90px 0; }
+      .slide .content a:hover {
+        background: black; }
