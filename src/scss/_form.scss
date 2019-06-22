@@ -39,8 +39,8 @@ form {
             appearance: none;
             height: inherit;
             outline: none;
-            background: $brand-lGrey;
-            border: 1px solid $brand-lGrey;
+            background: $brand-grey;
+            border: 1px solid $brand-grey;
             resize: none;
             padding: 8px 10px;
             border-radius: 3px;
@@ -129,16 +129,16 @@ form {
         .form-row {
             textarea, input {
                 &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                    color: $brand-lGrey;
+                    color: $brand-grey;
                 }
                 &::-moz-placeholder { /* Firefox 19+ */
-                    color: $brand-lGrey;
+                    color: $brand-grey;
                 }
                 &:-ms-input-placeholder { /* IE 10+ */
-                    color: $brand-lGrey;
+                    color: $brand-grey;
                 }
                 &:-moz-placeholder { /* Firefox 18- */
-                    color: $brand-lGrey;
+                    color: $brand-grey;
                 }
             }
         }
