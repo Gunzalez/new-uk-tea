@@ -31,7 +31,7 @@
   }
 
   .bottom {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   
   @media (max-width: $breakpoint1){
@@ -78,8 +78,9 @@
   height: 354px;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-position: center center;
+  transform:translate(0, -20px);
 
   @media (max-width: $breakpoint1){
     height: 280px;
@@ -89,9 +90,11 @@
 .slide-left {
   background-repeat: no-repeat;
   background-position: left;
+  height: 314px;
 }
 
 .slide-right {
   background-repeat: no-repeat;
   background-position: right;
+  height: 314px;
 }
