@@ -261,7 +261,10 @@ form {
       transition: background 500ms;
       margin: 40px 0 90px 0; }
       .slide .content a:hover {
-        background: black; }
+        background: rgba(0, 0, 0, 0.7); }
       @media (max-width: 576px) {
         .slide .content a {
           margin: 18px 0 120px 0; } }
+
+#carousel-main .items {
+  display: none; }

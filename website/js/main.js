@@ -123,9 +123,28 @@ DomReady.ready(function() {
         }
     };
 
+    main.carousel = {
+        el: document.getElementById("carousel-main"),
+
+        options: {
+            timer: null,
+            auto: true
+        },
+
+        swap: function(){
+
+        },
+
+        init: function(){
+            console.log(this);
+        }
+    };
+
     
 
     // init calls
+
+    main.carousel.init();
 
     main.navigation.init();
 

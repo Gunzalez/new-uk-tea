@@ -170,7 +170,7 @@
       margin: 40px 0 90px 0;
 
       &:hover {
-        background: rgba(0,0,0,1.0);
+        background: rgba(0,0,0,0.7);
       }
 
       @media (max-width: $breakpoint1){
@@ -181,3 +181,9 @@
   }
 }
 
+// for carousel
+#carousel-main {
+  .items {
+    display: none;
+  }
+}
