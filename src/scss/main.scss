@@ -100,5 +100,22 @@
   @media (max-width: $breakpoint1){
     height: 280px;
   }
+
+  a {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    background: red;
+
+    &.prev {
+      left: 10px;
+    }
+
+    &.next {
+      right: 10px;
+    }
+  }
 }
 

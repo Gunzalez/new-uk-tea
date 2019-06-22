@@ -7,7 +7,13 @@
     <div class="carousel">
         <div class="stage" style="background: url('/images/slide-1.jpg') left 20px no-repeat, url('/images/slide-1.jpg') right 20px no-repeat;">
             <div class="cloak">&nbsp;</div>
-            <div class="slide" style="background-image: url('/images/slide-1.jpg')">&nbsp;</div>  
+            <div class="slide" style="background-image: url('/images/slide-1.jpg')">
+                <a href="#" class="prev"></a>
+                <a href="#" class="next"></a>
+                <div class="content">
+                    
+                </div>
+            </div>  
         </div>
     </div>
 </div>

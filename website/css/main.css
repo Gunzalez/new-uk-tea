@@ -208,3 +208,14 @@ form {
   @media (max-width: 576px) {
     .slide {
       height: 280px; } }
+  .slide a {
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    width: 36px;
+    height: 36px;
+    background: red; }
+    .slide a.prev {
+      left: 10px; }
+    .slide a.next {
+      right: 10px; }
