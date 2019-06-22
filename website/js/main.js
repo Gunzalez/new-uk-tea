@@ -92,7 +92,9 @@ DomReady.ready(function() {
         init: function(){
             var menu = new Mmenu( "#nav-main", {
                     "extensions": [
-                       "position-right"
+                       "position-right",
+                    //    "shadow-page",
+                       "theme-dark"
                     ],
                     "counters": true,
                     "navbars": [
@@ -117,7 +119,7 @@ DomReady.ready(function() {
         },
 
         resize: function(){
-            
+
         }
     };
 
