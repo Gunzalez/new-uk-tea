@@ -142,13 +142,26 @@ form {
     .home-link img {
       width: 200px; } }
 
+.slogan-animated {
+  margin-top: -8px; }
+  .slogan-animated .top {
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: right; }
+  .slogan-animated .bottom {
+    font-size: 0.7em; }
+
 .navs {
   display: flex;
-  align-content: flex-end;
-  flex-direction: row; }
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-right: -10px; }
+
+.navigation {
+  text-align: right; }
 
 .nav-social {
-  margin: 15px 15px 0 0; }
+  margin: 18px 12px 0 0; }
   @media (max-width: 576px) {
     .nav-social {
       display: none; } }

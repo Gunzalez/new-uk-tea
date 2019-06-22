@@ -16,14 +16,33 @@
   }
 }
 
+.slogan-animated {
+  margin-top: -8px;
+  
+  .top {
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .bottom {
+    font-size: 0.7em;
+  }
+}
+
 .navs {
   display: flex;
-  align-content: flex-end;
+  justify-content: flex-end;
   flex-direction: row;
+  margin-right: -10px;
+}
+
+.navigation {
+  text-align: right;
 }
 
 .nav-social {
-  margin: 15px 15px 0 0;
+  margin: 18px 12px 0 0;
   @media (max-width: $breakpoint1){
     display: none;
   }

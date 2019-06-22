@@ -30,19 +30,28 @@
         
             <a href="index.html" class="home-link"><img src="images/logo-uk-tea.png" alt="UK Tea & Infusions Association" /></a>
 
-            <div class="navs">
-        
-                <div class="nav-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="navigation">
+                
+                <div class="navs">
+            
+                    <div class="nav-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <a id="open-nav" class="mburger mburger--collapse nav-trigger" href="#nav-main">
+                        <b></b>
+                        <b></b>
+                        <b></b>
+                    </a>
+
                 </div>
 
-                <a id="open-nav" class="mburger mburger--collapse" href="#nav-main">
-                    <b></b>
-                    <b></b>
-                    <b></b>
-                </a>
+                <div class="slogan-animated">
+                    <div class="top"><span id="digits">103,548,927</span></div>
+                    <div class="bottom"><p>Cup of tea consumed in UK so far today.</p></div>
+                </div>
 
             </div>
 
