@@ -104,17 +104,20 @@
   a {
     position: absolute;
     top: 50%;
-    margin-top: -18px;
+    margin-top: -32px;
     width: 36px;
     height: 36px;
-    background: red;
+    color: white;
+    font-size: 4.0em;
+    text-shadow: 0 0 6px rgba(0,0,0,0.35);
 
     &.prev {
-      left: 10px;
+      left: 15px;
     }
 
     &.next {
-      right: 10px;
+      right: 15px;
+      text-align: right;
     }
   }
 }
