@@ -22,14 +22,14 @@ p {
   padding: 0 0 15px 0; }
 
 .container {
-  max-width: 960px;
+  padding: 15px;
   margin: 0 auto;
-  padding: 15px; }
+  max-width: 960px; }
 
 .row {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 form {
   margin: 10px 0;
