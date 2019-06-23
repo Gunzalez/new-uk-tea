@@ -1,6 +1,7 @@
 @import "colours";
 @import "fonts";
 @import "utils";
+@import "breakpoints";
 
 * {
     outline: none;
@@ -31,15 +32,16 @@ p {
 }
 
 .container {
-    // padding: 15px;
     margin: 0 auto;
     max-width: 960px;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @media (min-width: $breakpoint1){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 

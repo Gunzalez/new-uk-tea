@@ -31,10 +31,11 @@ p {
   margin: 0 auto;
   max-width: 960px; }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+@media (min-width: 576px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
 
 form {
   margin: 10px 0;
@@ -142,6 +143,10 @@ form {
 
 #header {
   padding: 15px; }
+  #header .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
 .home-link img {
   width: 271px;
@@ -194,7 +199,7 @@ form {
       display: none; } }
 
 #carousel-main {
-  margin-bottom: 40px; }
+  margin-bottom: 60px; }
   @media (max-width: 576px) {
     #carousel-main {
       margin-bottom: 20px; } }
@@ -202,7 +207,7 @@ form {
 .stage {
   height: 334px;
   position: relative;
-  transition: background 2000ms; }
+  transition: background 500ms; }
   @media (max-width: 576px) {
     .stage {
       height: 280px;
@@ -225,7 +230,7 @@ form {
   margin: 0 auto;
   background-position: center center;
   background-size: cover;
-  transition: background 1000ms; }
+  transition: background 250ms; }
   @media (max-width: 576px) {
     .slide {
       height: 280px; } }
@@ -262,7 +267,7 @@ form {
       color: white;
       font-weight: bold;
       font-size: 3.0em;
-      text-shadow: 0 0 6px rgba(0, 0, 0, 0.95); }
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
       @media (max-width: 576px) {
         .slide .content .text {
           font-size: 2.0em; } }
@@ -289,18 +294,37 @@ form {
 
 .news-item {
   padding: 0 15px;
-  text-align: center;
   width: 33.33333%; }
-  .news-item .text {
+  @media (max-width: 576px) {
+    .news-item {
+      width: 100%; } }
+
+.pod {
+  text-align: center; }
+  .pod .text {
     padding: 0 15px; }
-  .news-item a {
-    text-decoration: none; }
-  .news-item .title {
+  .pod a {
+    text-decoration: none;
+    color: #484c4f; }
+  .pod .title {
     text-transform: uppercase;
     color: #19737b; }
-  .news-item p {
-    font-size: 0.9em; }
-  .news-item img {
+  .pod p {
+    font-size: 0.8em; }
+  .pod img {
     width: 100%;
     display: inline-block;
     margin-bottom: 10px; }
+
+.introduction {
+  background: url("/images/bg-introduction.png") bottom center no-repeat #f1f1ed;
+  margin: 30px 0;
+  padding: 30px 15px 15px; }
+
+#carousel-mini, #profile {
+  width: 300px;
+  min-height: 260px;
+  margin: 0 auto 30px; }
+  @media (max-width: 576px) {
+    #carousel-mini, #profile {
+      width: 280px; } }
