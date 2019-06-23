@@ -1,3 +1,4 @@
 TODO
 ==================
-Add in transpiling with babel
+Image preloading before carousel controls display or autostart
+Pause carousel while user hovers
