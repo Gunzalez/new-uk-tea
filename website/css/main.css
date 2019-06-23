@@ -11,11 +11,14 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
-  color: #262825;
+  color: #484c4f;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: white; }
+
+h2 {
+  font-size: 1.1em; }
 
 p {
   margin: 0;
@@ -283,7 +286,17 @@ form {
 
 .news-item {
   padding: 0 15px;
-  text-align: center; }
+  text-align: center;
+  width: 33.33333%; }
+  .news-item .text {
+    padding: 0 15px; }
+  .news-item a {
+    text-decoration: none; }
+  .news-item .title {
+    text-transform: uppercase;
+    color: #19737b; }
+  .news-item p {
+    font-size: 0.9em; }
   .news-item img {
     width: 100%;
     display: inline-block; }

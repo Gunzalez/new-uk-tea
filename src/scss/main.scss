@@ -23,7 +23,7 @@
 
 .slogan-animated {
   margin-top: -5px;
-  color: $brand-green;
+  color: $brand-brown;
   
   .top {
     font-size: 2.0em;
@@ -207,6 +207,24 @@
 .news-item {
   padding: 0 15px;
   text-align: center;
+  width: 33.33333%;
+
+  .text {
+    padding: 0 15px;
+  }
+
+  a {    
+    text-decoration: none;
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: $brand-green;
+  }
+
+  p {
+    font-size: 0.9em;    
+  }
 
   img {
     width: 100%;

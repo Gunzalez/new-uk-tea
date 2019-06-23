@@ -223,14 +223,14 @@ DomReady.ready(function() {
 
     
     // init calls
-
-    main.carousel.init({ auto: true, delay: 7 });
+    main.carousel.init({ 
+        auto: true, 
+        delay: 7 
+    });
 
     main.navigation.init();
 
-
-
-
+    // resize
     window.onresize = function() {
         var newWidth = window.innerWidth,
             oldWidth = props.screenWidth;
