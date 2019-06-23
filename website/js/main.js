@@ -36,7 +36,51 @@ DomReady.ready(function() {
 
         reportError: function(field) {
             field.parentNode.classList.add("error");
-        }
+        },
+
+        preLoad: function(Images, Callback){
+
+            // Keep the count of the verified images
+            var allLoaded = 0;
+
+            // The object that will be returned in the callback
+            var _log = {
+                success: [],
+                error: []
+            };
+
+            // Executed every time an img is successfully or wrong loaded
+            var verifier = function(){
+                allLoaded++;
+
+                // triggers the end callback when all images has been tested
+                if(allLoaded === Images.length){
+                    Callback.call(undefined, _log);
+                }
+            };
+
+            for (var index = 0; index < Images.length; index++) {
+
+                // Prevent that index has the same value by wrapping it inside an anonymous fn
+                (function(i){
+                    // Image path provided in the array e.g image.png
+                    var imgSource = Images[i],
+                        img = new Image();
+
+                    img.addEventListener("load", function(){
+                        _log.success.push(imgSource);
+                        verifier();
+                    }, false);
+
+                    img.addEventListener("error", function(){
+                        _log.error.push(imgSource);
+                        verifier();
+                    }, false);
+
+                    img.src = imgSource;
+                })(index);
+            }
+        },
     };
 
     main.contact = {
@@ -132,6 +176,7 @@ DomReady.ready(function() {
         },
 
         data: [],
+        imgsToPreload: [],
         curIndex: 0,
         timer: null,
 
@@ -180,12 +225,15 @@ DomReady.ready(function() {
         },
 
         autoStart: function(carousel, delay) {
+
             carousel.el.stage.onmouseenter = function(){
                 carousel.el.stage.classList.add('hovering');
-            }           
+            };         
+
             carousel.el.stage.onmouseleave = function(){
                 carousel.el.stage.classList.remove('hovering');
-            }           
+            };          
+            
             this.timer = setInterval(function(){
                 if(!carousel.el.stage.classList.contains('hovering')){
                     var newIndex = carousel.curIndex + 1;
@@ -199,13 +247,19 @@ DomReady.ready(function() {
 
         fetchData: function(carousel){                   
             carousel.el.stage.parentNode.querySelectorAll('.item').forEach(function(elment){
-                var slide = {
+                carousel.data.push({
                     image: elment.getAttribute('data-image'),
                     href: elment.getAttribute('data-href'),
                     link: elment.getAttribute('data-link-text'),
                     content: elment.innerHTML
-                };
-                carousel.data.push(slide);
+                });
+                carousel.imgsToPreload.push(elment.getAttribute('data-image'));
+            });
+
+            utils.preLoad(carousel.imgsToPreload, function(){
+                carousel.el.controls.forEach(function(el){
+                    el.classList.remove('display-none');
+                });
             });
         },
 
@@ -215,7 +269,10 @@ DomReady.ready(function() {
                 this.attachActions(this);
 
                 if(options.auto){
-                    this.autoStart(this, options.delay);
+                    var carousel = this;
+                    utils.preLoad(carousel.imgsToPreload, function(){
+                        carousel.autoStart(carousel, options.delay);
+                    });
                 }
             }
         }

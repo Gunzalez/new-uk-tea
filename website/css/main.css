@@ -18,11 +18,14 @@ body {
   background-color: white; }
 
 h2 {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0 0  10px 0; }
 
 p {
   margin: 0;
-  padding: 0 0 15px 0; }
+  padding: 0 0 15px 0;
+  line-height: 130%; }
 
 .container {
   margin: 0 auto;
@@ -299,4 +302,5 @@ form {
     font-size: 0.9em; }
   .news-item img {
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 10px; }
