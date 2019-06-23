@@ -4,6 +4,11 @@
 @import "form";
 @import "breakpoints";
 
+
+#header {
+  padding: 15px;
+}
+
 .home-link {
 
   img {
@@ -52,9 +57,6 @@
 
 .nav-social {
   margin: 18px 12px 0 0;
-  @media (max-width: $breakpoint1){
-    display: none;
-  }
 
   a {
     background-color: $brand-grey;
@@ -72,6 +74,17 @@
       background-color: darken($brand-grey, 50%);
     }
   }
+
+  @media (max-width: $breakpoint1){
+    display: none;
+  }
+}
+
+#carousel-main {
+  margin-bottom: 40px;
+  @media (max-width: $breakpoint1){
+    margin-bottom: 20px;
+  }
 }
 
 .stage {
@@ -81,6 +94,7 @@
 
   @media (max-width: $breakpoint1){
     height: 280px;
+    margin-bottom: 20px;
   }
 }
 
@@ -187,5 +201,15 @@
 #carousel-main {
   .items {
     display: none;
+  }
+}
+
+.news-item {
+  padding: 0 15px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    display: inline-block;
   }
 }

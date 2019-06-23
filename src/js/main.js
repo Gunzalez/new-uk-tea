@@ -170,6 +170,7 @@ DomReady.ready(function() {
                             }                           
                         }
                         carousel.setImage(newIndex);
+                        event.target.blur();
                     }
                     if(carousel.timer){
                         clearInterval(carousel.timer);
@@ -207,6 +208,7 @@ DomReady.ready(function() {
             if(this.el.stage){                
                 this.fetchData(this);
                 this.attachActions(this);
+
                 if(options.auto){
                     this.autoStart(this, options.delay);
                 }
