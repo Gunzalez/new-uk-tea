@@ -187,7 +187,8 @@ form {
 
 .stage {
   height: 334px;
-  position: relative; }
+  position: relative;
+  transition: background 2000ms; }
   @media (max-width: 576px) {
     .stage {
       height: 280px; } }
@@ -208,20 +209,22 @@ form {
   max-width: 960px;
   margin: 0 auto;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  transition: background 1000ms; }
   @media (max-width: 576px) {
     .slide {
       height: 280px; } }
   .slide > a {
     position: absolute;
     top: 40%;
-    width: 36px;
-    height: 36px;
+    width: 18px;
+    height: 48px;
     color: white;
-    font-size: 4.0em;
+    font-size: 3.0em;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
     transition: all 250ms;
-    z-index: 5; }
+    z-index: 5;
+    overflow: hidden; }
     @media (max-width: 576px) {
       .slide > a {
         top: auto;

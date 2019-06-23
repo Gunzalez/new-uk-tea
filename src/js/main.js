@@ -124,27 +124,100 @@ DomReady.ready(function() {
     };
 
     main.carousel = {
-        el: document.getElementById("carousel-main"),
-
-        options: {
-            timer: null,
-            auto: true
+        el: {
+            stage: document.querySelectorAll('#carousel-main .stage')[0],
+            slide: document.querySelectorAll('#carousel-main .slide')[0],
+            content: document.querySelectorAll('#carousel-main .content')[0],
+            controls: document.querySelectorAll('#carousel-main .controls')
         },
 
-        swap: function(){
+        data: [],
+        curIndex: 0,
+        timer: null,
 
+        getBackgroundStyle: function(string){
+            return "background: url('" + string + "') left 20px no-repeat, url('" + string + "') right 20px no-repeat;";
         },
 
-        init: function(){
-            console.log(this);
+        setImage: function(newIndex){
+            var newSlide = this.data[newIndex];
+            this.el.stage.style = this.getBackgroundStyle(newSlide.image);
+            this.el.slide.style = "background-image: url('" + newSlide.image + "')";
+            this.el.content.innerHTML = newSlide.content;
+            var anchor = document.createElement('A');
+            anchor.href = newSlide.href;
+            anchor.innerHTML = newSlide.link;
+            this.el.content.appendChild(anchor);
+            this.curIndex = newIndex;
+        },
+
+        attachActions: function(carousel){
+            carousel.el.controls.forEach(function(control){
+                control.onclick = function(event){
+                    event.preventDefault();
+                    if(event.target.parentNode.nodeName === 'A'){
+                        var newIndex;
+                        if(event.target.parentNode.classList.contains('prev')){ 
+                            newIndex = carousel.curIndex - 1;
+                            if(newIndex < 0){
+                                newIndex = carousel.data.length - 1;
+                            }
+                        }
+                        if(event.target.parentNode.classList.contains('next')){
+                            newIndex = carousel.curIndex + 1;
+                            if(newIndex > carousel.data.length - 1){
+                                newIndex = 0;
+                            }                           
+                        }
+                        carousel.setImage(newIndex);
+                    }
+                    if(carousel.timer){
+                        clearInterval(carousel.timer);
+                    }
+                };
+            });
+        },
+
+        autoStart: function(carousel, delay) {            
+            this.timer = setInterval(function(){
+                var hovering = false;
+                if(!hovering){
+                    var newIndex = carousel.curIndex + 1;
+                    if(newIndex > carousel.data.length - 1){
+                        newIndex = 0;
+                    }                    
+                    carousel.setImage(newIndex);
+                }
+            }, delay * 1000);
+        },
+
+        fetchData: function(carousel){                   
+            carousel.el.stage.parentNode.querySelectorAll('.item').forEach(function(elment){
+                var slide = {
+                    image: elment.getAttribute('data-image'),
+                    href: elment.getAttribute('data-href'),
+                    link: elment.getAttribute('data-link-text'),
+                    content: elment.innerHTML
+                };
+                carousel.data.push(slide);
+            });
+        },
+
+        init: function(options){
+            if(this.el.stage){                
+                this.fetchData(this);
+                this.attachActions(this);
+                if(options.auto){
+                    this.autoStart(this, options.delay);
+                }
+            }
         }
     };
 
     
-
     // init calls
 
-    main.carousel.init();
+    main.carousel.init({ auto: true, delay: 7 });
 
     main.navigation.init();
 
