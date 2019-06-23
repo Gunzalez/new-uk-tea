@@ -179,10 +179,15 @@ DomReady.ready(function() {
             });
         },
 
-        autoStart: function(carousel, delay) {            
+        autoStart: function(carousel, delay) {
+            carousel.el.stage.onmouseenter = function(){
+                carousel.el.stage.classList.add('hovering');
+            }           
+            carousel.el.stage.onmouseleave = function(){
+                carousel.el.stage.classList.remove('hovering');
+            }           
             this.timer = setInterval(function(){
-                var hovering = false;
-                if(!hovering){
+                if(!carousel.el.stage.classList.contains('hovering')){
                     var newIndex = carousel.curIndex + 1;
                     if(newIndex > carousel.data.length - 1){
                         newIndex = 0;
