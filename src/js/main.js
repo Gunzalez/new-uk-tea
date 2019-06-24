@@ -278,12 +278,66 @@ DomReady.ready(function() {
         }
     };
 
-    
+
+
+
+    main.slider = {
+
+        slider: null,
+
+        highLightCurrentSlide: function(slide){
+            console.log(slide);
+
+        },
+
+        addPagination: function(slider){
+            var $parent = slider.selector.parentNode;
+            var slides = slider.innerElements.length;
+            var curIndex = slider.currentSlide
+            var $pagination = document.createElement('DIV');
+            for(var s=0; s<slides; s++){
+                var $dot = document.createElement('SPAN');
+                if(s === curIndex){
+                    $dot.classList.add('active');
+                }
+                $pagination.appendChild($dot);
+            }
+            $pagination.classList.add('pagination');
+            $parent.appendChild($pagination);
+        },
+
+        init: function(){
+                    
+            this.slider = new Siema({
+                selector: '.stage-mini',
+                duration: 200,
+                easing: 'ease-out',
+                perPage: 1,
+                startIndex: 0,
+                draggable: true,
+                multipleDrag: true,
+                threshold: 20,
+                loop: true,
+                rtl: false,
+                onInit: function(){
+                    console.log(this);
+                    main.slider.addPagination(this);
+                },
+                onChange: function(){
+                    main.slider.highLightCurrentSlide(this.currentSlide);
+                }
+            });
+        }
+    }
+
+  
     // init calls
     main.carousel.init({ 
         auto: true, 
         delay: 7 
     });
+
+    main.slider.init()
 
     main.navigation.init();
 
