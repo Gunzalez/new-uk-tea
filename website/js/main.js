@@ -285,15 +285,18 @@ DomReady.ready(function() {
 
         slider: null,
 
-        highLightCurrentSlide: function(slide){
-            console.log(slide);
-
+        highLightCurrentSlide: function(slider){
+            var $parent = slider.selector.parentNode;
+            $parent.querySelectorAll('.pagination span').forEach(function($dot){
+                $dot.classList.remove('active');
+            });
+            $parent.querySelectorAll('.pagination span')[slider.currentSlide].classList.add('active');
         },
 
         addPagination: function(slider){
             var $parent = slider.selector.parentNode;
             var slides = slider.innerElements.length;
-            var curIndex = slider.currentSlide
+            var curIndex = slider.currentSlide;
             var $pagination = document.createElement('DIV');
             for(var s=0; s<slides; s++){
                 var $dot = document.createElement('SPAN');
@@ -304,6 +307,21 @@ DomReady.ready(function() {
             }
             $pagination.classList.add('pagination');
             $parent.appendChild($pagination);
+        },
+
+        attachActions: function(slider){
+            var $parent = slider.selector.parentNode;
+            $parent.querySelectorAll('.controls').forEach(function($control){
+                $control.addEventListener('click', function(event){
+                    event.preventDefault();
+                    if(event.target.parentNode.classList.contains('prev')){
+                        slider.prev();
+                    }
+                    if(event.target.parentNode.classList.contains('next')){
+                        slider.next();
+                    }
+                });
+            });
         },
 
         init: function(){
@@ -320,15 +338,15 @@ DomReady.ready(function() {
                 loop: true,
                 rtl: false,
                 onInit: function(){
-                    console.log(this);
+                    main.slider.attachActions(this);
                     main.slider.addPagination(this);
                 },
                 onChange: function(){
-                    main.slider.highLightCurrentSlide(this.currentSlide);
+                    main.slider.highLightCurrentSlide(this);
                 }
             });
         }
-    }
+    };
 
   
     // init calls
@@ -337,7 +355,7 @@ DomReady.ready(function() {
         delay: 7 
     });
 
-    main.slider.init()
+    main.slider.init();
 
     main.navigation.init();
 

@@ -312,6 +312,7 @@
       margin: 0 4px;
       border-radius: 50%;
       display: inline-block;
+      transition: background 500ms;
 
       &.active {
         background: $brand-black;

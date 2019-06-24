@@ -363,6 +363,7 @@ form {
       height: 8px;
       margin: 0 4px;
       border-radius: 50%;
-      display: inline-block; }
+      display: inline-block;
+      transition: background 500ms; }
       #carousel-mini .pagination span.active {
         background: #484c4f; }
