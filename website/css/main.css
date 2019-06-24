@@ -317,7 +317,7 @@ form {
     margin-bottom: 10px; }
 
 .introduction {
-  background: url("images/bg-introduction.png") bottom center no-repeat #f1f1ed;
+  background: url("../images/bg-introduction.png") bottom center no-repeat #f1f1ed;
   margin: 30px 0;
   padding: 30px 15px 0; }
 
