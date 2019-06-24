@@ -1,2 +1,7 @@
 TODO
 ==================
+
+
+BUGS
+==================
+Carousel flashes firs 3 slides
