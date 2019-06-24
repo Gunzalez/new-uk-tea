@@ -324,27 +324,30 @@ DomReady.ready(function() {
             });
         },
 
-        init: function(){
-                    
-            this.slider = new Siema({
-                selector: '.stage-mini',
-                duration: 200,
-                easing: 'ease-out',
-                perPage: 1,
-                startIndex: 0,
-                draggable: true,
-                multipleDrag: true,
-                threshold: 20,
-                loop: true,
-                rtl: false,
-                onInit: function(){
-                    main.slider.attachActions(this);
-                    main.slider.addPagination(this);
-                },
-                onChange: function(){
-                    main.slider.highLightCurrentSlide(this);
-                }
-            });
+        init: function(options){
+
+            var slider = document.querySelectorAll(options.selector);
+            if(slider.length){                    
+                this.slider = new Siema({
+                    selector: '.stage-mini',
+                    duration: 200,
+                    easing: 'ease-out',
+                    perPage: 1,
+                    startIndex: 0,
+                    draggable: true,
+                    multipleDrag: true,
+                    threshold: 20,
+                    loop: true,
+                    rtl: false,
+                    onInit: function(){
+                        main.slider.attachActions(this);
+                        main.slider.addPagination(this);
+                    },
+                    onChange: function(){
+                        main.slider.highLightCurrentSlide(this);
+                    }
+                });
+            }                    
         }
     };
 
@@ -355,7 +358,9 @@ DomReady.ready(function() {
         delay: 7 
     });
 
-    main.slider.init();
+    main.slider.init({
+        selector: '.stage-mini'
+    });
 
     main.navigation.init();
 
