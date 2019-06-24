@@ -358,7 +358,7 @@ form {
     height: 20px;
     text-align: center; }
     #carousel-mini .pagination span {
-      background: #b8b8b8;
+      border: 1px solid #7a7250;
       width: 8px;
       height: 8px;
       margin: 0 4px;
@@ -366,4 +366,4 @@ form {
       display: inline-block;
       transition: background 500ms; }
       #carousel-mini .pagination span.active {
-        background: #484c4f; }
+        background: #7a7250; }

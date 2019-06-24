@@ -306,7 +306,7 @@
     text-align: center;
 
     span {
-      background: $brand-grey;
+      border: 1px solid $brand-brown;
       width: 8px;
       height: 8px;
       margin: 0 4px;
@@ -315,7 +315,7 @@
       transition: background 500ms;
 
       &.active {
-        background: $brand-black;
+        background: $brand-brown;
       }
     }
   }
