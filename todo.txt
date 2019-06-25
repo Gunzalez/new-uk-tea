@@ -5,3 +5,9 @@ TODO
 BUGS
 ==================
 Carousel flashes firs 3 slides
+
+
+Time spent (8 hrs/day)
+==================
+3 days so far / 26 June 00:26 hours
+
