@@ -152,6 +152,7 @@ DomReady.ready(function() {
                         }
                      ]
                 });
+
             var api = menu.API;
 
             document.querySelector( "#open-nav")
@@ -159,6 +160,23 @@ DomReady.ready(function() {
                     "click", function(evnt){
                         evnt.preventDefault();
                         api.open();
+                });
+
+            this.footerInit();
+        },
+
+        footerInit: function(){
+            document.querySelector( "#nav-footer-trigger")
+                .addEventListener(
+                    "click", function(evnt){
+                        evnt.preventDefault();
+                        var $list = document.querySelector('#nav-footer');
+                        if($list.classList.contains('mm-wrapper_opened')){
+                            $list.classList.remove('mm-wrapper_opened');
+                        } else {
+                            $list.classList.add('mm-wrapper_opened');
+                        }
+                        
                 });
         },
 

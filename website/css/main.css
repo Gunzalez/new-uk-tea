@@ -377,3 +377,35 @@ form {
     @media (max-width: 576px) {
       #carousel-mini .pagination {
         bottom: 20px; } }
+
+.footer {
+  background-color: #353336;
+  color: white; }
+  .footer a {
+    color: white; }
+  .footer .nav-footer {
+    padding: 15px;
+    position: relative; }
+    .footer .nav-footer ul {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      width: 120px; }
+    .footer .nav-footer li {
+      border-top: 1px solid #4f4c50;
+      display: block;
+      padding: 8px;
+      text-align: center; }
+      .footer .nav-footer li:nth-child(1) {
+        border: none; }
+      .footer .nav-footer li a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        font-size: 0.8em;
+        text-align: center; }
+    .footer .nav-footer .nav-trigger {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      overflow: hidden; }

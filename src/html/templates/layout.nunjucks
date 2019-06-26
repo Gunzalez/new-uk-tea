@@ -76,7 +76,7 @@
 
     <div class="footer">
         <div class="container">
-            <div class="footer-list">
+            <div id="nav-footer" class="nav-footer">
                 <ul>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sitemap</a></li>
@@ -85,6 +85,11 @@
                     <li><a href="#">Cookies</a></li>
                     <li><a href="#">Contacts us</a></li>
                 <ul>
+                <a id="nav-footer-trigger" class="mburger mburger--collapse nav-trigger" href="#">
+                    <b></b>
+                    <b></b>
+                    <b></b>
+                </a>
 
             </div>
 

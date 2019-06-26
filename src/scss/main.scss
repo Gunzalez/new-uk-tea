@@ -333,3 +333,53 @@
     }
   }
 }
+
+.footer {
+  background-color: $brand-dark;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .nav-footer {
+    padding: 15px;
+    position: relative;
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      width: 120px;
+    }
+
+    li {
+      // display: inline;
+      // border-left: 1px solid lighten($color: $brand-dark, $amount: 10%);
+      border-top: 1px solid lighten($color: $brand-dark, $amount: 10%);
+      display: block;
+      padding: 8px;
+      text-align: center;
+
+      &:nth-child(1){
+        border: none;
+      }
+
+      a {
+        // display: inline-block;
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        font-size: 0.8em;
+        text-align: center;
+      }
+    }
+
+    .nav-trigger {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      overflow: hidden;
+    }
+  }
+}
