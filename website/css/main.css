@@ -271,23 +271,30 @@ form {
       @media (max-width: 576px) {
         .slide .content .text {
           font-size: 2.0em; } }
-    .slide .content a {
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 1.2em;
-      padding: 8px 10px;
-      background: rgba(0, 0, 0, 0.35);
-      border: 1px solid white;
-      text-decoration: none;
-      color: white;
-      border-radius: 2px;
-      transition: background 500ms;
-      margin: 40px 0 90px 0; }
-      .slide .content a:hover {
-        background: rgba(0, 0, 0, 0.7); }
-      @media (max-width: 576px) {
-        .slide .content a {
-          margin: 18px 0 120px 0; } }
+
+.slide .content a,
+.big-link {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  transition: background 500ms;
+  margin: 10px 0; }
+  .slide .content a:hover,
+  .big-link:hover {
+    background: rgba(0, 0, 0, 0.7); }
+
+.slide .content a {
+  margin: 40px 0 90px 0; }
+
+@media (max-width: 576px) {
+  .slide .content a {
+    margin: 18px 0 120px 0; } }
 
 #carousel-main .items {
   display: none; }
@@ -385,8 +392,7 @@ form {
     color: white; }
   .footer .nav-footer {
     padding: 15px;
-    position: relative;
-    min-height: 300px; }
+    position: relative; }
     .footer .nav-footer ul {
       margin: 0 auto;
       padding: 0;
@@ -436,3 +442,24 @@ form {
     display: block; }
   .nav-footer .nav-trigger {
     display: block !important; } }
+
+.tap-details {
+  padding-bottom: 20px; }
+  .tap-details a {
+    display: inline-block; }
+  .tap-details .logo {
+    text-align: center; }
+    .tap-details .logo img {
+      display: block; }
+  .tap-details .address {
+    text-align: center; }
+    .tap-details .address .text {
+      font-size: 0.8em;
+      padding: 20px; }
+
+@media (min-width: 576px) {
+  .tap-details {
+    display: flex;
+    justify-content: space-between; }
+    .tap-details .address {
+      text-align: right; } }
