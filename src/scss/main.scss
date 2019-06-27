@@ -77,6 +77,14 @@
   }
 }
 
+.nav-trigger {
+  transition: color 250ms;
+  
+  &:hover {
+    color: $brand-dark;
+  }
+}
+
 #carousel-main {
   margin-bottom: 60px;
   @media (max-width: $breakpoint1){

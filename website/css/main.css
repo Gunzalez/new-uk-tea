@@ -228,6 +228,11 @@ form {
     .nav-social {
       display: none; } }
 
+.nav-trigger {
+  transition: color 250ms; }
+  .nav-trigger:hover {
+    color: #353336; }
+
 #carousel-main {
   margin-bottom: 60px; }
   @media (max-width: 576px) {
