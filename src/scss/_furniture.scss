@@ -36,12 +36,7 @@ p {
     max-width: 960px;
 }
 
-// .row {
-//     @media (min-width: $breakpoint1){
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-around;
-//     }
-// }
-
+.col-xs-6 {
+    width: 50%;
+}
 

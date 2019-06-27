@@ -5,17 +5,7 @@
 @import "breakpoints";
 
 
-#header {
-  padding: 15px;
-
-  .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-}
-
-.home-link {
+.logo-link {
 
   img {
     width: 271px;
@@ -25,6 +15,7 @@
       width: 200px;
     }
   }
+  padding: 15px 0;
 }
 
 .slogan-animated {
@@ -138,7 +129,6 @@
     text-shadow: 0 0 6px rgba(0,0,0,0.35);
     transition: all 250ms;
     z-index: 5;
-    overflow: hidden;
   
     @media (max-width: $breakpoint1){
       top: auto;
@@ -220,7 +210,7 @@
   }
 }
 
-.news-item {
+.pod {
   text-align: center;
 
   .text {

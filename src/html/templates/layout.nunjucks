@@ -28,50 +28,54 @@
 <![endif]-->
 
 <div class="page">
-    <div id="header" class="container">
+    <div class="container">
         <div class="row">
-        
-            <a href="index.html" class="home-link"><img src="images/logo-uk-tea.png" alt="UK Tea & Infusions Association" /></a>
+            <div class="col-xs-6 col-sm-6">
+                <div class="logo-link">
+                    <a href="index.html"><img src="images/logo-uk-tea.png" alt="UK Tea & Infusions Association" /></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6">
 
-            <div class="navigation">
+                <div class="navigation">
+                    
+                    <div class="navs">
                 
-                <div class="navs">
-            
-                    <div class="nav-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <div class="nav-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+
+                        <a id="open-nav" class="mburger mburger--collapse nav-trigger" href="#nav-main">
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </a>
+
                     </div>
 
-                    <a id="open-nav" class="mburger mburger--collapse nav-trigger" href="#nav-main">
-                        <b></b>
-                        <b></b>
-                        <b></b>
-                    </a>
+                    <div class="slogan-animated">
+                        <div class="top"><span id="digits">103,548,927</span></div>
+                        <div class="bottom"><p>Cup of tea consumed in UK so far today.</p></div>
+                    </div>
 
                 </div>
 
-                <div class="slogan-animated">
-                    <div class="top"><span id="digits">103,548,927</span></div>
-                    <div class="bottom"><p>Cup of tea consumed in UK so far today.</p></div>
-                </div>
-
+                <nav id="nav-main" class="display-none">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About us</a>
+                            <ul>
+                                <li><a href="about/history/">History</a></li>
+                                <li><a href="/about/team/">The team</a></li>
+                                <li><a href="/about/address/">Our address</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <nav id="nav-main" class="display-none">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about.html">About us</a>
-                        <ul>
-                            <li><a href="about/history/">History</a></li>
-                            <li><a href="/about/team/">The team</a></li>
-                            <li><a href="/about/address/">Our address</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-  
         </div>
     </div>
 

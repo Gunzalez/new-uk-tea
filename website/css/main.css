@@ -31,6 +31,9 @@ p {
   margin: 0 auto;
   max-width: 960px; }
 
+.col-xs-6 {
+  width: 50%; }
+
 form {
   margin: 10px 0;
   width: 100%; }
@@ -135,19 +138,14 @@ form {
         transform: scale(1.3);
         margin-top: 0; } }
 
-#header {
-  padding: 15px; }
-  #header .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-
-.home-link img {
-  width: 271px;
-  transition: all 250ms; }
-  @media (max-width: 576px) {
-    .home-link img {
-      width: 200px; } }
+.logo-link {
+  padding: 15px 0; }
+  .logo-link img {
+    width: 271px;
+    transition: all 250ms; }
+    @media (max-width: 576px) {
+      .logo-link img {
+        width: 200px; } }
 
 .slogan-animated {
   margin-top: -5px;
@@ -237,8 +235,7 @@ form {
     font-size: 3.0em;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
     transition: all 250ms;
-    z-index: 5;
-    overflow: hidden; }
+    z-index: 5; }
     @media (max-width: 576px) {
       .slide > a {
         top: auto;
@@ -294,20 +291,20 @@ form {
 #carousel-main .items {
   display: none; }
 
-.news-item {
+.pod {
   text-align: center; }
-  .news-item .text {
+  .pod .text {
     padding: 0 15px; }
-  .news-item a {
+  .pod a {
     text-decoration: none;
     color: #484c4f;
     display: block; }
-  .news-item .title {
+  .pod .title {
     text-transform: uppercase;
     color: #19737b; }
-  .news-item p {
+  .pod p {
     font-size: 0.8em; }
-  .news-item img {
+  .pod img {
     width: 100%;
     display: inline-block;
     margin-bottom: 10px; }
