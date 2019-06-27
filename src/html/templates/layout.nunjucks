@@ -100,8 +100,10 @@
                     <a href="#" class="big-link">For journalists visit TAP</a>
                 </div>
                 <div class="address">
-                    <a href="#" class="big-link">News alert</a>
-                    <a href="#" class="big-link">Membership Extranet</a>
+                    <div class="links">
+                        <a href="#" class="big-link">News alert</a><br/>
+                        <a href="#" class="big-link">Membership Extranet</a>
+                    </div>
                     <p class="text">
                         © Copyright 2019 - UK Tea and Infusions Association,<br/>                    
                         c/o Food & Drink Federation<br/>

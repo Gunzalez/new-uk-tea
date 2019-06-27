@@ -185,15 +185,16 @@
 .big-link {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 1.2em;
-  padding: 8px 10px;
+  font-size: 1.0em;
+  padding: 6px 10px;
   background: rgba(0,0,0,0.35);
   border: 1px solid white;
   text-decoration: none;
   color: white;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: background 500ms;
   margin: 10px 0;
+  white-space: nowrap;
 
   &:hover {
     background: rgba(0,0,0,0.7);
@@ -441,7 +442,7 @@
 }
 
 .tap-details {
-    padding-bottom: 20px;
+  padding-bottom: 30px;
 
   a {
     display: inline-block;
@@ -449,18 +450,27 @@
 
   .logo {
     text-align: center;
+    padding: 0 15px;
 
     img {
       display: block;
+      margin: 0 auto 10px;
     }
   }
 
   .address {
     text-align: center;
 
+    .links {
+      padding: 0 15px;
+      a {
+        display: inline-block;
+      }
+    }
+
     .text {
       font-size: 0.8em;
-      padding: 20px;
+      padding: 15px;
     }
   }
 }
@@ -470,10 +480,6 @@
   .tap-details {
     display: flex;
     justify-content: space-between;
-
-    // .logo {
-    //   text-align: left;
-    // }
 
     .address {
       text-align: right;
