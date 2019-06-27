@@ -305,10 +305,10 @@ DomReady.ready(function() {
 
         highLightCurrentSlide: function(slider){
             var $parent = slider.selector.parentNode;
-            $parent.querySelectorAll('.pagination span').forEach(function($dot){
+            $parent.querySelectorAll('.dots span').forEach(function($dot){
                 $dot.classList.remove('active');
             });
-            $parent.querySelectorAll('.pagination span')[slider.currentSlide].classList.add('active');
+            $parent.querySelectorAll('.dots span')[slider.currentSlide].classList.add('active');
         },
 
         addPagination: function(slider){
@@ -323,7 +323,7 @@ DomReady.ready(function() {
                 }
                 $pagination.appendChild($dot);
             }
-            $pagination.classList.add('pagination');
+            $pagination.classList.add('dots');
             $parent.appendChild($pagination);
         },
 

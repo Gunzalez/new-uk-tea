@@ -250,13 +250,9 @@
 }
 
 #carousel-mini, #profile {
-  width: 300px;
+  max-width: 300px;
   min-height: 260px;
   margin: 0 auto;
-
-  @media (max-width: $breakpoint1){
-    width: 100%;
-  }
 }
 
 #carousel-mini {
@@ -280,7 +276,7 @@
   }
   
   .slide {
-    width: 300px;
+    max-width: 300px;
     text-align: center;
 
     img {
@@ -298,9 +294,9 @@
     }
   }
 
-  .pagination {
+  .dots {
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     width: 100%;
     height: 20px;
     text-align: center;
