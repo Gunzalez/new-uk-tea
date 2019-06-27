@@ -470,3 +470,49 @@ form {
     justify-content: space-between; }
     .tap-details .address {
       text-align: right; } }
+
+.external-feeds {
+  margin: 30px 0; }
+
+.feed-item {
+  padding: 0 15px;
+  width: 33.33333%; }
+  @media (max-width: 576px) {
+    .feed-item {
+      width: 100%; } }
+
+.two-by-two {
+  position: relative;
+  width: 100%;
+  min-height: 390px; }
+  .two-by-two > a {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-position: center center;
+    background-size: cover;
+    text-decoration: none;
+    background-color: red; }
+    .two-by-two > a:first-child {
+      top: 0;
+      left: 0;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white; }
+    .two-by-two > a:nth-last-child(1) {
+      bottom: 0;
+      right: 0;
+      border-top: 2px solid white;
+      border-left: 2px solid white; }
+    .two-by-two > a:nth-last-child(2) {
+      top: 0;
+      right: 0;
+      border-bottom: 2px solid white;
+      border-left: 2px solid white; }
+    .two-by-two > a:nth-last-child(3) {
+      bottom: 0;
+      left: 0;
+      border-top: 2px solid white;
+      border-right: 2px solid white; }
+    .two-by-two > a:hover {
+      text-decoration: none; }

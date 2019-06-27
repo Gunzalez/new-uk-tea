@@ -142,4 +142,34 @@
     </div>
 </div>
 
+<div class="section">
+    <div class="external-feeds">
+        <div class="container">
+            <div class="row">
+                    
+                <div class="feed-item pod">
+
+                </div>
+
+                
+                <div class="feed-item pod ">
+                    <div class="two-by-two">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+
+                
+                <div class="feed-item pod">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
 {% endblock %}
