@@ -166,8 +166,7 @@
       @media (max-width: $breakpoint1){
         font-size: 2.0em;
       }
-    }  
-    
+    }      
   }
 }
 
@@ -176,11 +175,9 @@
   margin: 40px 0 90px 0;
 }
 @media (max-width: $breakpoint1){
-  
-  .slide .content a {
+    .slide .content a {
     margin: 18px 0 120px 0;
   }
-
 }
 
 // for carousel
@@ -190,34 +187,6 @@
   }
 }
 
-.pod {
-  text-align: center;
-
-  .text {
-    padding: 0 15px;
-  }
-
-  a {    
-    text-decoration: none;
-    color: $brand-black;
-    display: block;
-  }
-
-  .title {
-    text-transform: uppercase;
-    color: $brand-green;
-  }
-
-  p {
-    font-size: 0.8em;
-  }
-
-  img {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-}
 
 .introduction {
   background: url('../images/bg-introduction.png') bottom center no-repeat $brand-beige;
@@ -489,6 +458,18 @@
 
       &:hover {
           text-decoration: none;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        width: 24px;
+        height: 24px;
+        background: url('../images/logo-instagram.png') top left no-repeat;
+        background-size: contain;
+        opacity: 0.6;
       }
   }
 }

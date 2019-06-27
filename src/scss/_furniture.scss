@@ -56,12 +56,40 @@ p {
     transition: background 500ms;
     margin: 10px 0;
     white-space: nowrap;
-  
+
     &:hover {
-      background: rgba(0,0,0,0.7);
-      text-decoration: none;
-      color: white;
+        background: rgba(0,0,0,0.7);
+        text-decoration: none;
+        color: white;
     }
-  }
+}
   
 
+.pod {
+    text-align: center;
+
+    .text {
+        padding: 0 15px;
+    }
+
+    a {    
+        text-decoration: none;
+        color: $brand-black;
+        display: block;
+    }
+
+    .title {
+        text-transform: uppercase;
+        color: $brand-green;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    img {
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 15px;
+    }
+}

@@ -54,6 +54,24 @@ p {
     text-decoration: none;
     color: white; }
 
+.pod {
+  text-align: center; }
+  .pod .text {
+    padding: 0 15px; }
+  .pod a {
+    text-decoration: none;
+    color: #484c4f;
+    display: block; }
+  .pod .title {
+    text-transform: uppercase;
+    color: #19737b; }
+  .pod p {
+    font-size: 0.8em; }
+  .pod img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px; }
+
 form {
   margin: 10px 0;
   width: 100%; }
@@ -293,24 +311,6 @@ form {
 #carousel-main .items {
   display: none; }
 
-.pod {
-  text-align: center; }
-  .pod .text {
-    padding: 0 15px; }
-  .pod a {
-    text-decoration: none;
-    color: #484c4f;
-    display: block; }
-  .pod .title {
-    text-transform: uppercase;
-    color: #19737b; }
-  .pod p {
-    font-size: 0.8em; }
-  .pod img {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 10px; }
-
 .introduction {
   background: url("../images/bg-introduction.png") bottom center no-repeat #f1f1ed;
   margin: 30px 0;
@@ -490,3 +490,13 @@ form {
       border-right: 2px solid white; }
     .two-by-two > a:hover {
       text-decoration: none; }
+    .two-by-two > a:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      width: 24px;
+      height: 24px;
+      background: url("../images/logo-instagram.png") top left no-repeat;
+      background-size: contain;
+      opacity: 0.6; }
