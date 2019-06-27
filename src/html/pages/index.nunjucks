@@ -57,6 +57,9 @@
 <div class="section">
     <div class="container">
         <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            
             <div class="news-item pod">
                 <a href="#">
                     <img src="images/news-item-1.jpg" alt="" />
@@ -66,6 +69,10 @@
                     </div>
                 </a>
             </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            
             <div class="news-item pod">
                 <a href="#">
                     <img src="images/news-item-2.jpg" alt="" />
@@ -75,6 +82,10 @@
                     </div>
                 </a>
             </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            
             <div class="news-item pod">
                 <a href="#">
                     <img src="images/news-item-3.jpg" alt="" />
@@ -84,6 +95,9 @@
                     </div>
                 </a>
             </div>
+        </div>
+
+
         </div>
     </div>
 </div>

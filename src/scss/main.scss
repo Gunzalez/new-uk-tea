@@ -220,16 +220,7 @@
   }
 }
 
-.news-item {  
-  padding: 0 15px;
-  width: 33.33333%;
-
-  @media (max-width: $breakpoint1){
-    width: 100%;
-  }
-}
-
-.pod {
+.news-item {
   text-align: center;
 
   .text {

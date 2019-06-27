@@ -31,12 +31,6 @@ p {
   margin: 0 auto;
   max-width: 960px; }
 
-@media (min-width: 576px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; } }
-
 form {
   margin: 10px 0;
   width: 100%; }
@@ -301,26 +295,19 @@ form {
   display: none; }
 
 .news-item {
-  padding: 0 15px;
-  width: 33.33333%; }
-  @media (max-width: 576px) {
-    .news-item {
-      width: 100%; } }
-
-.pod {
   text-align: center; }
-  .pod .text {
+  .news-item .text {
     padding: 0 15px; }
-  .pod a {
+  .news-item a {
     text-decoration: none;
     color: #484c4f;
     display: block; }
-  .pod .title {
+  .news-item .title {
     text-transform: uppercase;
     color: #19737b; }
-  .pod p {
+  .news-item p {
     font-size: 0.8em; }
-  .pod img {
+  .news-item img {
     width: 100%;
     display: inline-block;
     margin-bottom: 10px; }
