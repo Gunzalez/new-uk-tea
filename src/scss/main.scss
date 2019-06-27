@@ -171,26 +171,6 @@
   }
 }
 
-.slide .content a,
-.big-link {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.0em;
-  padding: 7px 10px;
-  background: rgba(0,0,0,0.5);
-  border: 1px solid white;
-  text-decoration: none;
-  color: white;
-  border-radius: 2px;
-  transition: background 500ms;
-  margin: 10px 0;
-  white-space: nowrap;
-
-  &:hover {
-    background: rgba(0,0,0,0.7);
-  }
-}
-
 
 .slide .content a {
   margin: 40px 0 90px 0;

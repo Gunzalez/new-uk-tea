@@ -15,7 +15,7 @@
                     <span class="brand-font-1">Unearth</span>
                     <span class="brand-font-2">Tea</span>
                 </span>
-                <a href="#">Growing & Production</a>
+                <a href="#" class="big-link">Growing & Production</a>
             </div>
         </div>
 

@@ -7,6 +7,7 @@
   outline: none;
   box-sizing: border-box; }
 
+/* elements */
 body {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: none;
@@ -27,12 +28,31 @@ p {
   padding: 0 0 15px 0;
   line-height: 130%; }
 
+/* classes */
 .container {
   margin: 0 auto;
   max-width: 960px; }
 
 .col-xs-6 {
   width: 50%; }
+
+.big-link {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.0em;
+  padding: 7px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 2px;
+  transition: background 500ms;
+  margin: 10px 0;
+  white-space: nowrap; }
+  .big-link:hover {
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    color: white; }
 
 form {
   margin: 10px 0;
@@ -262,24 +282,6 @@ form {
       @media (max-width: 576px) {
         .slide .content .text {
           font-size: 2.0em; } }
-
-.slide .content a,
-.big-link {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 1.0em;
-  padding: 7px 10px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid white;
-  text-decoration: none;
-  color: white;
-  border-radius: 2px;
-  transition: background 500ms;
-  margin: 10px 0;
-  white-space: nowrap; }
-  .slide .content a:hover,
-  .big-link:hover {
-    background: rgba(0, 0, 0, 0.7); }
 
 .slide .content a {
   margin: 40px 0 90px 0; }

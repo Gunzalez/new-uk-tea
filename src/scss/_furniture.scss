@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* elements */
 body {
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: none;
@@ -31,6 +32,8 @@ p {
     line-height: 130%;
 }
 
+
+/* classes */
 .container {
     margin: 0 auto;
     max-width: 960px;
@@ -39,4 +42,26 @@ p {
 .col-xs-6 {
     width: 50%;
 }
+
+.big-link {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    padding: 7px 10px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    transition: background 500ms;
+    margin: 10px 0;
+    white-space: nowrap;
+  
+    &:hover {
+      background: rgba(0,0,0,0.7);
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
 

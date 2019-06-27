@@ -210,6 +210,7 @@ DomReady.ready(function() {
             var anchor = document.createElement('A');
             anchor.href = newSlide.href;
             anchor.innerHTML = newSlide.link;
+            anchor.classList.add('big-link');
             this.el.content.appendChild(anchor);
             this.curIndex = newIndex;
         },
