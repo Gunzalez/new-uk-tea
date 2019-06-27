@@ -156,16 +156,15 @@
     </div>
 </div>
 
-<div class="external-feeds">
-    <div class="container">
-        <div class="row">
-                
-            <div class="feed-item pod">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="feed-item">
 
             </div>
-
-            
-            <div class="feed-item pod ">
+        </div>
+        <div class="col-sm-6 col-md-4">        
+            <div class="feed-item">
                 <div class="two-by-two">
                     <a href="#"></a>
                     <a href="#"></a>
@@ -173,14 +172,12 @@
                     <a href="#"></a>
                 </div>
             </div>
-
-            
-            <div class="feed-item pod">
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="feed-item">
 
             </div>
-        </div>
-
-
+        </div>        
     </div>
 </div>
 
