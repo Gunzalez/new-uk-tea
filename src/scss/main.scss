@@ -484,6 +484,11 @@
 .feed-item {
   overflow: hidden;
   margin: 15px 0;
+
+  @media (min-width: $breakpoint1){
+    margin: 30px 0;
+    
+  }
 }
 
 iframe {
