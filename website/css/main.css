@@ -13,7 +13,7 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
   color: #484c4f;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: white; }
@@ -548,3 +548,6 @@ iframe {
   .footer-links {
     display: flex;
     justify-content: space-between; } }
+
+.map-iframe {
+  margin-bottom: 20px; }
