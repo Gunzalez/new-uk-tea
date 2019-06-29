@@ -1,6 +1,5 @@
 TODO
 ==================
-Footer into bootstrap
 
 
 BUGS
@@ -14,4 +13,5 @@ Time spent (8 hrs/day)
 Footer - 3 hours for responsive list
 Scaffolding, footer, external feeds - 5 hours (10:33 am 27 of June)
 Shaker logo, twitter feed - 2 hours
+Two-by-two, footer to bootatrap and Contact page begins - 3 hrs
 
