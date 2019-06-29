@@ -178,7 +178,6 @@
   }
 }
 
-
 .slide .content a {
   margin: 40px 0 90px 0;
 }
@@ -194,7 +193,6 @@
     display: none;
   }
 }
-
 
 .introduction {
   background: url('../images/bg-introduction.png') bottom center no-repeat $brand-beige;
@@ -278,148 +276,6 @@
   }
 }
 
-.footer {
-  background-color: $brand-dark;
-  color: white;
-
-  a {
-    color: white;
-  }
-
-  .nav-footer {
-    padding: 15px;
-    position: relative;
-
-    ul {
-      margin: 0 auto;
-      padding: 0;
-      list-style: none;
-      text-align: right
-    }
-
-    li {
-      display: inline-block;
-      border-right: 1px solid lighten($color: $brand-dark, $amount: 10%);
-      padding: 4px 6px;
-
-      &:nth-last-child(1){
-        border: none;
-        padding-right: 0;
-
-        a {
-          padding-right: 0;
-        }
-      }
-
-      a {
-        display: inline-block;
-        padding: 6px 12px;
-        text-decoration: none;
-        font-size: 0.8em;
-        line-height: 100%;
-      }
-    }
-
-    .nav-trigger {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      overflow: hidden;
-      display: none;
-    }
-  }
-}
-
-
-@media (max-width: $breakpoint1){
-
-  .nav-footer {
-
-    ul {
-      display: none;
-      width: 120px;
-      text-align: center !important;
-
-      li {
-        display: block !important;
-        border-right: 0 !important;
-        border-bottom: 1px solid lighten($color: $brand-dark, $amount: 10%);
-        padding: 8px;
-        text-align: center;
-
-        a {
-          padding: 8px 12px !important;
-        }
-
-        &:nth-last-child(1){
-          border: none;
-          padding: 4px 6px;
-
-          a {
-            padding: 8px 12px !important;
-          }
-        }
-      }
-    }
-
-    &.mm-wrapper_opened {
-
-      ul {
-        display: block;
-      }
-    }
-
-    .nav-trigger {
-      display: block !important;
-    }
-  }
-}
-
-.tap-details {
-  padding-bottom: 30px;
-
-  a {
-    display: inline-block;
-  }
-
-  .logo {
-    text-align: center;
-    padding: 0 15px;
-
-    img {
-      display: block;
-      margin: 0 auto 10px;
-    }
-  }
-
-  .address {
-    text-align: center;
-
-    .links {
-      padding: 0 15px;
-      a {
-        display: inline-block;
-      }
-    }
-
-    .text {
-      font-size: 0.8em;
-      padding: 15px;
-    }
-  }
-}
-
-@media (min-width: $breakpoint1){
-  .tap-details {
-    display: flex;
-    justify-content: space-between;
-
-    .address {
-      text-align: right;
-    }
-  }
-}
-
 .two-by-two {
   position: relative;
   width: 100%;
@@ -496,4 +352,139 @@ iframe {
   height: 300px;
   border: 0;
   overflow: hidden;
+}
+
+.footer {
+  background-color: $brand-dark;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  .nav-footer {
+    padding: 15px;
+    position: relative;
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      text-align: right
+    }
+
+    li {
+      display: inline-block;
+      border-right: 1px solid lighten($color: $brand-dark, $amount: 10%);
+      padding: 4px 6px;
+
+      &:nth-last-child(1){
+        border: none;
+        padding-right: 0;
+
+        a {
+          padding-right: 0;
+        }
+      }
+
+      a {
+        display: inline-block;
+        padding: 6px 12px;
+        text-decoration: none;
+        font-size: 0.8em;
+        line-height: 100%;
+      }
+    }
+
+    .nav-trigger {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      overflow: hidden;
+      display: none;
+      z-index: 10;
+      color: white;
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint1){
+
+  .nav-footer {
+
+    ul {
+      display: none;
+      width: 120px;
+      text-align: center !important;
+
+      li {
+        display: block !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid lighten($color: $brand-dark, $amount: 10%);
+        padding: 8px;
+        text-align: center;
+
+        a {
+          padding: 8px 12px !important;
+        }
+
+        &:nth-last-child(1){
+          border: none;
+          padding: 4px 6px;
+
+          a {
+            padding: 8px 12px !important;
+          }
+        }
+      }
+    }
+
+    &.mm-wrapper_opened {
+
+      ul {
+        display: block;
+      }
+    }
+
+    .nav-trigger {
+      display: block !important;
+    }
+  }
+}
+
+
+.logo {
+  text-align: center;
+  padding: 0 15px;
+
+a {
+  display: inline-block;
+}
+
+  img {
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+
+.address {
+  text-align: right;
+
+  .links {
+    padding: 0 15px;
+    a {
+      display: inline-block;
+    }
+  }
+
+  .text {
+    font-size: 0.8em;
+    padding: 15px;
+  }
+
+  @media (max-width: $breakpoint1){
+    text-align: center;
+  }
+
 }
