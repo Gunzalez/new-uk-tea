@@ -487,3 +487,11 @@ a {
   }
 
 }
+
+.footer-links {
+
+  @media (min-width: $breakpoint1){
+    display: flex;
+    justify-content: space-between;
+  }
+}

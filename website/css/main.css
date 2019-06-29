@@ -527,3 +527,8 @@ iframe {
   @media (max-width: 576px) {
     .address {
       text-align: center; } }
+
+@media (min-width: 576px) {
+  .footer-links {
+    display: flex;
+    justify-content: space-between; } }
