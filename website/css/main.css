@@ -18,11 +18,6 @@ body {
   font-weight: 100;
   background-color: white; }
 
-h2 {
-  font-size: 1.1em;
-  margin: 0;
-  padding: 0 0  10px 0; }
-
 p {
   margin: 0;
   padding: 0 0 15px 0;
@@ -54,6 +49,14 @@ p {
     text-decoration: none;
     color: white; }
 
+.title-large {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #7a7250;
+  border-bottom: 1px solid whitesmoke;
+  padding: 0 0 10px 0;
+  margin: 0 0 15px 0; }
+
 .pod {
   text-align: center; }
   .pod .text {
@@ -64,7 +67,10 @@ p {
     display: block; }
   .pod .title {
     text-transform: uppercase;
-    color: #19737b; }
+    color: #19737b;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0 0 10px 0; }
   .pod p {
     font-size: 0.8em; }
   .pod img {
@@ -251,6 +257,16 @@ form {
   margin-bottom: 60px; }
   @media (max-width: 576px) {
     #carousel-main {
+      margin-bottom: 20px; } }
+
+.page-header {
+  margin-bottom: 60px; }
+  .page-header .stage {
+    height: 257px; }
+    .page-header .stage .slide {
+      height: 277px; }
+  @media (max-width: 576px) {
+    .page-header {
       margin-bottom: 20px; } }
 
 .stage {

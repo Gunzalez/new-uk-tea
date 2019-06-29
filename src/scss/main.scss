@@ -92,6 +92,23 @@
   }
 }
 
+.page-header {
+  margin-bottom: 60px;
+
+  .stage {
+    height: 257px;
+
+    .slide {
+      height: 277px;
+    }
+  }
+  
+  @media (max-width: $breakpoint1){
+    margin-bottom: 20px;
+  }
+}
+
+
 .stage {
   height: 334px;
   position: relative;

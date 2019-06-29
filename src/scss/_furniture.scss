@@ -20,11 +20,6 @@ body {
     background-color: white;
 }
 
-h2 {
-    font-size: 1.1em;
-    margin: 0;
-    padding: 0 0  10px 0;
-}
 
 p {
     margin: 0;
@@ -63,9 +58,18 @@ p {
         color: white;
     }
 }
+
+.title-large {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: $brand-brown;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0 0 10px 0;
+    margin: 0 0 15px 0;
+}
   
 .pod {
-    text-align: center;
+        text-align: center;
 
     .text {
         padding: 0 15px;
@@ -80,6 +84,9 @@ p {
     .title {
         text-transform: uppercase;
         color: $brand-green;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 0 10px 0;
     }
 
     p {
