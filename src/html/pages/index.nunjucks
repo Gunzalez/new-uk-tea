@@ -168,10 +168,10 @@
         <div class="col-sm-6 col-md-4">        
             <div class="feed-item">
                 <div class="two-by-two">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#" style="background-image: url('images/two-by-two-1.jpg')"></a>
+                    <a href="#" style="background-image: url('images/two-by-two-2.jpg')"></a>
+                    <a href="#" style="background-image: url('images/two-by-two-3.jpg')"></a>
+                    <a href="#" style="background-image: url('images/two-by-two-4.jpg')"></a>
                 </div>
             </div>
         </div>

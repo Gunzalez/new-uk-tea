@@ -399,8 +399,7 @@ form {
     height: 50%;
     background-position: center center;
     background-size: cover;
-    text-decoration: none;
-    background-color: red; }
+    text-decoration: none; }
     .two-by-two > a:first-child {
       top: 0;
       left: 0;
