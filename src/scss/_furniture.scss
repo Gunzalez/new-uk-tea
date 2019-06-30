@@ -137,21 +137,39 @@ p {
 }
 
 table {
-    // width: 80%;
-    // margin: 0 auto 30px;
-
-    // td, th {
-    //     padding: 4px 8px;
-    // }
 
     th {
         text-transform: uppercase;
+    }
+
+    th, td {
         white-space: nowrap;
         padding-right: 30px !important;
+        font-size: 0.9em;
+        text-align: center;
+
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: $breakpoint1){
+
+        th, td {
+            padding: 0.3em 20px 0.3em 0.3em !important;
+        }
     }
 
     td {
-        white-space: nowrap;
-        padding-right: 30px !important;
+
+        span {
+            display: inline-block;
+            text-indent: -9000px;
+            background-color: $brand-orange;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-top: 3px;
+        }
     }
 }

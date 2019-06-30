@@ -109,13 +109,28 @@ p {
     font-weight: normal; }
 
 table th {
-  text-transform: uppercase;
-  white-space: nowrap;
-  padding-right: 30px !important; }
+  text-transform: uppercase; }
 
-table td {
+table th, table td {
   white-space: nowrap;
-  padding-right: 30px !important; }
+  padding-right: 30px !important;
+  font-size: 0.9em;
+  text-align: center; }
+  table th:first-child, table td:first-child {
+    text-align: left; }
+
+@media (max-width: 576px) {
+  table th, table td {
+    padding: 0.3em 20px 0.3em 0.3em !important; } }
+
+table td span {
+  display: inline-block;
+  text-indent: -9000px;
+  background-color: #e7802c;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 3px; }
 
 form {
   margin: 10px 0;
