@@ -71,7 +71,7 @@ p {
   font-weight: bold; }
   @media (max-width: 576px) {
     .title-large {
-      font-size: 2.2em; } }
+      font-size: 2.0em; } }
 
 .heading .title-large {
   text-align: center;
@@ -139,8 +139,6 @@ table td span {
 form {
   margin: 10px 0 50px 0;
   width: 100%; }
-  form .form-row {
-    margin-bottom: 20px; }
   form label {
     font-weight: 400;
     display: none; }
@@ -270,7 +268,26 @@ form {
   .page-header .stage {
     height: 257px; }
     .page-header .stage .slide {
-      height: 277px; }
+      height: 277px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .page-header .stage .slide .shout {
+        font-size: 4.2rem;
+        color: white;
+        font-weight: 500;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
+        .page-header .stage .slide .shout .font-two {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic; }
+          @media (max-width: 576px) {
+            .page-header .stage .slide .shout .font-two {
+              display: block; } }
+        @media (max-width: 576px) {
+          .page-header .stage .slide .shout {
+            font-size: 2.2rem;
+            text-align: center;
+            line-height: 120%; } }
   @media (max-width: 576px) {
     .page-header {
       margin-bottom: 40px; } }

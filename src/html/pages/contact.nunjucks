@@ -6,7 +6,12 @@
 <div class="page-header">
     <div class="stage" style="background: url('images/bg-header-contact.jpg') left 20px no-repeat, url('images/bg-header-contact.jpg') right 20px no-repeat;">
         <div class="cloak">&nbsp;</div>        
-        <div class="slide" style="background-image: url('images/bg-header-contact.jpg')">&nbsp;</div>
+        <div class="slide" style="background-image: url('images/bg-header-contact.jpg')">
+            <div class="shout">
+                <span class="font-one">Contact</span>
+                <span class="font-two">& Membership</span>
+            </div>
+        </div>
 
     </div>
 </div>

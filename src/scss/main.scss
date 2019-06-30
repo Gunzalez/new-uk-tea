@@ -100,6 +100,32 @@
 
     .slide {
       height: 277px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .shout {
+        font-size: 4.2rem;
+        color: white;
+        font-weight: 500;
+        text-shadow: 0 0 6px rgba(0,0,0,0.90);
+
+        .font-two {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+          
+          @media (max-width: $breakpoint1){
+            display: block;
+          }
+        }
+        
+        @media (max-width: $breakpoint1){
+          font-size: 2.2rem;
+          text-align: center;
+          line-height: 120%;
+        }
+
+      }
     }
   }
   
