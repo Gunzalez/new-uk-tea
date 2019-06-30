@@ -54,7 +54,7 @@
             <h3>Table of Membership Benefits</h3>
 
             <div class="table-responsive">
-                <table class="table table-striped">
+                <table class="table table-sm table-striped">
                     <thead>
                         <tr>
                             <th>Benefit</th>
@@ -74,16 +74,22 @@
                             <td>Eligible as Exec Board Member</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
-                            <td><span>Yes</span></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Operating Group Member</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
-                            <td><span>Yes</span></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>European Committee Attendance</td>
+                            <td><span>Yes</span></td>
+                            <td><span>Yes</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>News Alerts</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
@@ -92,7 +98,7 @@
                             <td>Receive Exec Board Minutes</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
-                            <td><span>Yes</span></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>Secure Members Website Area</td>
@@ -104,19 +110,13 @@
                             <td>Access to FDF website</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
-                            <td><span>Yes</span></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>UKTIA Website Listing</td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
                             <td><span>Yes</span></td>
-                        </tr>
-                        <tr>
-                            <td>Access To PDF Website</td>
-                            <td><span>Yes</span></td>
-                            <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>Full Market Data</td>
@@ -134,7 +134,7 @@
                             <td>Top-Line Market Data</td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td><span>Yes</span></td>
                         </tr>
                         <tr>
                             <td>Industry Advice</td>
@@ -155,6 +155,60 @@
             
             <h2 class="title-large">Membership Form</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nisi diam, venenatis vel scelerisque sed, ornare quis neque. Fusce imperdiet velit vel auctor luctus. Sed semper elementum placerat. Nam id ornare mi. Proin mattis id enim at efficitur.</p>
+
+            <form>
+                <div class="form-group row">
+                    <label for="membership-type" class="col-sm-4">Type of membership</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="membership-type">
+                            <option value="0">Select a membership type</option>
+                            <option value="UK Listed">UK Listed</option>
+                            <option value="Producer">Producer</option>
+                            <option value="Associate">Associate</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="form-group row">
+                    <label for="company-name" class="col-sm-4">Company name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="company-name" placeholder="Company name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="company-type" class="col-sm-4">Company Type</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" id="company-type">
+                            <option value="0">Select a company type</option>
+                            <option>Type 1</option>
+                            <option>Type 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contact-name" class="col-sm-4">Contact Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="contact-name" placeholder="Contact Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="contact-role" class="col-sm-4">Contact Role</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="contact-role" placeholder="Contact Role" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email-address" class="col-sm-4">Email address</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" id="email-addess" placeholder="Email address" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-right">
+                        <button type="submit" class="btn btn-primary btn-submit col-auto">Register</button>
+                    </div>                
+                </div>                
+            </form>
 
         </div>   
     </div>

@@ -127,25 +127,34 @@ table td span {
   display: inline-block;
   text-indent: -9000px;
   background-color: #e7802c;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   margin-top: 3px; }
 
 form {
-  margin: 10px 0;
+  margin: 10px 0 50px 0;
   width: 100%; }
   form .form-row {
     margin-bottom: 20px; }
   form label {
-    font-size: 16px;
-    display: block;
-    padding-bottom: 5px;
-    font-weight: 400; }
-    form label span {
-      color: white; }
-  form .placeholder {
+    font-weight: 400;
     display: none; }
+  form .btn-submit {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: #7a7250;
+    border-color: #7a7250;
+    transition: all 250ms; }
+    form .btn-submit:hover {
+      background-color: #4c4732;
+      border-color: #4c4732; }
+    @media (min-width: 576px) {
+      form .btn-submit {
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px; } }
   form select.form-control,
   form input[type="text"].form-control,
   form input[type="email"].form-control,
@@ -158,45 +167,7 @@ form {
     appearance: none;
     height: inherit;
     outline: none;
-    background: #b8b8b8;
-    border: 1px solid #b8b8b8;
-    resize: none;
-    padding: 8px 10px;
-    border-radius: 3px;
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    margin-bottom: 5px; }
-  form textarea.form-control {
-    width: 100%;
-    height: 180px; }
-  form select.form-control {
-    background: url("../images/bg-select.png") right center no-repeat;
-    padding-right: 30px; }
-  form .form-check,
-  form .form-radio {
-    position: relative;
-    padding-left: 32px;
-    padding-bottom: 10px; }
-    form .form-check input[type="checkbox"],
-    form .form-check input[type="radio"],
-    form .form-radio input[type="checkbox"],
-    form .form-radio input[type="radio"] {
-      display: inline;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      cursor: pointer;
-      transform: scale(1.2); }
-      form .form-check input[type="checkbox"] + label,
-      form .form-check input[type="radio"] + label,
-      form .form-radio input[type="checkbox"] + label,
-      form .form-radio input[type="radio"] + label {
-        display: inline;
-        line-height: 20px;
-        cursor: pointer; }
+    font-size: 14px; }
   form .error-span {
     display: none; }
   form .error select.form-control,
@@ -211,30 +182,21 @@ form {
     display: block;
     color: #b70000;
     font-size: 14px; }
-  @media (min-width: 960px) {
-    form {
-      width: 440px;
-      margin: 0 auto; }
-      form .placeholder {
-        display: block; }
-      form .form-row textarea::-webkit-input-placeholder, form .form-row input::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #b8b8b8; }
-      form .form-row textarea::-moz-placeholder, form .form-row input::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #b8b8b8; }
-      form .form-row textarea:-ms-input-placeholder, form .form-row input:-ms-input-placeholder {
-        /* IE 10+ */
-        color: #b8b8b8; }
-      form .form-row textarea:-moz-placeholder, form .form-row input:-moz-placeholder {
-        /* Firefox 18- */
-        color: #b8b8b8; }
-      form .form-check input[type="checkbox"],
-      form .form-check input[type="radio"],
-      form .form-radio input[type="checkbox"],
-      form .form-radio input[type="radio"] {
-        transform: scale(1.3);
-        margin-top: 0; } }
+  @media (min-width: 576px) {
+    form label {
+      display: block; }
+    form .form-group textarea::-webkit-input-placeholder, form .form-group input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: white; }
+    form .form-group textarea::-moz-placeholder, form .form-group input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: white; }
+    form .form-group textarea:-ms-input-placeholder, form .form-group input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: white; }
+    form .form-group textarea:-moz-placeholder, form .form-group input:-moz-placeholder {
+      /* Firefox 18- */
+      color: white; } }
 
 .logo-link {
   padding: 15px 0; }
