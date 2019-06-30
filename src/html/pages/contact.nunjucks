@@ -14,10 +14,10 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
+
             <h2 class="title-large">Objectives & Purpose</h2>
             <p>The UK Tea & Infusions Association (UKTIA) is an independent non-profit making body dedicated to promoting tea and herbal infusions and their unique story, for the benefit of those who produce, sell and enjoy tea and herbal infusion products.</p>
-        </div>  
-        <div class="col-sm-12">
+        
             <h2 class="title-large">Get in Touch</h2>
             <div class="row">
                 <div class="col-sm-6">
@@ -40,6 +40,7 @@
                     </p>
                 </div>
             </div>
+
             <p>UKTIA is registered with Corporate Telephone Preference Service and does not accept unsolicited telephone sales calls.</p>
             <p>UKTIA websites accept images and copy from a wide variety of sources including UKTIA members and the general public. Every effort is made to ensure that copyright ownership is respected and we apologise in advance for any unintentional errors, and will be happy to make any corrections if notified.</p>
 
@@ -51,6 +52,40 @@
             <p>Firms, companies or other corporations registered in the United Kingdom and who are bona fide packers, blenders or traders of tea within the United Kingdom shall be eligible for membership of the Association as a full member.</p>
 
             <h3>Table of Membership Benefits</h3>
+
+            <table class="table-striped">
+                <thead>
+                    <tr>
+                        <th>Benefit</th>
+                        <th>UK Listed</th>
+                        <th>Producer</th>
+                        <th>Associate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Voting Rights</td>
+                        <td><span>Yes</span></td>
+                        <td><span>Yes</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Industry Advice</td>
+                        <td><span>Yes</span></td>
+                        <td><span>Yes</span></td>
+                        <td><span>Yes</span></td>
+                    </tr>
+                    <tr>
+                        <td>Crisis Support</td>
+                        <td><span>Yes</span></td>
+                        <td><span>Yes</span></td>
+                        <td><span>Yes</span></td>
+                    </tr>
+                </tbody>    
+            </table>
+
+
+
         </div>   
     </div>
 </div>

@@ -19,17 +19,21 @@ body {
   background-color: white; }
 
 h2 {
-  font-size: 2.6em; }
+  font-size: 2.6em;
+  line-height: 100%; }
 
 h3 {
   font-size: 1.2em;
   padding: 0;
-  margin: 0 0 15px 0; }
+  margin: 0 0 15px 0;
+  font-weight: 700; }
 
 p {
   margin: 0;
   padding: 0 0 15px 0;
   line-height: 130%; }
+  p strong {
+    font-weight: 700; }
 
 /* classes */
 .container {
@@ -62,8 +66,8 @@ p {
   font-style: italic;
   color: #7a7250;
   border-bottom: 1px solid whitesmoke;
-  padding: 0 0 10px 0;
-  margin: 0 0 15px 0; }
+  padding: 0 0 15px 0;
+  margin: 0 0 25px 0; }
 
 .pod {
   text-align: center; }
@@ -99,6 +103,14 @@ p {
     color: #666;
     font-size: 11px;
     font-weight: normal; }
+
+table {
+  width: 80%;
+  margin: 0 auto 30px; }
+  table td {
+    padding: 4px 8px; }
+  table th {
+    text-transform: uppercase; }
 
 form {
   margin: 10px 0;
