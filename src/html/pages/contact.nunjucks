@@ -214,4 +214,6 @@
     </div>
 </div>
 
+{% include "partials/may-also-like.nunjucks" %}
+
 {% endblock %}
