@@ -137,14 +137,21 @@ p {
 }
 
 table {
-    width: 80%;
-    margin: 0 auto 30px;
+    // width: 80%;
+    // margin: 0 auto 30px;
 
-    td, th {
-        padding: 4px 8px;
-    }
+    // td, th {
+    //     padding: 4px 8px;
+    // }
 
     th {
         text-transform: uppercase;
+        white-space: nowrap;
+        padding-right: 30px !important;
+    }
+
+    td {
+        white-space: nowrap;
+        padding-right: 30px !important;
     }
 }
