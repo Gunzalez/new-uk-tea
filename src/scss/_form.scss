@@ -19,13 +19,13 @@ form {
         text-transform: uppercase;
         text-align: center;
         width: 100%;
-        background-color: $brand-brown;
-        border-color: $brand-brown;
+        background-color: darken($color: $brand-brown, $amount: 15%);
+        border-color: darken($color: $brand-brown, $amount: 15%);
         transition: all 250ms;
 
         &:hover {
-            background-color: darken($color: $brand-brown, $amount: 15%);
-            border-color: darken($color: $brand-brown, $amount: 15%);
+            background-color:$brand-brown;
+            border-color: $brand-brown;
         }
 
         @media (min-width: $breakpoint1){
@@ -34,7 +34,6 @@ form {
             padding-left: 20px;
         }
     }
-
 
     select,
     input[type="text"],
