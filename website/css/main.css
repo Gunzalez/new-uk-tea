@@ -258,20 +258,20 @@ form {
   .nav-trigger:hover {
     color: #353336; }
 
-#carousel-main {
+#carousel-main, .page-header {
   margin-bottom: 30px; }
   @media (max-width: 576px) {
-    #carousel-main {
+    #carousel-main, .page-header {
       margin-bottom: 20px; } }
-  #carousel-main .stage {
+  #carousel-main .stage, .page-header .stage {
     height: 400px;
     position: relative;
     transition: background 500ms; }
     @media (max-width: 576px) {
-      #carousel-main .stage {
+      #carousel-main .stage, .page-header .stage {
         height: 300px;
         margin-bottom: 30px; } }
-  #carousel-main .cloak {
+  #carousel-main .cloak, .page-header .cloak {
     background: white;
     opacity: 0.7;
     position: absolute;
@@ -279,7 +279,7 @@ form {
     left: 0;
     bottom: 0;
     right: 0; }
-  #carousel-main .slide {
+  #carousel-main .slide, .page-header .slide {
     position: relative;
     height: 400px;
     width: 100%;
@@ -289,9 +289,9 @@ form {
     background-size: cover;
     transition: background 250ms; }
     @media (max-width: 576px) {
-      #carousel-main .slide {
+      #carousel-main .slide, .page-header .slide {
         height: 300px; } }
-    #carousel-main .slide > a {
+    #carousel-main .slide > a, .page-header .slide > a {
       position: absolute;
       top: 40%;
       width: 18px;
@@ -302,30 +302,30 @@ form {
       transition: all 250ms;
       z-index: 5; }
       @media (max-width: 576px) {
-        #carousel-main .slide > a {
+        #carousel-main .slide > a, .page-header .slide > a {
           top: auto;
           bottom: 50px; } }
-      #carousel-main .slide > a:hover {
+      #carousel-main .slide > a:hover, .page-header .slide > a:hover {
         color: #b8b8b8; }
-      #carousel-main .slide > a.prev {
+      #carousel-main .slide > a.prev, .page-header .slide > a.prev {
         left: 15px; }
-      #carousel-main .slide > a.next {
+      #carousel-main .slide > a.next, .page-header .slide > a.next {
         right: 15px;
         text-align: right; }
-    #carousel-main .slide .content {
+    #carousel-main .slide .content, .page-header .slide .content {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       text-align: center; }
-      #carousel-main .slide .content .text {
+      #carousel-main .slide .content .text, .page-header .slide .content .text {
         display: block;
         color: white;
         font-weight: bold;
         font-size: 3.0em;
         text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
         @media (max-width: 576px) {
-          #carousel-main .slide .content .text {
+          #carousel-main .slide .content .text, .page-header .slide .content .text {
             font-size: 2.0em; } }
 
 #carousel-main .slide .content a {
@@ -513,7 +513,7 @@ iframe {
         display: inline-block;
         padding: 6px 12px;
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 0.85em;
         line-height: 100%; }
     .footer .nav-footer .nav-trigger {
       position: absolute;
