@@ -93,6 +93,11 @@ p {
     width: 100%;
     display: inline-block;
     margin-bottom: 15px; }
+  @media (max-width: 576px) {
+    .pod.news p {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #d6d2c0;
+      margin-bottom: 15px; } }
 
 .shaker {
   font-size: 11px;
@@ -254,17 +259,88 @@ form {
     color: #353336; }
 
 #carousel-main {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   @media (max-width: 576px) {
     #carousel-main {
       margin-bottom: 20px; } }
+  #carousel-main .stage {
+    height: 400px;
+    position: relative;
+    transition: background 500ms; }
+    @media (max-width: 576px) {
+      #carousel-main .stage {
+        height: 300px;
+        margin-bottom: 30px; } }
+  #carousel-main .cloak {
+    background: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  #carousel-main .slide {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+    transition: background 250ms; }
+    @media (max-width: 576px) {
+      #carousel-main .slide {
+        height: 300px; } }
+    #carousel-main .slide > a {
+      position: absolute;
+      top: 40%;
+      width: 18px;
+      height: 48px;
+      color: white;
+      font-size: 3.0em;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+      transition: all 250ms;
+      z-index: 5; }
+      @media (max-width: 576px) {
+        #carousel-main .slide > a {
+          top: auto;
+          bottom: 50px; } }
+      #carousel-main .slide > a:hover {
+        color: #b8b8b8; }
+      #carousel-main .slide > a.prev {
+        left: 15px; }
+      #carousel-main .slide > a.next {
+        right: 15px;
+        text-align: right; }
+    #carousel-main .slide .content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center; }
+      #carousel-main .slide .content .text {
+        display: block;
+        color: white;
+        font-weight: bold;
+        font-size: 3.0em;
+        text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
+        @media (max-width: 576px) {
+          #carousel-main .slide .content .text {
+            font-size: 2.0em; } }
+
+#carousel-main .slide .content a {
+  margin: 40px 0 130px 0; }
+
+@media (max-width: 576px) {
+  #carousel-main .slide .content a {
+    margin: 18px 0 120px 0; } }
 
 .page-header {
-  margin-bottom: 60px; }
+  margin-bottom: 30px; }
   .page-header .stage {
-    height: 298px; }
+    height: 308px; }
     .page-header .stage .slide {
-      height: 328px;
+      height: 308px;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -288,99 +364,25 @@ form {
     .page-header {
       margin-bottom: 40px; } }
 
-.stage {
-  height: 390px;
-  position: relative;
-  transition: background 500ms; }
-  @media (max-width: 576px) {
-    .stage {
-      height: 280px;
-      margin-bottom: 20px; } }
-
-.cloak {
-  background: white;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-.slide {
-  position: relative;
-  height: 420px;
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  background-position: center center;
-  background-size: cover;
-  transition: background 250ms; }
-  @media (max-width: 576px) {
-    .slide {
-      height: 280px; } }
-  .slide > a {
-    position: absolute;
-    top: 40%;
-    width: 18px;
-    height: 48px;
-    color: white;
-    font-size: 3.0em;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
-    transition: all 250ms;
-    z-index: 5; }
-    @media (max-width: 576px) {
-      .slide > a {
-        top: auto;
-        bottom: 50px; } }
-    .slide > a:hover {
-      color: #b8b8b8; }
-    .slide > a.prev {
-      left: 15px; }
-    .slide > a.next {
-      right: 15px;
-      text-align: right; }
-  .slide .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center; }
-    .slide .content .text {
-      display: block;
-      color: white;
-      font-weight: bold;
-      font-size: 3.0em;
-      text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
-      @media (max-width: 576px) {
-        .slide .content .text {
-          font-size: 2.0em; } }
-
-.slide .content a {
-  margin: 40px 0 90px 0; }
-
-@media (max-width: 576px) {
-  .slide .content a {
-    margin: 18px 0 120px 0; } }
-
 #carousel-main .items {
   display: none; }
 
 .introduction {
-  background: url("../images/bg-introduction.png") bottom center no-repeat, url("../images/bg-introduction.gif") top center repeat-y #f1f1ed;
-  margin: 30px 0;
-  padding: 30px 15px 0;
-  position: relative; }
-  @media (max-width: 576px) {
+  margin: 15px 0;
+  background-color: #f1f1ed; }
+  @media (min-width: 576px) {
     .introduction {
-      padding-bottom: 60px; } }
+      padding: 30px 15px 0;
+      background: url("../images/bg-introduction.png") bottom center no-repeat, url("../images/bg-introduction.gif") top center repeat-y #f1f1ed; } }
 
 #carousel-mini, #profile {
   max-width: 350px;
-  min-height: 260px;
+  min-height: 350px;
   margin: 0 auto; }
 
 #carousel-mini {
-  position: relative; }
+  position: relative;
+  min-height: 330px; }
   #carousel-mini .controls {
     position: absolute;
     top: 40%;
@@ -394,19 +396,17 @@ form {
       text-align: right; }
   #carousel-mini .slide {
     max-width: 350px;
-    text-align: center; }
+    text-align: center;
+    min-height: 330px; }
     #carousel-mini .slide img {
-      margin: 45px 0;
+      margin: 45px 0 30px 0;
       max-width: 80%; }
-      @media (max-width: 576px) {
-        #carousel-mini .slide img {
-          margin: 20px 0; } }
     #carousel-mini .slide .text {
       font-size: 0.9em;
       padding: 0 40px; }
   #carousel-mini .dots {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     width: 100%;
     height: 20px;
     text-align: center; }
@@ -420,9 +420,13 @@ form {
       transition: background 500ms; }
       #carousel-mini .dots span.active {
         background: #7a7250; }
-    @media (max-width: 576px) {
+  @media (max-width: 576px) {
+    #carousel-mini {
+      min-height: 300px; }
       #carousel-mini .dots {
-        bottom: 20px; } }
+        bottom: 30px; }
+      #carousel-mini .slide {
+        min-height: 300px; } }
 
 .two-by-two {
   position: relative;

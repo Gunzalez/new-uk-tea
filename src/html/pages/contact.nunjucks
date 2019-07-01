@@ -4,7 +4,7 @@
 {% block content %}
 
 <div class="page-header">
-    <div class="stage" style="background: url('images/bg-header-contact.jpg') left 20px no-repeat, url('images/bg-header-contact.jpg') right 20px no-repeat;">
+    <div class="stage" style="background: url('images/bg-header-contact.jpg') left 15px no-repeat, url('images/bg-header-contact.jpg') right 15px no-repeat;">
         <div class="cloak">&nbsp;</div>        
         <div class="slide" style="background-image: url('images/bg-header-contact.jpg')">
             <div class="shout">
