@@ -199,7 +199,7 @@ DomReady.ready(function() {
         timer: null,
 
         getBackgroundStyle: function(string){
-            return "background: url('" + string + "') left 20px no-repeat, url('" + string + "') right 20px no-repeat;";
+            return "background: url('" + string + "') left 15px no-repeat, url('" + string + "') right 15px no-repeat;";
         },
 
         setImage: function(newIndex){

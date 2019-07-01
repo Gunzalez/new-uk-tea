@@ -278,7 +278,7 @@ form {
     #carousel-main, .page-header {
       margin-bottom: 20px; } }
   #carousel-main .stage, .page-header .stage {
-    height: 400px;
+    height: 385px;
     position: relative;
     transition: background 500ms; }
     @media (max-width: 576px) {
@@ -295,7 +295,7 @@ form {
     right: 0; }
   #carousel-main .slide, .page-header .slide {
     position: relative;
-    height: 400px;
+    height: 385px;
     width: 100%;
     max-width: 1140px;
     margin: 0 auto;
