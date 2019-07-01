@@ -140,7 +140,7 @@ DomReady.ready(function() {
                     //    "shadow-page",
                        "theme-dark"
                     ],
-                    "counters": true,
+                    // "counters": true,
                     "navbars": [
                         {
                            "position": "bottom",
