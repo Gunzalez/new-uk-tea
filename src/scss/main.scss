@@ -344,29 +344,29 @@
       &:first-child {
           top: 0;
           left: 0;
-          border-bottom: 2px solid white;
-          border-right: 2px solid white;
+          border-bottom: 3px solid white;
+          border-right: 3px solid white;
       }
 
       &:nth-last-child(1){
           bottom: 0;
           right: 0;
-          border-top: 2px solid white;
-          border-left: 2px solid white;
+          border-top: 3px solid white;
+          border-left: 3px solid white;
       }
 
       &:nth-last-child(2){
           top: 0;
           right: 0;
-          border-bottom: 2px solid white;
-          border-left: 2px solid white;
+          border-bottom: 3px solid white;
+          border-left: 3px solid white;
       }
 
       &:nth-last-child(3){
           bottom: 0;
           left: 0;
-          border-top: 2px solid white;
-          border-right: 2px solid white;
+          border-top: 3px solid white;
+          border-right: 3px solid white;
       }
 
       &:hover {
