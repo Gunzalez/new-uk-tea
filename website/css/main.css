@@ -36,10 +36,6 @@ p {
     font-weight: 700; }
 
 /* classes */
-.container {
-  margin: 0 auto;
-  max-width: 960px; }
-
 .col-xs-6 {
   width: 50%; }
 
@@ -266,9 +262,9 @@ form {
 .page-header {
   margin-bottom: 60px; }
   .page-header .stage {
-    height: 257px; }
+    height: 298px; }
     .page-header .stage .slide {
-      height: 277px;
+      height: 328px;
       display: flex;
       align-items: center;
       justify-content: center; }
@@ -293,7 +289,7 @@ form {
       margin-bottom: 40px; } }
 
 .stage {
-  height: 334px;
+  height: 390px;
   position: relative;
   transition: background 500ms; }
   @media (max-width: 576px) {
@@ -312,9 +308,9 @@ form {
 
 .slide {
   position: relative;
-  height: 354px;
+  height: 420px;
   width: 100%;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   background-position: center center;
   background-size: cover;
@@ -378,7 +374,7 @@ form {
       padding-bottom: 60px; } }
 
 #carousel-mini, #profile {
-  max-width: 300px;
+  max-width: 350px;
   min-height: 260px;
   margin: 0 auto; }
 
@@ -396,7 +392,7 @@ form {
       right: 0;
       text-align: right; }
   #carousel-mini .slide {
-    max-width: 300px;
+    max-width: 350px;
     text-align: center; }
     #carousel-mini .slide img {
       margin: 45px 0;

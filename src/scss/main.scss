@@ -96,10 +96,10 @@
   margin-bottom: 60px;
 
   .stage {
-    height: 257px;
+    height: 298px;
 
     .slide {
-      height: 277px;
+      height: 328px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -134,9 +134,8 @@
   }
 }
 
-
 .stage {
-  height: 334px;
+  height: 390px;
   position: relative;
   transition: background 500ms;
 
@@ -158,9 +157,9 @@
 
 .slide {
   position: relative;
-  height: 354px;
+  height: 420px;
   width: 100%;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   background-position: center center;
   background-size: cover;
@@ -248,7 +247,7 @@
 }
 
 #carousel-mini, #profile {
-  max-width: 300px;
+  max-width: 350px;
   min-height: 260px;
   margin: 0 auto;
 }
@@ -274,7 +273,7 @@
   }
   
   .slide {
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
 
     img {

@@ -1,6 +1,8 @@
 TODO
 ==================
 Ask about validation, build or add static error
+Remove numbers from navigation
+Fix select dropdown styling
 
 
 BUGS
