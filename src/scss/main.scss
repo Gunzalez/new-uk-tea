@@ -238,22 +238,25 @@
 }
 
 .introduction {
-  margin: 15px 0;
   background-color: $brand-beige;
 
   @media (min-width: $breakpoint1){
+    margin: 15px 0;
     padding: 30px 15px 0;      
     background: url('../images/bg-introduction.png') bottom center no-repeat,  url('../images/bg-introduction.gif') top center repeat-y $brand-beige;
   }
 }
 
-#carousel-mini, #profile {
+#profile {
   max-width: 350px;
-  min-height: 350px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 #carousel-mini {
+  max-width: 350px;
+  min-height: 350px;
+  margin: 0 auto;
   position: relative;
   min-height: 330px;
 
@@ -386,11 +389,10 @@
 
 .feed-item {
   overflow: hidden;
-  margin: 15px 0;
+  margin-top: 15px;
 
-  @media (min-width: $breakpoint1){
-    margin: 30px 0;
-    
+  @media (max-width: $breakpoint1){
+    margin-bottom: 15px;
   }
 }
 
@@ -404,7 +406,10 @@ iframe {
 .footer {
   background-color: $brand-dark;
   color: white;
-  margin-top: 30px;
+
+  @media (min-width: $breakpoint1){
+    margin-top: 30px;
+  }
 
   a {
     color: white;

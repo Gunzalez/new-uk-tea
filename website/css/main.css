@@ -99,6 +99,20 @@ p {
       border-bottom: 1px solid #d6d2c0;
       margin-bottom: 15px; } }
 
+.feed-item .pod {
+  text-align: left; }
+  .feed-item .pod .text {
+    padding: 0; }
+    .feed-item .pod .text p {
+      padding: 0;
+      font-size: 0.85em; }
+
+.feed-item .location, .feed-item .date {
+  font-weight: bold; }
+
+.feed-item .date {
+  color: #19737b; }
+
 .shaker {
   font-size: 11px;
   text-align: center;
@@ -368,19 +382,22 @@ form {
   display: none; }
 
 .introduction {
-  margin: 15px 0;
   background-color: #f1f1ed; }
   @media (min-width: 576px) {
     .introduction {
+      margin: 15px 0;
       padding: 30px 15px 0;
       background: url("../images/bg-introduction.png") bottom center no-repeat, url("../images/bg-introduction.gif") top center repeat-y #f1f1ed; } }
 
-#carousel-mini, #profile {
+#profile {
   max-width: 350px;
-  min-height: 350px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 10px; }
 
 #carousel-mini {
+  max-width: 350px;
+  min-height: 350px;
+  margin: 0 auto;
   position: relative;
   min-height: 330px; }
   #carousel-mini .controls {
@@ -475,10 +492,10 @@ form {
 
 .feed-item {
   overflow: hidden;
-  margin: 15px 0; }
-  @media (min-width: 576px) {
+  margin-top: 15px; }
+  @media (max-width: 576px) {
     .feed-item {
-      margin: 30px 0; } }
+      margin-bottom: 15px; } }
 
 iframe {
   width: 100%;
@@ -488,8 +505,10 @@ iframe {
 
 .footer {
   background-color: #353336;
-  color: white;
-  margin-top: 30px; }
+  color: white; }
+  @media (min-width: 576px) {
+    .footer {
+      margin-top: 30px; } }
   .footer a {
     color: white; }
   .footer .nav-footer {

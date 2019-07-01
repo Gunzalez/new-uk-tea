@@ -93,7 +93,7 @@ p {
 }
   
 .pod {
-        text-align: center;
+    text-align: center;
 
     .text {
         padding: 0 15px;
@@ -114,9 +114,9 @@ p {
     }
 
     img {
-            width: 100%;
-            display: inline-block;
-            margin-bottom: 15px;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 15px;
     }
 
     &.news {
@@ -127,6 +127,30 @@ p {
                 margin-bottom: 15px;
             }
         }
+    }
+}
+
+.feed-item {
+
+    .pod {
+        text-align: left;
+
+        .text {
+            padding: 0;
+
+            p {
+                padding: 0;
+                font-size: 0.85em;
+            }
+        }
+    }
+
+    .location, .date {
+        font-weight: bold;
+    }
+
+    .date {
+        color: $brand-green;
     }
 }
 
