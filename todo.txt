@@ -3,6 +3,8 @@ TODO
 Ask about validation, build or add static error
 Fix select dropdown styling
 To add in supplied fonts
+Fix homepage hero carousel headers
+    Remove arrows add gestures, try swipe.js or hammer.js
 
 
 BUGS
