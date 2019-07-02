@@ -30,7 +30,7 @@
                 <div class="col-sm-3">
                     <div class="masters-category">
                         <img src="images/tea-mixology.png" alt="" />
-                        <h3>Tea Mixology</h3>
+                        <h3 class="title">Tea Mixology</h3>
                         <p>A Master competing in this category must demonstrate the skill of tea preparation by brewing and presenting to each member of the judging panel a total of two beverages:</p>
                     </div>
                 </div>
