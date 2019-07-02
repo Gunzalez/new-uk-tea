@@ -215,18 +215,47 @@
         .font-two {
           font-family: 'Times New Roman', Times, serif;
           font-style: italic;
-          
-          @media (max-width: $breakpoint1){
-            display: block;
+        }
+
+        .text {
+          display: inline-block;
+          padding-right: 30px;
+        }
+
+        .logo {
+
+          img {
+            max-width: 140px;
           }
         }
+      }      
         
-        @media (max-width: $breakpoint1){
-          font-size: 2.2rem;
+      @media (max-width: $breakpoint1){
+        .shout {
+          font-size: 2.8rem;
           text-align: center;
-          line-height: 120%;
+          line-height: 120%;   
+
+          .text {
+            padding-right: 0;
+            padding-bottom: 15px;
+          }       
+
+          .font-two {
+            display: block;
+          }
+
+          .logo {
+            display: block;
+  
+            img {
+              max-width: 70px;
+            }
+          }
         }
       }
+
+
     }
   }
   
@@ -511,38 +540,41 @@ iframe {
   }
 }
 
+.footer {
 
-.logo {
-  text-align: center;
-  padding: 0 15px;
-
-a {
-  display: inline-block;
-}
-
-  img {
-    display: block;
-    margin: 0 auto 10px;
-  }
-}
-
-.address {
-  text-align: right;
-
-  .links {
+  .logo {
+    text-align: center;
     padding: 0 15px;
-    a {
-      display: inline-block;
+
+  a {
+    display: inline-block;
+  }
+
+    img {
+      display: block;
+      margin: 0 auto 10px;
     }
   }
 
-  .text {
-    font-size: 0.8em;
-    padding: 15px;
-  }
+  .address {
+    text-align: right;
 
-  @media (max-width: $breakpoint1){
-    text-align: center;
+    .links {
+      padding: 0 15px;
+      a {
+        display: inline-block;
+      }
+    }
+
+    .text {
+      font-size: 0.8em;
+      padding: 15px;
+    }
+
+    @media (max-width: $breakpoint1){
+      text-align: center;
+    }
+
   }
 
 }
@@ -557,4 +589,29 @@ a {
 
 .map-iframe {
   margin-bottom: 20px;
+}
+
+.masters-category {
+
+  img {
+    display: block;
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint1) and (max-width: $breakpoint3) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $breakpoint1){
+    border-bottom: 1px solid lighten($color: $brand-dark, $amount: 60%);
+    margin-bottom: 15px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+  }
 }
