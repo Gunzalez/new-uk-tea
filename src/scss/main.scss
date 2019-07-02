@@ -7,9 +7,14 @@
 
 .logo-link {
 
+  a {
+    display: inline-block;
+  }
+
   img {
     width: 271px;
     transition: all 250ms;
+    margin-top: -5px;
 
     @media (max-width: $breakpoint1){
       width: 200px;

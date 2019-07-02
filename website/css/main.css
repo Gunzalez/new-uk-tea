@@ -217,9 +217,12 @@ form {
 
 .logo-link {
   padding: 10px 0 15px 0; }
+  .logo-link a {
+    display: inline-block; }
   .logo-link img {
     width: 271px;
-    transition: all 250ms; }
+    transition: all 250ms;
+    margin-top: -5px; }
     @media (max-width: 576px) {
       .logo-link img {
         width: 200px; } }
