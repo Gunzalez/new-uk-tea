@@ -58,6 +58,7 @@
                   <nav id="nav-main" class="display-none">
                      <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="masters.html">Masters</a></li>
                         <li>
                            <a href="ababout-tea.html">About Tea</a>
                            <ul>
