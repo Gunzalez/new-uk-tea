@@ -3,7 +3,7 @@
 @import "breakpoints";
 
 form {
-    margin: 10px 0 50px 0;
+    margin: 10px 0 30px 0;
     width: 100%;
 
     label {
@@ -28,6 +28,16 @@ form {
             width: auto;
             padding-right: 20px;
             padding-left: 20px;
+        }
+
+        &[disabled]{
+            color: white;
+            
+            &:hover {
+                background-color: darken($color: $brand-brown, $amount: 15%);
+                border-color: darken($color: $brand-brown, $amount: 15%);
+                cursor: not-allowed;
+            }
         }
     }
 
@@ -96,6 +106,23 @@ form {
                     color: white;
                 }
             }
+        }
+    }
+}
+
+.form-news {
+    padding-bottom: 30px;
+    border-bottom: 1px solid lighten($color: $brand-brown, $amount: 40%);
+    
+    input {
+        margin-right: 15px;
+    }
+
+    @media (max-width: $breakpoint1){        
+    
+        input {
+            margin-right: 0;
+            margin-bottom: 15px;
         }
     }
 }
