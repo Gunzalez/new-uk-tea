@@ -39,6 +39,10 @@ p {
 .col-xs-6 {
   width: 50%; }
 
+.highlight {
+  font-weight: 500;
+  color: #3786c1; }
+
 .big-link {
   display: inline-block;
   text-transform: uppercase;
@@ -67,7 +71,7 @@ p {
   font-weight: 500; }
   @media (max-width: 576px) {
     .title-large {
-      font-size: 2.0em; } }
+      font-size: 32px; } }
 
 .heading .title-large {
   text-align: center;
@@ -152,7 +156,7 @@ table td span {
   margin-top: 3px; }
 
 form {
-  margin: 10px 0 50px 0;
+  margin: 10px 0 30px 0;
   width: 100%; }
   form label {
     font-weight: 400;
@@ -172,6 +176,12 @@ form {
         width: auto;
         padding-right: 20px;
         padding-left: 20px; } }
+    form .btn-submit[disabled] {
+      color: white; }
+      form .btn-submit[disabled]:hover {
+        background-color: #4c4732;
+        border-color: #4c4732;
+        cursor: not-allowed; }
   form select.form-control,
   form input[type="text"].form-control,
   form input[type="email"].form-control,
@@ -214,6 +224,16 @@ form {
     form .form-group textarea:-moz-placeholder, form .form-group input:-moz-placeholder {
       /* Firefox 18- */
       color: white; } }
+
+.form-news {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d6d2c0; }
+  .form-news input {
+    margin-right: 15px; }
+  @media (max-width: 576px) {
+    .form-news input {
+      margin-right: 0;
+      margin-bottom: 15px; } }
 
 .logo-link {
   padding: 10px 0 15px 0; }
@@ -619,9 +639,16 @@ iframe {
 
 @media (max-width: 576px) {
   .masters-category {
-    border-bottom: 1px solid #cecccf;
+    border-bottom: 1px solid #d6d2c0;
     margin-bottom: 15px; }
     .masters-category .title {
       margin-bottom: 10px; }
     .masters-category img {
       margin-bottom: 15px; } }
+
+.results .result {
+  margin-bottom: 30px; }
+
+.results .image {
+  width: 100%;
+  display: block; }

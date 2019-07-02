@@ -47,6 +47,11 @@ p {
     width: 50%;
 }
 
+.highlight {
+    font-weight: 500;
+    color: $brand-blue;
+}
+
 .big-link {
     display: inline-block;
     text-transform: uppercase;
@@ -78,7 +83,7 @@ p {
     font-weight: 500;
 
     @media (max-width: $breakpoint1){
-        font-size: 2.0em;
+        font-size: 32px;
     }
 }
 

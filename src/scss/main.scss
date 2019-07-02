@@ -599,7 +599,7 @@ iframe {
   }
 
   @media (max-width: $breakpoint1){
-    border-bottom: 1px solid lighten($color: $brand-dark, $amount: 60%);
+    border-bottom: 1px solid lighten($color: $brand-brown, $amount: 40%);
     margin-bottom: 15px;
 
     .title {
@@ -609,5 +609,17 @@ iframe {
     img {
       margin-bottom: 15px;
     }
+  }
+}
+
+.results {
+
+  .result {
+      margin-bottom: 30px;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
   }
 }
