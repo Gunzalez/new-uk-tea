@@ -177,10 +177,12 @@ form {
         padding-right: 20px;
         padding-left: 20px; } }
     form .btn-submit[disabled] {
-      color: white; }
+      color: white;
+      background-color: #6b6446;
+      border-color: #6b6446; }
       form .btn-submit[disabled]:hover {
-        background-color: #4c4732;
-        border-color: #4c4732;
+        background-color: #6b6446;
+        border-color: #6b6446;
         cursor: not-allowed; }
   form select.form-control,
   form input[type="text"].form-control,

@@ -32,10 +32,12 @@ form {
 
         &[disabled]{
             color: white;
+            background-color: darken($color: $brand-brown, $amount: 5%);
+                border-color: darken($color: $brand-brown, $amount: 5%);
             
             &:hover {
-                background-color: darken($color: $brand-brown, $amount: 15%);
-                border-color: darken($color: $brand-brown, $amount: 15%);
+                background-color: darken($color: $brand-brown, $amount: 5%);
+                border-color: darken($color: $brand-brown, $amount: 5%);
                 cursor: not-allowed;
             }
         }
