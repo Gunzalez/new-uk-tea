@@ -216,7 +216,7 @@ form {
       color: white; } }
 
 .logo-link {
-  padding: 15px 0; }
+  padding: 10px 0 15px 0; }
   .logo-link img {
     width: 271px;
     transition: all 250ms; }
@@ -249,7 +249,7 @@ form {
   text-align: right; }
 
 .nav-social {
-  margin: 18px 12px 0 0; }
+  margin: 18px 10px 0 0; }
   .nav-social a {
     background-color: #b8b8b8;
     width: 26px;
