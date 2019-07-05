@@ -59,7 +59,7 @@ p {
     font-size: 18px;
     line-height: 100%;
     padding: 8px 12px 6px 12px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     border: 1px solid white;
     text-decoration: none;
     color: white;
@@ -70,7 +70,7 @@ p {
     font-family: $brandButton;
 
     &:hover {
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,1.0);
         text-decoration: none;
         color: white;
     }

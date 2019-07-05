@@ -638,3 +638,18 @@ iframe {
     display: block;
   }
 }
+
+.news {
+
+  a {   
+    img {
+      transition: all 500ms;
+    }
+
+    &:hover {      
+      img {
+        filter: grayscale(100%);
+      }
+    }
+  }
+}

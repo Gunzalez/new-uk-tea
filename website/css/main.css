@@ -60,7 +60,7 @@ p {
   font-size: 18px;
   line-height: 100%;
   padding: 8px 12px 6px 12px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border: 1px solid white;
   text-decoration: none;
   color: white;
@@ -70,7 +70,7 @@ p {
   white-space: nowrap;
   font-family: "nunito_sansregular"; }
   .big-link:hover {
-    background: rgba(0, 0, 0, 0.7);
+    background: black;
     text-decoration: none;
     color: white; }
 
@@ -266,6 +266,12 @@ form {
     .form-news input {
       margin-right: 0;
       margin-bottom: 15px; } }
+
+label {
+  line-height: 35px; }
+
+.form-group {
+  margin-bottom: 10px; }
 
 @font-face {
   font-family: 'nunito_sansregular';
@@ -705,3 +711,9 @@ iframe {
 .results .image {
   width: 100%;
   display: block; }
+
+.news a img {
+  transition: all 500ms; }
+
+.news a:hover img {
+  filter: grayscale(100%); }
