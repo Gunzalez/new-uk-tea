@@ -1,5 +1,24 @@
+@font-face {
+    font-family: 'nunito_sansregular';
+    src: url('webfonts/nunitosans-regular-webfont.woff2') format('woff2'),
+         url('webfonts/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@font-face {
+    font-family: 'nunito_sanssemibold';
+    src: url('webfonts/nunitosans-semibold-webfont.woff2') format('woff2'),
+         url('webfonts/nunitosans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 $bodyFont:          'Open Sans', sans-serif;
+$brandFont1:        'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$brandFont2:        'Times New Roman', Times, serif;
+$brandHeader:       'nunito_sanssemibold';
+$brandButton:       'nunito_sansregular';
+$brandLinks:        'nunito_sanssemibold';
 

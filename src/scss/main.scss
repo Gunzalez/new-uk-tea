@@ -3,6 +3,7 @@
 @import "mixins";
 @import "form";
 @import "breakpoints";
+@import "fonts";
 
 
 .logo-link {
@@ -26,11 +27,14 @@
 .slogan-animated {
   margin-top: -5px;
   color: $brand-brown;
+  white-space: 1px;
   
   .top {
-    font-size: 2.0em;
+    font-size: 37px;
+    line-height: 40px;
     font-weight: bold;
     text-align: right;
+    font-family: $brandFont1;
   }
 
   P {
@@ -171,9 +175,18 @@
       .text {
         display: block;
         color: white;
-        font-weight: bold;
-        font-size: 3.0em;
-        text-shadow: 0 0 6px rgba(0,0,0,0.90);
+        font-weight: 500;
+        font-size: 82px;
+        // text-shadow: 0 0 6px rgba(0,0,0,0.90);
+
+        .brand-font-1 {
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .brand-font-2 {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+        }
 
         @media (max-width: $breakpoint1){
           font-size: 2.0em;
@@ -185,10 +198,10 @@
 
 #carousel-main {
   .slide .content a {
-    margin: 40px 0 130px 0;
+    margin: 10px 0 130px 0;
   }
   @media (max-width: $breakpoint1){
-      .slide .content a {
+    .slide .content a {
       margin: 18px 0 120px 0;
     }
   }
@@ -207,7 +220,7 @@
       justify-content: center;
 
       .shout {
-        font-size: 4.2rem;
+        font-size: 82px;
         color: white;
         font-weight: 500;
         text-shadow: 0 0 6px rgba(0,0,0,0.90);
@@ -476,8 +489,9 @@ iframe {
         display: inline-block;
         padding: 6px 12px;
         text-decoration: none;
-        font-size: 0.85em;
+        font-size: 18px;
         line-height: 100%;
+        font-family: $brandButton;
       }
     }
 
@@ -512,6 +526,7 @@ iframe {
 
         a {
           padding: 8px 12px !important;
+          font-size: 16px !important;
         }
 
         &:nth-last-child(1){

@@ -1,5 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@font-face {
+  font-family: 'nunito_sansregular';
+  src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'nunito_sanssemibold';
+  src: url("webfonts/nunitosans-semibold-webfont.woff2") format("woff2"), url("webfonts/nunitosans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .display-none {
   display: none; }
 
@@ -20,7 +30,8 @@ body {
 
 h2 {
   font-size: 38px;
-  line-height: 100%; }
+  line-height: 100%;
+  font-family: "nunito_sanssemibold"; }
 
 h3 {
   font-size: 1.2em;
@@ -46,8 +57,9 @@ p {
 .big-link {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 1.0em;
-  padding: 7px 10px;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 8px 12px 6px 12px;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid white;
   text-decoration: none;
@@ -55,7 +67,8 @@ p {
   border-radius: 2px;
   transition: background 500ms;
   margin: 10px 0;
-  white-space: nowrap; }
+  white-space: nowrap;
+  font-family: "nunito_sansregular"; }
   .big-link:hover {
     background: rgba(0, 0, 0, 0.7);
     text-decoration: none;
@@ -65,7 +78,7 @@ p {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   color: #7a7250;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #f1f1ed;
   padding: 10px 0 15px 0;
   margin: 0 0 25px 0;
   font-weight: 500; }
@@ -120,8 +133,10 @@ p {
 .shaker {
   font-size: 11px;
   text-align: center;
-  color: #000;
-  margin: 5px auto; }
+  color: #666;
+  margin: 0 auto;
+  background-color: black;
+  padding: 5px 0; }
   .shaker a {
     background: url("../images/sugarshaker.png") no-repeat center left;
     height: 16px;
@@ -154,6 +169,21 @@ table td span {
   height: 12px;
   border-radius: 50%;
   margin-top: 3px; }
+
+#nav-main {
+  font-family: "nunito_sansregular" !important; }
+
+@font-face {
+  font-family: 'nunito_sansregular';
+  src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'nunito_sanssemibold';
+  src: url("webfonts/nunitosans-semibold-webfont.woff2") format("woff2"), url("webfonts/nunitosans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 form {
   margin: 10px 0 30px 0;
@@ -237,6 +267,18 @@ form {
       margin-right: 0;
       margin-bottom: 15px; } }
 
+@font-face {
+  font-family: 'nunito_sansregular';
+  src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'nunito_sanssemibold';
+  src: url("webfonts/nunitosans-semibold-webfont.woff2") format("woff2"), url("webfonts/nunitosans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .logo-link {
   padding: 10px 0 15px 0; }
   .logo-link a {
@@ -251,11 +293,14 @@ form {
 
 .slogan-animated {
   margin-top: -5px;
-  color: #7a7250; }
+  color: #7a7250;
+  white-space: 1px; }
   .slogan-animated .top {
-    font-size: 2.0em;
+    font-size: 37px;
+    line-height: 40px;
     font-weight: bold;
-    text-align: right; }
+    text-align: right;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
   .slogan-animated P {
     padding: 0; }
   .slogan-animated .bottom {
@@ -360,15 +405,19 @@ form {
       #carousel-main .slide .content .text, .page-header .slide .content .text {
         display: block;
         color: white;
-        font-weight: bold;
-        font-size: 3.0em;
-        text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
+        font-weight: 500;
+        font-size: 82px; }
+        #carousel-main .slide .content .text .brand-font-1, .page-header .slide .content .text .brand-font-1 {
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+        #carousel-main .slide .content .text .brand-font-2, .page-header .slide .content .text .brand-font-2 {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic; }
         @media (max-width: 576px) {
           #carousel-main .slide .content .text, .page-header .slide .content .text {
             font-size: 2.0em; } }
 
 #carousel-main .slide .content a {
-  margin: 40px 0 130px 0; }
+  margin: 10px 0 130px 0; }
 
 @media (max-width: 576px) {
   #carousel-main .slide .content a {
@@ -384,7 +433,7 @@ form {
       align-items: center;
       justify-content: center; }
       .page-header .stage .slide .shout {
-        font-size: 4.2rem;
+        font-size: 82px;
         color: white;
         font-weight: 500;
         text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); }
@@ -568,8 +617,9 @@ iframe {
         display: inline-block;
         padding: 6px 12px;
         text-decoration: none;
-        font-size: 0.85em;
-        line-height: 100%; }
+        font-size: 18px;
+        line-height: 100%;
+        font-family: "nunito_sansregular"; }
     .footer .nav-footer .nav-trigger {
       position: absolute;
       top: 5px;
@@ -591,7 +641,8 @@ iframe {
       padding: 8px;
       text-align: center; }
       .nav-footer ul li a {
-        padding: 8px 12px !important; }
+        padding: 8px 12px !important;
+        font-size: 16px !important; }
       .nav-footer ul li:nth-last-child(1) {
         border: none;
         padding: 4px 6px; }
