@@ -25,4 +25,5 @@ Contact page build complete - table - 3.5 hours
 Rejigging site wide styles for wider layout - 3 hours
 Starts and completes Masters Cup page - 2 hours
 Starts News & Events page - 2 hours
+Adds in and hooks up fonts - 2 hours
 
