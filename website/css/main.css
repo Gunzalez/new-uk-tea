@@ -133,18 +133,25 @@ p {
 .shaker {
   font-size: 11px;
   text-align: center;
-  color: #666;
+  color: #bebebe;
   margin: 0 auto;
   background-color: black;
-  padding: 5px 0; }
+  padding: 5px 0;
+  transition: all 250ms; }
   .shaker a {
     background: url("../images/sugarshaker.png") no-repeat center left;
     height: 16px;
     margin: 0;
     padding: 5px 0px 5px 21px;
-    color: #666;
+    color: #bebebe;
     font-size: 11px;
-    font-weight: normal; }
+    font-weight: normal;
+    transition: all 500ms; }
+  .shaker:hover {
+    color: whitesmoke; }
+    .shaker:hover a {
+      color: whitesmoke;
+      text-decoration: underline; }
 
 table th {
   text-transform: uppercase; }
