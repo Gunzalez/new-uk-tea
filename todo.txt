@@ -27,4 +27,5 @@ Starts News & Events page - 2 hours
 Adds in and hooks up fonts - 2 hours
 Bootstrap overrides and others - 2 hours
 Completes new section - 2 hours
+Starts Origins - 1 hour
 
