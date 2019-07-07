@@ -85,6 +85,13 @@ a {
     .title-large {
       font-size: 32px; } }
 
+.title-small {
+  text-transform: uppercase;
+  color: #19737b;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 0 10px 0; }
+
 .heading .title-large {
   text-align: center;
   border-bottom: none;
@@ -738,11 +745,15 @@ iframe {
   font-weight: bold; }
 
 .results .result {
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 .results .image {
   width: 100%;
   display: block; }
+
+.results .divider {
+  width: 100%;
+  margin-bottom: 30px; }
 
 .result .title {
   text-transform: uppercase;
@@ -750,6 +761,9 @@ iframe {
   font-size: 18px;
   margin: 0;
   padding: 0 0 10px 0; }
+
+.result .image {
+  margin-bottom: 15px; }
 
 .result .location {
   font-weight: bold;
@@ -760,7 +774,7 @@ iframe {
   color: #3786c1; }
 
 .filter {
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
   padding: 15px 0;
   list-style: none; }
   .filter li {

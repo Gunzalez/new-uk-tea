@@ -638,12 +638,17 @@ iframe {
   }
 
   .result {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
   }
 
   .image {
     width: 100%;
     display: block;
+  }
+
+  .divider {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -656,7 +661,10 @@ iframe {
       margin: 0;
       padding: 0 0 10px 0;
   }
-  
+
+  .image {
+    margin-bottom: 15px;
+  }  
 
   .location {
       font-weight: bold;
@@ -670,7 +678,7 @@ iframe {
 }
 
 .filter {
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
   padding: 15px 0;
   list-style: none;
 
