@@ -706,3 +706,25 @@ iframe {
     }
   }
 }
+
+.sub-section {
+  margin-bottom: 15px;
+
+  .trigger {
+    text-transform: uppercase;
+    color: $brand-green;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 10px 0;
+    display: block;
+
+    i {
+      padding-right: 15px;
+      color: $brand-orange;
+    }
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

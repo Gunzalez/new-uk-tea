@@ -791,3 +791,18 @@ iframe {
           text-decoration: none; }
     .filter li:nth-last-child(1) {
       border: none; }
+
+.sub-section {
+  margin-bottom: 15px; }
+  .sub-section .trigger {
+    text-transform: uppercase;
+    color: #19737b;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 10px 0;
+    display: block; }
+    .sub-section .trigger i {
+      padding-right: 15px;
+      color: #e7802c; }
+    .sub-section .trigger:hover {
+      text-decoration: none; }
