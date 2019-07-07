@@ -130,29 +130,6 @@ p {
 .feed-item .date {
   color: #19737b; }
 
-.shaker {
-  font-size: 11px;
-  text-align: center;
-  color: #bebebe;
-  margin: 0 auto;
-  background-color: black;
-  padding: 5px 0;
-  transition: all 250ms; }
-  .shaker a {
-    background: url("../images/sugarshaker.png") no-repeat center left;
-    height: 16px;
-    margin: 0;
-    padding: 5px 0px 5px 21px;
-    color: #bebebe;
-    font-size: 11px;
-    font-weight: normal;
-    transition: all 500ms; }
-  .shaker:hover {
-    color: whitesmoke; }
-    .shaker:hover a {
-      color: whitesmoke;
-      text-decoration: underline; }
-
 table th {
   text-transform: uppercase; }
 
@@ -179,6 +156,42 @@ table td span {
 
 #nav-main {
   font-family: "nunito_sansregular" !important; }
+
+/* bootstrap overrides */
+.table thead th,
+.table td, .table th {
+  border: none !important; }
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f1f1ed !important; }
+
+.form-control,
+.btn {
+  border-radius: 1px !important; }
+
+/* ================================================================== */
+.shaker {
+  font-size: 11px;
+  text-align: center;
+  color: #bebebe;
+  margin: 0 auto;
+  background-color: black;
+  padding: 5px 0;
+  transition: all 250ms; }
+  .shaker a {
+    background: url("../images/sugarshaker.png") no-repeat center left;
+    height: 16px;
+    margin: 0;
+    padding: 5px 0px 5px 21px;
+    color: #bebebe;
+    font-size: 11px;
+    font-weight: normal;
+    transition: all 500ms; }
+  .shaker:hover {
+    color: whitesmoke; }
+    .shaker:hover a {
+      color: whitesmoke;
+      text-decoration: underline; }
 
 @font-face {
   font-family: 'nunito_sansregular';
@@ -228,9 +241,6 @@ form {
   form input[type="number"].form-control,
   form input[type="password"].form-control,
   form textarea.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     height: inherit;
     outline: none;
     font-size: 14px; }
@@ -247,8 +257,9 @@ form {
   form .error .error-span {
     display: block;
     color: #b70000;
-    font-size: 14px; }
-  @media (min-width: 576px) {
+    font-size: 12px;
+    padding-top: 2px; }
+  @media (min-width: 768px) {
     form label {
       display: block; }
     form .form-group textarea::-webkit-input-placeholder, form .form-group input::-webkit-input-placeholder {
@@ -275,10 +286,14 @@ form {
       margin-bottom: 15px; } }
 
 label {
-  line-height: 35px; }
+  line-height: 35px;
+  font-size: 0.9em; }
 
 .form-group {
   margin-bottom: 10px; }
+
+.form-stripped .row:nth-child(odd) label {
+  background: #f1f1ed; }
 
 @font-face {
   font-family: 'nunito_sansregular';

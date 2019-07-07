@@ -161,37 +161,6 @@ p {
         color: $brand-green;
     }
 }
-
-.shaker {
-    font-size: 11px;
-    text-align: center;
-    color: #bebebe;
-    margin: 0 auto;
-    background-color: black;
-    padding: 5px 0;
-    transition: all 250ms;
-
-    a {
-        background: url('../images/sugarshaker.png') no-repeat center left;
-        height: 16px;
-        margin: 0;
-        padding: 5px 0px 5px 21px;
-        color: #bebebe;
-        font-size: 11px;
-        font-weight: normal;
-        transition: all 500ms;
-    }
-
-    &:hover {
-        color: whitesmoke;
-
-        a {
-            color: whitesmoke;
-            text-decoration: underline;
-        }
-    }
-}
-
 table {
 
     th {
@@ -232,4 +201,64 @@ table {
 
 #nav-main {
     font-family: $brandButton !important;
+}
+
+
+
+
+/* bootstrap overrides */
+.table thead th,
+.table td, .table th {
+    border: none !important;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $brand-beige !important;
+}
+
+.form-control,
+.btn {
+    border-radius: 1px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================== */
+.shaker {
+    font-size: 11px;
+    text-align: center;
+    color: #bebebe;
+    margin: 0 auto;
+    background-color: black;
+    padding: 5px 0;
+    transition: all 250ms;
+
+    a {
+        background: url('../images/sugarshaker.png') no-repeat center left;
+        height: 16px;
+        margin: 0;
+        padding: 5px 0px 5px 21px;
+        color: #bebebe;
+        font-size: 11px;
+        font-weight: normal;
+        transition: all 500ms;
+    }
+
+    &:hover {
+        color: whitesmoke;
+
+        a {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+    }
 }
