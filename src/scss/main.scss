@@ -460,6 +460,10 @@ iframe {
     color: white;
   }
 
+  .big-link {
+    font-size: 15px;
+  }
+
   .nav-footer {
     padding: 15px;
     position: relative;
@@ -639,11 +643,11 @@ iframe {
   }
 }
 
-.news {
+.pod {
 
   a {   
-    img {
-      transition: all 500ms;
+    > img {
+      transition: all 250ms;
     }
 
     &:hover {      

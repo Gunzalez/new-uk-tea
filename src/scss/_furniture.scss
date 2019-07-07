@@ -14,7 +14,7 @@ body {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: 100%;
     color: $brand-black;
-    font-size: 15px;
+    font-size: 16px;
     font-family: $bodyFont;
     font-weight: 100;
     background-color: white;
@@ -56,15 +56,15 @@ p {
 .big-link {
     display: inline-block;
     text-transform: uppercase;
-    font-size: 18px;
     line-height: 100%;
-    padding: 8px 12px 6px 12px;
+    padding: 8px 12px;
+    font-size: 18px;
     background: rgba(0,0,0,0.6);
     border: 1px solid white;
     text-decoration: none;
     color: white;
     border-radius: 2px;
-    transition: background 500ms;
+    transition: background 250ms;
     margin: 10px 0;
     white-space: nowrap;
     font-family: $brandButton;
