@@ -1,8 +1,7 @@
 TODO
 ==================
-Ask about validation, build or add static error
-Fix select dropdown styling
-To add in supplied fonts
+Ask about validation
+Refactor bootstrap files to seperate file
 Fix homepage hero carousel headers
     Remove arrows add gestures, try swipe.js or hammer.js
 
@@ -26,4 +25,5 @@ Rejigging site wide styles for wider layout - 3 hours
 Starts and completes Masters Cup page - 2 hours
 Starts News & Events page - 2 hours
 Adds in and hooks up fonts - 2 hours
+Bootstrap overrides and others - 2 hours
 
