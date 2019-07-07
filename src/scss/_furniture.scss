@@ -14,7 +14,7 @@ body {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: 100%;
     color: $brand-black;
-    font-size: 16px;
+    font-size: 14px;
     font-family: $bodyFont;
     font-weight: 100;
     background-color: white;
@@ -43,14 +43,13 @@ p {
     }
 }
 
+a {
+    color: $brand-blue;
+}
+
 /* classes */
 .col-xs-6 {
     width: 50%;
-}
-
-.highlight {
-    font-weight: 500;
-    color: $brand-blue;
 }
 
 .big-link {
@@ -99,7 +98,7 @@ p {
         padding-top: 25px;
     }
 }
-  
+
 .pod {
     text-align: center;
 
@@ -116,7 +115,7 @@ p {
     .title {
         text-transform: uppercase;
         color: $brand-green;
-        font-size: 1.1em;
+        font-size: 18px;
         margin: 0;
         padding: 0 0 10px 0;
     }
@@ -138,6 +137,21 @@ p {
     }
 }
 
+.pod {
+
+    a {   
+      > img {
+        transition: all 250ms;
+      }
+  
+      &:hover {      
+        img {
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
 .feed-item {
 
     .pod {
@@ -158,9 +172,10 @@ p {
     }
 
     .date {
-        color: $brand-green;
+        color: $brand-blue;
     }
 }
+
 table {
 
     th {

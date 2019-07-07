@@ -23,7 +23,7 @@ body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
   color: #484c4f;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: white; }
@@ -46,13 +46,12 @@ p {
   p strong {
     font-weight: 700; }
 
+a {
+  color: #3786c1; }
+
 /* classes */
 .col-xs-6 {
   width: 50%; }
-
-.highlight {
-  font-weight: 500;
-  color: #3786c1; }
 
 .big-link {
   display: inline-block;
@@ -103,7 +102,7 @@ p {
   .pod .title {
     text-transform: uppercase;
     color: #19737b;
-    font-size: 1.1em;
+    font-size: 18px;
     margin: 0;
     padding: 0 0 10px 0; }
   .pod img {
@@ -115,6 +114,12 @@ p {
       padding-bottom: 10px;
       border-bottom: 1px solid #d6d2c0;
       margin-bottom: 15px; } }
+
+.pod a > img {
+  transition: all 250ms; }
+
+.pod a:hover img {
+  filter: grayscale(100%); }
 
 .feed-item .pod {
   text-align: left; }
@@ -128,7 +133,7 @@ p {
   font-weight: bold; }
 
 .feed-item .date {
-  color: #19737b; }
+  color: #3786c1; }
 
 table th {
   text-transform: uppercase; }
@@ -729,6 +734,9 @@ iframe {
     .masters-category img {
       margin-bottom: 15px; } }
 
+.results .link {
+  font-weight: bold; }
+
 .results .result {
   margin-bottom: 30px; }
 
@@ -736,8 +744,36 @@ iframe {
   width: 100%;
   display: block; }
 
-.pod a > img {
-  transition: all 250ms; }
+.result .title {
+  text-transform: uppercase;
+  color: #19737b;
+  font-size: 18px;
+  margin: 0;
+  padding: 0 0 10px 0; }
 
-.pod a:hover img {
-  filter: grayscale(100%); }
+.result .location {
+  font-weight: bold;
+  padding-bottom: 0; }
+
+.result .date {
+  font-weight: bold;
+  color: #3786c1; }
+
+.filter {
+  margin: 0 0 30px 0;
+  padding: 15px 0;
+  list-style: none; }
+  .filter li {
+    display: inline;
+    border-right: 1px solid #484c4f; }
+    .filter li a {
+      display: inline-block;
+      padding: 4px 18px;
+      font-weight: bold; }
+      .filter li a.active {
+        color: #484c4f;
+        cursor: text; }
+        .filter li a.active:hover {
+          text-decoration: none; }
+    .filter li:nth-last-child(1) {
+      border: none; }
