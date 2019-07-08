@@ -814,5 +814,17 @@ iframe {
     margin-bottom: 10px; }
   .sub-section .filter {
     padding: 0; }
+  .sub-section .content {
+    display: none; }
+  .sub-section .fa-minus {
+    display: none; }
+  .sub-section .fa-plus {
+    display: inline-block; }
+  .sub-section.open .fa-minus {
+    display: inline-block; }
+  .sub-section.open .fa-plus {
+    display: none; }
+  .sub-section.open .content {
+    display: block; }
   .sub-section.open .trigger {
     padding: 0 0 10px 0; }

@@ -740,7 +740,31 @@ iframe {
     padding: 0;
   }
 
+  .content {
+    display: none;
+  }
+
+  .fa-minus {
+    display: none;
+  }
+
+  .fa-plus {
+    display: inline-block;
+  }
+
   &.open {
+
+    .fa-minus {
+      display: inline-block;
+    }
+  
+    .fa-plus {
+      display: none;
+    }
+
+    .content {
+      display: block;
+    }
 
     .trigger {      
       padding: 0 0 10px 0;
