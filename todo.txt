@@ -29,4 +29,5 @@ Bootstrap overrides and others - 2 hours
 Completes new section - 2 hours
 Starts Origins - 1 hour
 Completes Origins + feedback tweaks - 3
+Starts About page - 30 mins
 
