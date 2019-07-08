@@ -780,7 +780,7 @@ iframe {
   list-style: none; }
   .filter li {
     display: inline;
-    border-right: 1px solid #484c4f; }
+    border-left: 1px solid #484c4f; }
     .filter li a {
       display: inline-block;
       padding: 4px 18px;
@@ -790,20 +790,29 @@ iframe {
         cursor: text; }
         .filter li a.active:hover {
           text-decoration: none; }
-    .filter li:nth-last-child(1) {
+    .filter li:first-child {
       border: none; }
+      .filter li:first-child a {
+        padding-left: 0; }
 
 .sub-section {
-  margin-bottom: 15px; }
+  margin: 15px 0; }
   .sub-section .trigger {
     text-transform: uppercase;
     color: #19737b;
     font-size: 18px;
     margin: 0;
-    padding: 0 0 10px 0;
     display: block; }
     .sub-section .trigger i {
       padding-right: 15px;
       color: #e7802c; }
     .sub-section .trigger:hover {
       text-decoration: none; }
+  .sub-section .title {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  .sub-section .filter {
+    padding: 0; }
+  .sub-section.open .trigger {
+    padding: 0 0 10px 0; }

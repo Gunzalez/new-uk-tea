@@ -683,7 +683,7 @@ iframe {
 
   li {
     display: inline;
-    border-right: 1px solid $brand-black;
+    border-left: 1px solid $brand-black;
 
     a {
       display: inline-block;
@@ -700,21 +700,24 @@ iframe {
       }
     }
 
-    &:nth-last-child(1){
+    &:first-child {
       border: none;
+      
+      a {        
+        padding-left: 0;
+      }
     }
   }
 }
 
 .sub-section {
-  margin-bottom: 15px;
+  margin: 15px 0;
 
   .trigger {
     text-transform: uppercase;
     color: $brand-green;
     font-size: 18px;
     margin: 0;
-    padding: 0 0 10px 0;
     display: block;
 
     i {
@@ -724,6 +727,23 @@ iframe {
 
     &:hover{
       text-decoration: none;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .filter {
+    padding: 0;
+  }
+
+  &.open {
+
+    .trigger {      
+      padding: 0 0 10px 0;
     }
   }
 }
