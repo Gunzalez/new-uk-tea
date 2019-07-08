@@ -124,7 +124,24 @@
                 <i class="fas fa-plus"></i> Kenya, Malawi & Zimbabwe</a>
             <div class="content">
 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/map-kenya-plus.gif" class="responsive" alt="" />                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p>One of the oldest of the African producers, Kenya has a history of tea dating back to 1903, when tea seeds from India were first planted on a two acre farm. Today, Kenya has 203,006 hectares under cultivation by smallholders (shambas), under the protection of the Kenya Tea Development Authority, and tea producing companies in the public and private sector. Kenya exports over 443,461 tonnes of tea per year (25% of world exports). Kenya's equatorial climate allows tea growing all year round.</p>
 
+<p>The teas are very bright, colourful, with a reddish coppery tint and a pleasant brisk flavour. Kenya speciality tea is ideal as a drink for any time of day or night and is particularly ideal with beef and horseraddish or ham sandwiches and rich chocolate cake.  In the after dinner slot Kenya tea will enhance the flavour of a smoked cheese taken with Drambuie.  Kenya teas are also blended into many famous British brands.</p>
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 class="title">Malawi</h3>
+                <p>Malawi is the pioneer of tea growing in Africa, with production first starting commercially in the 1880s in Mulanje. Now exporting some 31,000 tonnes annually, Malawi has a 1.7% share of world exports and is mainly responsible for the spread of tea cultivation in Africa. Malawi was the first African country to adopt the cloning method of estate refurbishment. Although Malawi teas are not so well known as speciality teas, their superb colour and brightness means they are used in the blending of leading British tea brands.</p>
+
+
+                <h3 class="title">Zimbabwe</h3>
+                <p>Tea production in Zimbabwe could begin commercially only after the successful establishment of irrigated tea estates. With an average annual rainfall of not more than 26 inches per annum, as opposed to the 50 plus inches per annum usually required, irrigation is essential to continuous growth. Zimbabwe now exports over 11,000 tonnes of tea per year from 5,500 hectares. Today, tea is a "controlled" commodity in Zimbabwe so that its quality and industry growth are protected.</p>
 
             </div>
         </div>
