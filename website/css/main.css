@@ -59,12 +59,12 @@ a {
   line-height: 100%;
   padding: 8px 12px;
   font-size: 18px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(45, 45, 45, 0.6);
   border: 1px solid white;
   text-decoration: none;
   color: white;
   border-radius: 2px;
-  transition: background 250ms;
+  transition: background 500ms;
   margin: 10px 0;
   white-space: nowrap;
   font-family: "nunito_sansregular"; }
@@ -126,15 +126,14 @@ a {
   transition: all 250ms; }
 
 .pod a:hover img {
-  filter: grayscale(100%); }
+  opacity: 0.6; }
 
 .feed-item .pod {
   text-align: left; }
   .feed-item .pod .text {
     padding: 0; }
     .feed-item .pod .text p {
-      padding: 0;
-      font-size: 0.85em; }
+      padding: 0; }
 
 .feed-item .location, .feed-item .date {
   font-weight: bold; }
@@ -180,6 +179,10 @@ table td span {
 .form-control,
 .btn {
   border-radius: 1px !important; }
+
+img.responsive {
+  width: 100%;
+  margin-bottom: 15px; }
 
 /* ================================================================== */
 .shaker {
@@ -320,21 +323,20 @@ label {
   font-style: normal; }
 
 .logo-link {
-  padding: 10px 0 15px 0; }
+  padding: 30px 0; }
   .logo-link a {
     display: inline-block; }
   .logo-link img {
     width: 271px;
-    transition: all 250ms;
-    margin-top: -5px; }
+    transition: all 250ms; }
     @media (max-width: 576px) {
       .logo-link img {
         width: 200px; } }
 
 .slogan-animated {
-  margin-top: -5px;
+  margin-top: -7px;
   color: #7a7250;
-  white-space: 1px; }
+  letter-spacing: 1px; }
   .slogan-animated .top {
     font-size: 37px;
     line-height: 40px;
@@ -357,9 +359,14 @@ label {
 
 .navigation {
   text-align: right; }
+  .navigation .nav-trigger {
+    margin-top: 13px;
+    transition: color 250ms; }
+    .navigation .nav-trigger:hover {
+      color: #353336; }
 
 .nav-social {
-  margin: 18px 10px 0 0; }
+  margin: 30px 10px 0 0; }
   .nav-social a {
     background-color: #b8b8b8;
     width: 26px;
@@ -376,11 +383,6 @@ label {
   @media (max-width: 576px) {
     .nav-social {
       display: none; } }
-
-.nav-trigger {
-  transition: color 250ms; }
-  .nav-trigger:hover {
-    color: #353336; }
 
 #carousel-main, .page-header {
   margin-bottom: 30px; }
@@ -544,7 +546,6 @@ label {
       margin: 45px 0 30px 0;
       max-width: 80%; }
     #carousel-mini .slide .text {
-      font-size: 0.9em;
       padding: 0 40px; }
   #carousel-mini .dots {
     position: absolute;
