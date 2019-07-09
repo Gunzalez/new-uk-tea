@@ -223,11 +223,6 @@
         color: white;
         font-weight: 500;
 
-        .font-two {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: italic;
-        }
-
         .text {
           display: inline-block;
           padding-right: 30px;
@@ -796,6 +791,7 @@ iframe {
     justify-content: center;
     align-content: space-around;
     background: #f8f8f6;
+    transition: background 250ms;
 
     > * {
       margin: 0 auto;
@@ -803,7 +799,33 @@ iframe {
 
     &:hover {
       background: $brand-beige;
+      text-decoration: none;
+
+      span {
+        
+        i {
+          transform: translate(0, 5px);
+        }
+      }
     }
 
+    span {
+      color: $brand-vdark;
+
+      i {
+        font-size: 30px;
+        transition: transform 250ms;
+        color: $brand-brown;
+      }
+
+      &.font-two {
+        color: $brand-brown;
+        font-size: 28px;
+
+        @media (min-width: $breakpoint1){
+          font-size: 38px;
+        }
+      }
+    }
   }
 }

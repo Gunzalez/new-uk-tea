@@ -208,6 +208,10 @@ img.responsive {
       color: whitesmoke;
       text-decoration: underline; }
 
+.font-two {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; }
+
 @font-face {
   font-family: 'nunito_sansregular';
   src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
@@ -478,9 +482,6 @@ label {
         font-size: 82px;
         color: white;
         font-weight: 500; }
-        .page-header .stage .slide .shout .font-two {
-          font-family: 'Times New Roman', Times, serif;
-          font-style: italic; }
         .page-header .stage .slide .shout .text {
           display: inline-block;
           padding-right: 30px; }
@@ -850,8 +851,24 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
-    background: #f8f8f6; }
+    background: #f8f8f6;
+    transition: background 250ms; }
     .giant-buttons > a > * {
       margin: 0 auto; }
     .giant-buttons > a:hover {
-      background: #f1f1ed; }
+      background: #f1f1ed;
+      text-decoration: none; }
+      .giant-buttons > a:hover span i {
+        transform: translate(0, 5px); }
+    .giant-buttons > a span {
+      color: #2d2d2d; }
+      .giant-buttons > a span i {
+        font-size: 30px;
+        transition: transform 250ms;
+        color: #7a7250; }
+      .giant-buttons > a span.font-two {
+        color: #7a7250;
+        font-size: 28px; }
+        @media (min-width: 576px) {
+          .giant-buttons > a span.font-two {
+            font-size: 38px; } }
