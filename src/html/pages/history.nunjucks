@@ -1,0 +1,175 @@
+<!-- index file -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="page-header">
+    <div class="stage" style="background: url('images/bg-history-of-tea.jpg') left 15px no-repeat, url('images/bg-history-of-tea.jpg') right 15px no-repeat;">
+        <div class="cloak">&nbsp;</div>        
+        <div class="slide" style="background-image: url('images/bg-history-of-tea.jpg')">
+            <div class="shout">               
+                    <span class="font-one">Tea</span>
+                    <span class="font-two">History</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h2 class="title-large">A Brief History</h2>
+            <p>Tea is the most widely used ancient beverage in the world.</p>
+            <p>Today, tea remains to be a popular drink of choice - helping us to hydrate, stay warm on a cold day or simply enjoy the taste of its different varieties. Alongside Black tea there are other tea varieties that we can also enjoy.</p>
+
+            <div class="giant-buttons">
+                <a href="#">
+                    <span>Previous section</span>
+                    <span class="font-two">A Social History</span>
+                    <span><i class="fas fa-caret-left"></i></span>
+                </a>
+                <a href="#">
+                    <span>Next section</span>
+                    <span class="font-two">The Beginnings of Tea</span>
+                    <span><i class="fas fa-caret-right"></i></span>
+                </a>
+            </div>
+
+            <div class="sub-section open">
+            <a href="#" class="trigger">                
+                <i class="fas fa-plus"></i> 
+                <i class="fas fa-minus"></i> ROOIBOS (RED BUSH)</a>
+            <div class="content">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/img-rooibos.jpg" class="responsive" alt="" />                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>Latin name:</strong> Aspalathus linearis (N.L.Burm.) R.Dahlgr</p>
+                        <p><strong>Family:</strong> Fabaceae (pea family)</p>
+                        <p><strong>Common names:</strong> Rooibos, Rooibosch, Red bush, Bush tea, Red bush tea</p>
+                        <p><strong>Part used:</strong> Whole leaf and stem</p>
+                        <p><strong>Key constituents:</strong> Polyphenols; dihydrochalcones; flavonoids (including Aspalathin, quercetin, dihydro-orientin and dihydro-iso-orientin); the processed leaves and stems contain benzoic and cinnamic acids, and nothofagin.</p>
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 class="title">Facts:</h3>
+                <p>Rooibos is a shrubby legume that grows up to about five feet in height. It has a stem from which needle-like leaves grow from about one foot from the ground. Rooibos is a member of the legume, or pea, family native to the mountain slopes of western Cape Province, South Africa. <strong>(1)</strong></p>
+
+                <p>The leaves and stems are harvested in the summer and can be used to make tea in two different ways. Firstly, the leaves and stems can be cut, bruised and aerated (formally though inaccurately called ‘fermented’) or immediately dried to prevent oxidation. </p>
+
+                <p>The oxidised type is called red tea because of its colour, while the non-oxidised type which contains more of the health promoting polyphenols is green in colour and called green rooibos tea (should be distinguished from ordinary green tea).</p>
+                
+                <p>The traditional oxidised tea is processed today in much the same way as the indigenous people processed it hundreds of years ago, including the sun-drying step, but the tools are more sophisticated now.</p>
+
+                <p>Rooibos tea is caffeine free, low in tannins, high in vitamin C and bursting with flavonoid antioxidants and other helpful plant compounds including Aspalathin which is typically not found in other plants. <strong>(2)</strong></p>
+
+                <p>It has been popular in southern Africa for generations and is now enjoyed around the world. Rooibos is brewed in the same manner as black tea and can be drunk with milk and sugar to taste, or with a slice of lemon and/or sweetened with honey.</p>
+
+
+                <h3 class="title">References:</h3>
+                <p>1. Standley L, Winterton P, Marnewick JL et al. Influence of processing stages on antimutagenic and antioxidant potentials of rooibos tea. J Agric Food Chem. 2001 49(1):114-7.</p>
+                <p>2. <a href="http://www.redbushtea.com/redbush_tea_faq.aspx" target="_blank">www.redbushtea.com/redbush_tea_faq.aspx</a></p>
+
+
+            </div>
+        </div>
+        <hr class="divider" />
+        
+        <div class="sub-section">
+            <a href="#" class="trigger">                
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i> FENNERL SEED TEA</a>
+            <div class="content">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/img-fennel-tea.jpg" class="responsive" alt="" />                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>Fennel tea</strong> may aid healthy digestion, and treat bloating, gas, or cramps, and may also act as a diuretic. According to herbalists, <strong>fennel seed</strong> is an effective aid to digestion.</p>                    
+                        <p>It can help the smooth muscles of the gastrointestinal system relax and reduce gas, bloating, and stomach cramps.</p>
+                        </p>
+                    </div>
+                </div>
+
+                 <h3 class="title">Painful periods:</h3>
+                        <p>Painful periods or dysmenorrhoea are a common problem for many women, who often use over-the-counter medications, such as non-steroidal anti-inflammatory drugs (NSAIDs) to treat the pain.</p>
+
+                        <p>However, roughly 10-20 percent of women who suffer from severe cramping and discomfort during their period do not find relief through this approach.</p>
+
+                        <p>Many turn to alternative or complementary treatments instead, and a 2012 study suggested that fennel can be helpful in this regard.</p>
+
+                        <p>Researchers speculate that fennel helps keep the uterus from contracting, which is what prompts the pain reported by women with dysmenorrhea.</p>
+
+                        
+                        <h3 class="title">Colic:</h3>
+                        <p>One of the significant benefits of fennel is its anti-spasmodic qualities. Because of this, some people believe that fennel tea may also play a role in reducing the symptoms of colic in infants.</p>
+
+                        <h3 class="title">Regulating blood sugar:</h3>
+                        <p>Many herbalists and complementary healthcare practitioners recommend fennel tea as a way to regulate blood sugar.</p>
+                        <p>A study in Bangladesh, in which mice were treated with an extract made from mentholated fennel seeds, found that, at some dosage levels, this extract reduced blood glucose levels at a rate comparable to that of standard antihyperglycemic medications.</p>
+                        </p>
+
+            </div>
+        </div>
+
+
+        <hr class="divider" />
+        
+        <div class="sub-section">
+            <a href="#" class="trigger">                
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i> LIQUORICE TEA</a>
+            <div class="content">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/img-liquorice-tea.jpg" class="responsive" alt="" />                        
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Licorice root, also known as sweet root, is used mostly as a sweetener in candies and beverages. People have also used licorice root for centuries for its medicinal benefits.</p>
+
+                        <p>The medical community is starting to be more accepting of the overall holistic benefits of licorice. However, it’s important to note medical research hasn’t proved some of these health benefits.</p>
+
+                        <p>Licorice is available in many forms, either containing glycyrrhizin or as deglycyrrhizinated licorice (DGL).</p>
+                        </p>
+                    </div>
+                </div>
+
+                 <h3 class="title">Cleanses your respiratory system</h3>
+                        <p>Licorice is recommended to treat respiratory problems. Taking licorice as an oral supplement can help the body produce healthy mucus. Increasing phlegm production may seem counterintuitive to a healthy bronchial system. However, the opposite is true. The production of clean, healthy phlegm keeps the respiratory system functioning without old, sticky mucus clogging it.</p>
+
+                 <h3 class="title">Reduces stress</h3>
+                        <p>Over time, stress can leave the adrenal gland exhausted by constantly producing adrenaline and cortisol. Licorice supplements can give the adrenal gland some relief. <strong>Licorice root</strong> extract can stimulate the adrenal gland, which promotes a healthy level of cortisol in the body. Read about 10 more simple ways to relieve stress.</p>
+
+                 <h3 class="title">Assists cancer treatment</h3>
+                        <p>Some studies say licorice root can potentially aid the treatment of breast and prostate cancers. And some Chinese practices also incorporate it into cancer treatment.</p> 
+                        
+                        <p>The FDA has yet to approve such treatment methods in the United States. But, research is ongoing, according to the American Cancer Society.</p>
+                        
+
+            </div>
+        </div>
+            
+            
+
+       
+        
+        
+
+            </div>
+        </div>
+            
+
+        </div>   
+    </div>
+</div>
+
+{% include "partials/may-also-like.nunjucks" %}
+
+{% endblock %}
