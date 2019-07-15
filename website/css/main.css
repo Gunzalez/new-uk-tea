@@ -338,7 +338,6 @@ label {
         width: 200px; } }
 
 .slogan-animated {
-  margin-top: -7px;
   color: #7a7250;
   letter-spacing: 1px; }
   .slogan-animated .top {
@@ -808,6 +807,9 @@ iframe {
       color: #e7802c; }
     .sub-section .trigger:hover {
       text-decoration: none; }
+    @media (max-width: 576px) {
+      .sub-section .trigger {
+        font-size: 16px; } }
   .sub-section .title {
     font-size: 16px;
     margin-top: 15px;
