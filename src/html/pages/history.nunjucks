@@ -145,12 +145,18 @@
 
             <div class="giant-buttons">
                 <a href="#" class="left">
-                    <span>Previous section</span>
+                    <span>
+                        <span>previous</span>
+                        <span>section</span>
+                    </span>
                     <span class="font-two">A Social History</span>
                     <span><i class="fas fa-caret-left"></i></span>
                 </a>
                 <a href="#" class="right">
-                    <span>Next section</span>
+                    <span>
+                        <span>next</span>
+                        <span>section</span>
+                    </span>
                     <span class="font-two">The Beginnings of Tea</span>
                     <span><i class="fas fa-caret-right"></i></span>
                 </a>

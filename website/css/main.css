@@ -854,16 +854,26 @@ iframe {
     justify-content: center;
     align-content: space-around;
     background: #f8f8f6;
-    transition: background 250ms; }
+    transition: background 250ms;
+    text-align: center; }
     .giant-buttons > a > * {
       margin: 0 auto; }
+    .giant-buttons > a span span {
+      text-transform: uppercase; }
     .giant-buttons > a:hover {
       background: #f1f1ed;
       text-decoration: none; }
       .giant-buttons > a:hover span i {
         transform: translate(0, 5px); }
-    .giant-buttons > a.left:hover span i {
+    .giant-buttons > a.left:hover span i, .giant-buttons > a.right:hover span i {
       transform: translate(-5px, 0); }
+    @media (max-width: 576px) {
+      .giant-buttons > a.left i, .giant-buttons > a.right i {
+        margin-top: 20px; }
+      .giant-buttons > a.left span span, .giant-buttons > a.right span span {
+        display: block; }
+      .giant-buttons > a.left .font-two, .giant-buttons > a.right .font-two {
+        display: none; } }
     .giant-buttons > a.right:hover span i {
       transform: translate(5px, 0); }
     .giant-buttons > a span {

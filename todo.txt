@@ -1,6 +1,5 @@
 TODO
 ==================
-Giant buttons on mobile
 Ask about validation
 Refactor bootstrap files to seperate file
 Fix homepage hero carousel headers

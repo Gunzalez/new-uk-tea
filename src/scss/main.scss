@@ -724,8 +724,6 @@ iframe {
     @media (max-width: $breakpoint1){
       font-size: 16px;
     }
-
-
   }
 
   .title {
@@ -797,9 +795,16 @@ iframe {
     align-content: space-around;
     background: #f8f8f6;
     transition: background 250ms;
+    text-align: center;
 
     > * {
       margin: 0 auto;
+    }
+
+    span {
+      span {
+        text-transform: uppercase;
+      }
     }
 
     &:hover {
@@ -814,7 +819,7 @@ iframe {
       }
     }
 
-    &.left {
+    &.left, &.right {
 
       &:hover {
         span {
@@ -823,8 +828,24 @@ iframe {
             transform: translate(-5px, 0);
           }
         }
-
       }
+
+      @media (max-width: $breakpoint1){
+
+        i {
+          margin-top: 20px;
+        }
+
+        span {
+          span {
+            display: block;
+          }
+        }
+
+        .font-two {
+            display: none;
+        }
+      }      
     }
 
     &.right {
@@ -836,7 +857,6 @@ iframe {
             transform: translate(5px, 0);
           }
         }
-
       }
     }
 
