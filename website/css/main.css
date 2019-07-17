@@ -862,6 +862,10 @@ iframe {
       text-decoration: none; }
       .giant-buttons > a:hover span i {
         transform: translate(0, 5px); }
+    .giant-buttons > a.left:hover span i {
+      transform: translate(-5px, 0); }
+    .giant-buttons > a.right:hover span i {
+      transform: translate(5px, 0); }
     .giant-buttons > a span {
       color: #2d2d2d; }
       .giant-buttons > a span i {

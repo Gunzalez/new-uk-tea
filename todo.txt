@@ -1,7 +1,6 @@
 TODO
 ==================
 Giant buttons on mobile
-Giant button left and right chevron movements on hover
 Ask about validation
 Refactor bootstrap files to seperate file
 Fix homepage hero carousel headers

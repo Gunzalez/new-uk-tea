@@ -814,6 +814,32 @@ iframe {
       }
     }
 
+    &.left {
+
+      &:hover {
+        span {
+          
+          i {
+            transform: translate(-5px, 0);
+          }
+        }
+
+      }
+    }
+
+    &.right {
+
+      &:hover {
+        span {
+          
+          i {
+            transform: translate(5px, 0);
+          }
+        }
+
+      }
+    }
+
     span {
       color: $brand-vdark;
 
