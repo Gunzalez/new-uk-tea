@@ -184,6 +184,9 @@ img.responsive {
   width: 100%;
   margin-bottom: 15px; }
 
+.container .heading {
+  margin-top: 30px; }
+
 /* ================================================================== */
 .shaker {
   font-size: 11px;
@@ -840,7 +843,7 @@ iframe {
   display: block; }
 
 .sub-section.open .trigger {
-  border-bottom: 1px solid #fcfcfc;
+  border-bottom: 1px solid #f7f7f7;
   margin-bottom: 15px; }
 
 .sub-section.open:hover .trigger {

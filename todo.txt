@@ -31,5 +31,6 @@ Starts Origins - 1 hour
 Completes Origins + feedback tweaks - 3
 Starts About page - 30 mins
 Completes About page - 45 mins
-Starts Hostory page - 1.5 hours
+Starts History page - 1.5 hours
+Finishes History and FAQs - 2.5 hours
 
