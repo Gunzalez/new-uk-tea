@@ -4,9 +4,9 @@
 {% block content %}
 
 <div class="page-header">
-    <div class="stage" style="background: url('images/bg-history-of-tea.jpg') left 15px no-repeat, url('images/bg-history-of-tea.jpg') right 15px no-repeat;">
+    <div class="stage" style="background: url('images/bg-faqs.jpg') left 15px no-repeat, url('images/bg-faqs.jpg') right 15px no-repeat;">
         <div class="cloak">&nbsp;</div>        
-        <div class="slide" style="background-image: url('images/bg-history-of-tea.jpg')">
+        <div class="slide" style="background-image: url('images/bg-faqs.jpg')">
             <div class="shout">               
                     <span class="font-one">Tea</span>
                     <span class="font-two">History</span>
@@ -21,28 +21,47 @@
         <div class="col-sm-12">
 
             <h2 class="title-large">Answering Your Most Common Questions</h2>
+
+            <p>With 84% of the British population drinking tea and herbal infusions every day, there is an understandable thirst for knowledge on all aspects of tea. Here are a few answers to some of the most popular questions asked about tea.</p>
+            <p>If your question is not answered here then <a href="contact.html">please contact us with your question</a>.</p>
             
             <div class="sub-section open">
                 <a href="#" class="trigger">                
                     <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE BIRTH OF TEA IN CHINA</a>
+                    <i class="fas fa-minus"></i> TEA
+                </a>
+
                 <div class="content">
 
                     <div class="row">
-                        <div class="col-sm-3">
-                            <img src="images/img-emperor.jpg" class="responsive" alt="Emperor Shen nung" />
-                        </div>
-                        <div class="col-sm-9">
-                            <p>Tea is often thought of as being a quintessentially British drink, and we have been drinking it for over 350 years. But in fact the history of tea goes much further back.</p>
-
-                            <p>The story of tea begins in China. According to legend, in 2737 BC, the Chinese emperor Shen Nung was sitting beneath a tree while his servant boiled drinking water, when some leaves from the tree blew into the water. Shen Nung, a renowned herbalist, decided to try the infusion that his servant had accidentally created. The tree was a Camellia sinensis, and the resulting drink was what we now call tea.</p>
-
-                            <p>It is impossible to know whether there is any truth in this story. But tea drinking certainly became established in China many centuries before it had even been heard of in the west. </p>
-
-                            <p>Containers for tea have been found in tombs dating from the Han dynasty (206 BC - 220 AD) but it was under the Tang dynasty (618-906 AD), that tea became firmly established as the national drink of China. </p>
-
-                            <p>It became such a favourite that during the late eighth century a writer called Lu Yu wrote the first book entirely about tea, the Ch'a Ching, or Tea Classic. It was shortly after this that tea was first introduced to Japan, by Japanese Buddhist monks who had travelled to China to study. Tea drinking has become a vital part </p>
-
+                        <div class="col-sm-12">
+                            
+                            <dl class="faqs">
+                                <dt>How many of cups of tea do the British drink each day?</dt>
+                                <dd>Approximately 100 million cups daily, which is almost 36 billion per year [Source: ITC].</dd>
+                            
+                                <dt>Are we now a coffee drinking nation?</dt>
+                                <dd>No, the number of cups of coffee drunk each day is estimated at 70 million.</dd>
+                            
+                                <dt>Is green tea better for you than black tea?</dt>
+                                <dd>Both varieties come from the plant Camellia sinensis and both have similar amounts of antioxidants and minerals.</dd>
+                            
+                                <dt>Why does tea refresh you in hot weather?</dt>
+                                <dd>It simply raises the body temperature momentarily, you perspire and the perspiration on your skin creates a cooling effect.  Cold drinks quench your thirst but do not reduce your core temperature.</dd>
+                            
+                                <dt>Do green and black teas come from different plants?</dt>
+                                <dd>No, they both come from the same plant known by its botanical name Camellia sinensis.</dd>
+                            
+                                <dt>Does tea contain the same level of caffeine as coffee?</dt>
+                                <dd>No, at least half the level of coffee.</dd>
+                            
+                                <dt>How do you produce decaffeinated tea?</dt>
+                                <dd>Simply by "washing" the tea leaves towards the end of the production process in an organic solvent. The method is strictly governed by legal limits.</dd>
+                            
+                                <dt>How many varieties of tea are there?</dt>
+                                <dd>UK Tea & Infusions Association estimates about 1,500 varieties of Camellia sinensis.</dd>
+                            </dl>
+	
                         </div>
                     </div>
 
@@ -54,7 +73,7 @@
             <div class="sub-section">
                 <a href="#" class="trigger">                
                     <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> TEA SMUGGLING AND TAXATIONS</a>
+                    <i class="fas fa-minus"></i> INFUSIONS</a>
                 <div class="content">
 
                     <div class="row">
@@ -69,100 +88,29 @@
                     </div>
 
                 </div>
-            </div> 
+            </div>
 
-            
             <hr class="divider" /> 
             
             <div class="sub-section">
                 <a href="#" class="trigger">                
                     <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE GROWTH OF TEA IN EUROPE</a>
-                <div class="content">
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="images/img-tea-growth.jpg" class="responsive" alt="Woman drinking tea with pinky up" />
-                        </div>
-                        <div class="col-sm-9">
-                            <p>So at this stage in the history of tea, Europe was rather lagging behind. In the latter half of the sixteenth century there are the first brief mentions of tea as a drink among Europeans.
-                            </p>
-                            <p> These are mostly from Portuguese who were living in the East as traders and missionaries. But although some of these individuals may have brought back samples of tea to their native country, it was not the Portuguese who were the first to ship back tea as a commercial import. </p>
-                            <p>This was done by the Dutch, who in the last years of the sixteenth century began to encroach on Portuguese trading routes in the East. By the turn of the century they had established a trading post on the island of Java, and it was via Java that in 1606 the first consignment of tea was shipped from China to Holland.</p>
-                            <p>Tea soon became a fashionable drink among the Dutch, and from there spread to other countries in continental western Europe, but because of its high price it remained a drink for the wealthy.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div> 
-
-            
-            <hr class="divider" /> 
-            
-            <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> EARLY DISCUSSIONS ABOUT TEA AND HEALTH</a>
+                    <i class="fas fa-minus"></i> GLOSSARY</a>
                 <div class="content">
 
                     <div class="row">
                         <div class="col-sm-12">
-                            <p>As well as the great debate in the eighteenth century about the taxation of tea, there was an equally furious argument about whether tea drinking was good or bad for the health.</p>
-                             <p>Leaps forward in medical and scientific research mean that we now know that drinking four cups of tea a day may help maintain your health, but such information was not available to tea drinkers 250 years ago.</P>
-                             <p>Wealthy philanthropists in particular worried that excessive tea drinking among the working classes would lead to weakness and melancholy. Typically, they were not concerned with the continuing popularity of tea among the wealthy classes, for whom 'strength to labour' was of rather less importance!</p>
-                             <p> The debate rumbled on into the nineteenth century, but was really put to an end in the middle of that century, when a new generation of wealthy philanthropists realised the value of tea drinking to the temperance movement. In their enthusiasm to have the working classes go teetotal, tea was regularly offered at temperance meetings as a substitute for alcohol.</p>
-
+                            <p>The British took to tea with an enthusiasm that continues to the present day. It became a popular drink in coffee houses, which were as much locations for the transaction of business as they were for relaxation or pleasure.</p>
+                            <p> They were though the preserve of middle-and upper-class men; women drank tea in their own homes, and as yet tea was still too expensive to be widespread among the working classes.</p>
+                            
+                            <p> In part, its high price was due to a punitive system of taxation. The first tax on tea in the leaf, introduced in 1689, was so high at 25p in the pound that it almost stopped sales.</p>
+                            
+                            <p>It was reduced to 5p in the pound in 1692, and from then until as recently as 1964, when tea duties were finally abolished, politicians were forever tinkering with the exact rate and method of the taxation of tea.</p>
                         </div>
                     </div>
 
                 </div>
-            </div>   
-            
-            <hr class="divider" />             
-
-            <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> MODERN DAY TEA DRINKING</a>
-                <div class="content">
-
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="images/img-tea-bags.jpg" class="responsive" alt="Emperor Shen nung" />
-                        </div>
-                        <div class="col-sm-9">
-                            <p>But as the tea auction declined, an essential element of modern tea-drinking took off - the tea bag. Tea bags were invented in America in the early twentieth century, but sales only really took off in Britain in the 1970s.</p>
-                            <p> Nowadays it would be hard for many tea-drinkers to imagine life without them. Such is the British enthusiasm for tea that even after the dismantling of the Empire, British companies continue to play a leading role in the world's tea trade and British brands dominate the world market.</p>
-                            <p>With recent scientific research indicating that tea drinking may have direct health benefits, it is assured that for centuries to come there will be a place at the centre of British life for a nice cup of tea. </p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            
-                
-
-            <div class="giant-buttons">
-                <a href="#" class="left">
-                    <span>
-                        <span>previous</span>
-                        <span>section</span>
-                    </span>
-                    <span class="font-two">A Social History</span>
-                    <span><i class="fas fa-caret-left"></i></span>
-                </a>
-                <a href="#" class="right">
-                    <span>
-                        <span>next</span>
-                        <span>section</span>
-                    </span>
-                    <span class="font-two">The Beginnings of Tea</span>
-                    <span><i class="fas fa-caret-right"></i></span>
-                </a>
-            </div>       
-        
-        
+            </div>        
 
             </div>
         </div>
