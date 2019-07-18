@@ -42,15 +42,15 @@
                         </div>
                         <div class="col-md-4">
                             <h4>Tea venue type</h4>
-                            <ul>
-                                <li><a href="#">Hotels</a></li>
+                            <ul class="filter-list">
+                                <li><a href="#" class="active">Hotels</a></li>
                                 <li><a href="#">Tearooms</a></li>
                                 <li><a href="#">Restaurants</a></li>
                             </ul>    
                         </div>
                         <div class="col-md-4">
                             <h4>Suppliers</h4>
-                            <ul>
+                            <ul class="filter-list">
                                 <li><a href="#">Decaffeinated Tea</a></li>
                                 <li><a href="#">Equipment</a></li>
                                 <li><a href="#">Machinery</a></li>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="col-md-4">
                             <h4>Everything else</h4>
-                            <ul>
+                            <ul class="filter-list">
                                 <li><a href="#">Blenders & Packers</a></li>
                                 <li><a href="#">Packing & Labelling Services</a></li>
                                 <li><a href="#">Consultancy Services</a></li>
@@ -124,6 +124,7 @@
                                         <i class="fas fa-minus"></i>
                                     </a>
                                     <div class="content">
+                                    dididid
 
                                     </div>
                                 </div>
@@ -136,7 +137,7 @@
                                         <i class="fas fa-minus"></i>
                                     </a>
                                     <div class="content">
-
+                                        More stuff
                                     </div>
                                 </div>
 
@@ -204,44 +205,70 @@
             <div class="sub-section">
                 <a href="#" class="trigger">                
                     <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> GLOSSARY</a>
+                    <i class="fas fa-minus"></i> INTERCONTINENTAL LONDON PARK LANE</a>
                 <div class="content">
 
                     <div class="row">
                         <div class="col-sm-12">
-                            
-                            <dl class="faqs">
-                                <dt>Diusmod tempim ad minim venior incididunt?</dt>
-                                <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna<br>
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</dd>
-                                <dt>Lorem ipsum dolor sit amet?</dt>
-                                <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</dd>
-
-                                <dt>Ut enim ad minim veniam, quis nostrud exercitation?</dt>
-                                <dd>Fncididunt ut labore et dolore magna
-                                alit enim ad miud exercitation ulnim veniam, quis nostqua. Urlamco laboris nisi ut aliquip 
-                                commodo consequat.</dd>
-
-                                <dt>Urlamco laboris nisi ut aliquip?</dt>
-                                <dd>Fxercitation ulnim veommodo consequatniam, quis nostqua. Urlamco laboris nisi ut aliquip.</dd>
-
-
-                                </dl>
 
                         </div>
                     </div>
 
                 </div>
-            </div>        
+            </div> 
 
-            </div>
-        </div>
+            <hr class="divider" /> 
             
+            <div class="sub-section">
+                <a href="#" class="trigger">                
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i> MILLENNIUM HOTEL, LONDON MAYFAIR</a>
+                <div class="content">
 
-        </div>   
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+            <hr class="divider" /> 
+            
+            <div class="sub-section">
+                <a href="#" class="trigger">                
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i> THE ANGEL HOTEL, ABERGAVENNY</a>
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+            <hr class="divider" /> 
+            
+            <div class="sub-section">
+                <a href="#" class="trigger">                
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i> THE GORING HOTEL</a>
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>            
     </div>
 </div>
 

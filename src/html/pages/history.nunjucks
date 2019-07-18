@@ -70,7 +70,6 @@
 
                 </div>
             </div> 
-
             
             <hr class="divider" /> 
             
@@ -95,7 +94,6 @@
 
                 </div>
             </div> 
-
             
             <hr class="divider" /> 
             
@@ -139,9 +137,7 @@
                     </div>
 
                 </div>
-            </div>
-            
-                
+            </div>                
 
             <div class="giant-buttons">
                 <a href="#" class="left">
@@ -160,13 +156,7 @@
                     <span class="font-two">The Beginnings of Tea</span>
                     <span><i class="fas fa-caret-right"></i></span>
                 </a>
-            </div>       
-        
-        
-
-            </div>
-        </div>
-            
+            </div> 
 
         </div>   
     </div>

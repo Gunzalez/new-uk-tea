@@ -171,6 +171,16 @@ table td span {
 .divider {
   margin: 0; }
 
+.filter-list {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none; }
+  .filter-list .active {
+    color: #353336;
+    cursor: default; }
+    .filter-list .active:hover {
+      text-decoration: none; }
+
 /* bootstrap overrides */
 .table thead th,
 .table td, .table th {
@@ -824,6 +834,12 @@ iframe {
     .sub-section .trigger {
       font-size: 16px; } }
 
+.sub-section > .trigger .fa-minus {
+  display: none; }
+
+.sub-section > .trigger .fa-plus {
+  display: inline-block; }
+
 .sub-section .title {
   font-size: 16px;
   margin-top: 15px;
@@ -835,24 +851,16 @@ iframe {
 .sub-section .content {
   display: none; }
 
-.sub-section .fa-minus {
-  display: none; }
-
-.sub-section .fa-plus {
-  display: inline-block; }
-
-.sub-section.open .fa-minus {
-  display: inline-block; }
-
-.sub-section.open .fa-plus {
-  display: none; }
-
 .sub-section.open .content {
   display: block; }
 
-.sub-section.open .trigger {
+.sub-section.open > .trigger {
   border-bottom: 1px solid #f7f7f7;
   margin-bottom: 15px; }
+  .sub-section.open > .trigger .fa-minus {
+    display: inline-block; }
+  .sub-section.open > .trigger .fa-plus {
+    display: none; }
 
 .sub-section.open:hover .trigger {
   background: none; }
@@ -860,12 +868,32 @@ iframe {
 .sub-section:nth-last-child {
   margin-bottom: 30px; }
 
-.sub-section .sub-sub-section .trigger {
-  margin-bottom: 0; }
+.sub-section .sub-sub-section .content {
+  display: none; }
 
-.sub-section .sub-sub-section a i {
-  padding-right: 0;
-  padding-left: 15px; }
+.sub-section .sub-sub-section .trigger {
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 0; }
+  .sub-section .sub-sub-section .trigger .fa-minus {
+    display: none; }
+  .sub-section .sub-sub-section .trigger .fa-plus {
+    display: inline-block; }
+  .sub-section .sub-sub-section .trigger i {
+    padding-right: 0;
+    padding-left: 15px; }
+
+.sub-section .sub-sub-section.open .content {
+  display: block;
+  padding-bottom: 15px; }
+
+.sub-section .sub-sub-section.open .trigger .fa-minus {
+  display: inline-block; }
+
+.sub-section .sub-sub-section.open .trigger .fa-plus {
+  display: none; }
+
+.sub-section .sub-sub-section:last-child .trigger {
+  border-bottom: none; }
 
 .icon {
   display: inline-block;
