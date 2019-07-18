@@ -821,7 +821,7 @@ iframe {
 
       .content {
         display: block;
-        padding-bottom: 15px;
+        padding: 15px 0;
       }
 
       .trigger {   
@@ -841,6 +841,13 @@ iframe {
       .trigger {
         border-bottom: none;
       }
+
+      &.open {
+
+        .trigger { 
+          border-bottom: 1px solid lighten($color: #000000, $amount: 97%);
+        }
+      } 
     }
   }
 }
@@ -1012,4 +1019,51 @@ iframe {
       content: "A:";
     }
   }
+}
+
+.hotel-photos {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+  }
+
+  li {
+    display: inline;
+    padding-right: 15px;
+  }
+
+  a {
+    display: inline-block;
+
+    img {
+      transition: all 250ms;
+    }
+
+    &:hover {
+
+      img {
+        opacity: 0.6;
+      }
+    }
+  }  
+}
+
+.hours {
+    dt {
+      float: left;
+      font-weight: bold;
+      width: 70px;
+      padding-bottom: 2px;
+    }
+
+    dd {
+      margin-bottom: 2px;
+    }
 }

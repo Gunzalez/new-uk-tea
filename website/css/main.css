@@ -204,6 +204,10 @@ img.responsive {
 .container .heading {
   margin-top: 30px; }
 
+ol, ul {
+  margin-left: 0;
+  padding-left: 20px; }
+
 /* ================================================================== */
 .shaker {
   font-size: 11px;
@@ -888,7 +892,7 @@ iframe {
 
 .sub-section .sub-sub-section.open .content {
   display: block;
-  padding-bottom: 15px; }
+  padding: 15px 0; }
 
 .sub-section .sub-sub-section.open .trigger .fa-minus {
   display: inline-block; }
@@ -898,6 +902,9 @@ iframe {
 
 .sub-section .sub-sub-section:last-child .trigger {
   border-bottom: none; }
+
+.sub-section .sub-sub-section:last-child.open .trigger {
+  border-bottom: 1px solid #f7f7f7; }
 
 .icon {
   display: inline-block;
@@ -990,3 +997,31 @@ iframe {
   margin-bottom: 30px; }
   .faqs dd:before {
     content: "A:"; }
+
+.hotel-photos {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 10px; }
+  .hotel-photos ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; }
+  .hotel-photos li {
+    display: inline;
+    padding-right: 15px; }
+  .hotel-photos a {
+    display: inline-block; }
+    .hotel-photos a img {
+      transition: all 250ms; }
+    .hotel-photos a:hover img {
+      opacity: 0.6; }
+
+.hours dt {
+  float: left;
+  font-weight: bold;
+  width: 70px;
+  padding-bottom: 2px; }
+
+.hours dd {
+  margin-bottom: 2px; }

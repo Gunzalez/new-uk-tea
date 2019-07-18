@@ -1,5 +1,6 @@
 TODO
 ==================
+Twitter feed breaking out on mobile
 Ask about validation
 Refactor bootstrap files to seperate file
 Fix homepage hero carousel headers
@@ -35,4 +36,5 @@ Starts History page - 1.5 hours
 Finishes History and FAQs - 2.5 hours
 Starts Directory page - 30 mins
 Continues Directory page - 3 hrs
+Completes Directory page - 2 hrs
 

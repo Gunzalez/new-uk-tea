@@ -39,9 +39,9 @@
                             </ul>
                         </div>                        
                     </div>
-                    
+
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h4>Tea venue type</h4>
                             <ul class="filter-list">
                                 <li><a href="#" class="active">Hotels</a></li>
@@ -49,7 +49,7 @@
                                 <li><a href="#">Restaurants</a></li>
                             </ul>    
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h4>Suppliers</h4>
                             <ul class="filter-list">
                                 <li><a href="#">Decaffeinated Tea</a></li>
@@ -63,7 +63,7 @@
                                 <li><a href="#">Teabag Paper</a></li>
                             </ul>                                     
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <h4>Everything else</h4>
                             <ul class="filter-list">
                                 <li><a href="#">Blenders & Packers</a></li>
@@ -95,21 +95,21 @@
 
                     <div class="indented">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <p>Great Fosters<br>
                                 Stroude Road<br>
                                 Egham<br>
                                 Surrey<br>
-                                <a href="https://goo.gl/maps/6yJDDgRfw6yG7qAH6" target="_blank">TW20 9UR</a></p>
+                                <a href="https://goo.gl/maps/6yJDDgRfw6yG7qAH6" target="_blank" title="View on Google Maps">TW20 9UR</a></p>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="links">
                                     <p>T: <a href="tel:01784433822">01784 433822</a><br>
                                     W: <a href="https://www.greatfosters.co.uk" target="_blank">www.greatfosters.co.uk</a><br>
                                     E: <a href="mailto:reception@greatfosters.co.uk">reception@greatfosters.co.uk</a></p>
                                 </div>
                             </div>
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-4">
                                 <img src="images/logo-great-fosters.jpg" alt="Great Fosters logo" />
                             </div>
                         </div>
@@ -125,7 +125,21 @@
                                         <i class="fas fa-minus"></i>
                                     </a>
                                     <div class="content">
-                                    dididid
+                                    
+                                        <div class="hotel-photos">
+                                            <ul>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-1.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-2.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-3.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-4.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-5.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-1.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-2.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-3.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-4.jpg" alt=""></a></li>
+                                                <li><a href="#" class="lightbox"><img src="images/hotel-great-fosters-5.jpg" alt=""></a></li>
+                                            </ul>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -138,7 +152,8 @@
                                         <i class="fas fa-minus"></i>
                                     </a>
                                     <div class="content">
-                                        More stuff
+                                        <p>Great Fosters is a fine example of Elizabethan architecture set amongst 50 acres of stunning formal gardens and parkland. Probably built as a Royal hunting lodge in 1550 and very much a stately home since then, it is now a prestigious luxury hotel.</p>
+                                        <p>Afternoon tea is served in the Anne Boleyn, Cocktail Bar, Main Hall and in the warmer months on the terraces. Our pastry team will tempt you with dainty sandwiches, homemade scones with Devonshire clotted cream and a selection of cakes that look almost too good to eat!</p>
                                     </div>
                                 </div>
 
@@ -150,6 +165,36 @@
                                         <i class="fas fa-minus"></i>
                                     </a>
                                     <div class="content">
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+
+                                                <h4>Tea</h4>                                                
+                                                <ul> 
+                                                    <li>Organic Silver Needle White Tea</li> 
+                                                    <li>Jing Assam Breakfast</li> 
+                                                    <li>Jing Earl Grey</li> 
+                                                    <li>Organic Dragon Well Green Tea</li> 
+                                                    <li>Jasmine Pearls</li> 
+                                                    <li>Jing English Breakfast</li>
+                                                    <li>Darjeeling</li> 
+                                                    <li>Darjeeling 2<sup>nd</sup> Flush</li>
+                                                    <li>Lapsang Souchong</li>
+                                                    <li>Twinings Breakfast Tea</li>
+                                                </ul>
+
+                                            </div>                                                
+                                            <div class="col-md-4">   
+
+                                                <h4>Infusions</h4>
+                                                <ul> 
+                                                    <li> Organic Whole Chamomile Flowers</li> 
+                                                    <li>  Whole Peppermint Leaf</li> 
+                                                    <li>  Blackcurrant and Hibiscus</li>
+                                                </ul>
+
+                                            </div>                                               
+                                        </div>
 
                                     </div>
                                 </div>
@@ -175,6 +220,43 @@
                                     </a>
                                     <div class="content">
 
+                                        
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h4>Hours</h4>
+                                                <dl class="hours">
+                                                    <dt>Mon:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Tues:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Weds:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Thurs:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Fri:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Sat:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                    <dt>Sun:</dt>
+                                                    <dd>2pm - 6pm</dd>
+                                                </dl>                                                
+                                            </div>    
+                                            
+                                            <div class="col-md-6">   
+
+                                                <h4>Manager</h4> 
+
+                                                <p>Amanda Dougans<br>Great Fosters<br>Stroude Road<br>Egham<br>                                Surrey<br>
+                                                <a href="http://www.google.co.uk/?q=TW20 9UR" title="View on google maps">TW20 9UR</a><br><br>
+                                                Phone: 01784 433822<br>
+                                                Web: <a href="http://www.greatfosters.co.uk" target="_blank" title="View this members website">www.greatfosters.co.uk</a><br>
+                                                Email: <a href="mailto:reception@greatfosters.co.uk" title="Email this member">reception@greatfosters.co.uk</a>
+                                                </p>
+
+                                            </div>   
+                                            
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -187,16 +269,20 @@
                                     </a>
                                     <div class="content">
 
+                                        <p>Please note that children aged 3 - 12 years of age are charged at £15 per child.</p>
+                                        <h4>Booking times</h4>
+                                        <p>Afternoon Tea is available at either 2.00pm, 2.15pm, 2.30pm, 4.30pm, 4.45pm and 5.00pm.</p>
+                                        <p>You are welcome to keep your table for up to 2 hours. Reservations are recommended especially at weekends.</p>
+                                        <h4>Group bookings</h4>
+                                        <p>Please note that we are able to accommodate a maximum of 10 guests on any one table.</p>
+
                                     </div>
                                 </div>
 
                             </div>
                         </div>
 
-
                     </div>
-
-                    
 
                 </div>
             </div>
