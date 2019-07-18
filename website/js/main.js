@@ -202,7 +202,7 @@ DomReady.ready(function() {
             return "background: url('" + string + "') left 15px no-repeat, url('" + string + "') right 15px no-repeat;";
         },
 
-        setImage: function(newIndex){
+        setImage: function(newIndex) {
             var newSlide = this.data[newIndex];
             this.el.stage.style = this.getBackgroundStyle(newSlide.image);
             this.el.slide.style = "background-image: url('" + newSlide.image + "')";
@@ -215,7 +215,8 @@ DomReady.ready(function() {
             this.curIndex = newIndex;
         },
 
-        attachActions: function(carousel){
+        attachActions: function(carousel) {
+
             carousel.el.controls.forEach(function(control){
                 control.onclick = function(event){
                     event.preventDefault();
@@ -300,7 +301,7 @@ DomReady.ready(function() {
     main.sections = {
         
         el: {
-            sections: document.querySelectorAll('.sub-section')
+            sections: []
         },
 
         setUpLinks: function(){
@@ -318,15 +319,18 @@ DomReady.ready(function() {
             })
         },
 
-        init: function() {
+        init: function(options) {
+            var that = this;
+            options.classNames.forEach(function(className){
+                document.querySelectorAll(className).forEach(function(item){
+                    that.el.sections.push(item);    
+                });
+            })
             if(this.el.sections.length){
                 this.setUpLinks()
             }
         }
-    }
-
-
-
+    };
 
     main.slider = {
 
@@ -397,7 +401,6 @@ DomReady.ready(function() {
             }                    
         }
     };
-
   
     // init calls
     main.carousel.init({ 
@@ -411,9 +414,11 @@ DomReady.ready(function() {
 
     main.navigation.init();
 
-    main.sections.init();
+    main.sections.init({
+        classNames: ['.sub-section', '.sub-sub-section']
+    });
 
-    // resize
+    // resize calls
     window.onresize = function() {
         var newWidth = window.innerWidth,
             oldWidth = props.screenWidth;
