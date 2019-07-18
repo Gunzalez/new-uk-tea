@@ -33,78 +33,168 @@
                     <div class="row">
                         <div class="col-sm-12">
                             
-                            <dl class="faqs">
-                                <dt>How many of cups of tea do the British drink each day?</dt>
-                                <dd>Approximately 100 million cups daily, which is almost 36 billion per year [Source: ITC].</dd>
-                            
-                                <dt>Are we now a coffee drinking nation?</dt>
-                                <dd>No, the number of cups of coffee drunk each day is estimated at 70 million.</dd>
-                            
-                                <dt>Is green tea better for you than black tea?</dt>
-                                <dd>Both varieties come from the plant Camellia sinensis and both have similar amounts of antioxidants and minerals.</dd>
-                            
-                                <dt>Why does tea refresh you in hot weather?</dt>
-                                <dd>It simply raises the body temperature momentarily, you perspire and the perspiration on your skin creates a cooling effect.  Cold drinks quench your thirst but do not reduce your core temperature.</dd>
-                            
-                                <dt>Do green and black teas come from different plants?</dt>
-                                <dd>No, they both come from the same plant known by its botanical name Camellia sinensis.</dd>
-                            
-                                <dt>Does tea contain the same level of caffeine as coffee?</dt>
-                                <dd>No, at least half the level of coffee.</dd>
-                            
-                                <dt>How do you produce decaffeinated tea?</dt>
-                                <dd>Simply by "washing" the tea leaves towards the end of the production process in an organic solvent. The method is strictly governed by legal limits.</dd>
-                            
-                                <dt>How many varieties of tea are there?</dt>
-                                <dd>UK Tea & Infusions Association estimates about 1,500 varieties of Camellia sinensis.</dd>
-                            </dl>
-	
+                            <ul class="filter"><!--
+                                --><li><a href="#">All Businesses</a></li><!--
+                                --><li><a href="#">All Tea Venues</a></li><!--
+                                --><li><a href="#">UKTIA Member Companies</a></li>
+                            </ul>
+                    
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Tea venue type</h4>
+                            <ul>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Tearooms</a></li>
+                                <li><a href="#">Restaurants</a></li>
+                            </ul>    
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Suppliers</h4>
+                            <ul>
+                                <li><a href="#">Decaffeinated Tea</a></li>
+                                <li><a href="#">Equipment</a></li>
+                                <li><a href="#">Machinery</a></li>
+                                <li><a href="#">Packaging</a></li>
+                                <li><a href="#">Raw Materials</a></li>
+                                <li><a href="#">Tea Extracts</a></li>
+                                <li><a href="#">Tea & Infusions Companies</a></li>
+                                <li><a href="#">Tea Sacks</a></li>
+                                <li><a href="#">Teabag Paper</a></li>
+                            </ul>                                     
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Everything else</h4>
+                            <ul>
+                                <li><a href="#">Blenders & Packers</a></li>
+                                <li><a href="#">Packing & Labelling Services</a></li>
+                                <li><a href="#">Consultancy Services</a></li>
+                                <li><a href="#">Tea Training Consultants</a></li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Tea Brokers & Tea Traders</a></li>
+                                <li><a href="#">Tea Gardens & Agents</a></li>
+                                <li><a href="#">Tea Importers/Exporters</a></li>
+                                <li><a href="#">Tea Quality Control & Process Monitoring</a></li>
+                                <li><a href="#">Warehousing</a></li>
+                                <li><a href="#">Tea Ware</a></li>
+                                <li><a href="#">Tea Masterclasses</a></li>
+                            </ul>                                    
                         </div>
                     </div>
 
                 </div>
             </div>
-
-            <hr class="divider" /> 
             
-            <div class="sub-section">
+            <h2 class="title-large">Hotels</h2>
+            
+            <div class="sub-section open">
                 <a href="#" class="trigger">                
                     <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> INFUSIONS</a>
+                    <i class="fas fa-minus"></i> GREAT FOSTERS</a>
                 <div class="content">
 
-                    <div class="row">
-                        <div class="col-sm-12">
-                        
-                            <dl class="faqs">
-                            
-                                <dt>Lorem ipsum sum dip sum, nice.?</dt>
-                                <dd>Of to see the wizard estimated at 70 million.</dd>
-                            
-                                <dt>Is green tea better for you than black tea?</dt>
-                                <dd>Both varieties come from the plant Camellia sinensis and both have similar amounts of antioxidants and minerals.</dd>
-                            
-                                <dt>Why does tea refresh you in hot weather?</dt>
-                                <dd>It simply raises the body temperature momentarily, you perspire and the perspiration on your skin creates a cooling effect.  Cold drinks quench your thirst but do not reduce your core temperature.</dd>
-                            
-                                <dt>Do green and black teas come from different plants?</dt>
-                                <dd>No, they both come from the same plant known by its botanical name Camellia sinensis.</dd>
-
-                                <dt>How many of cups of tea do the British drink each day?</dt>
-                                <dd>Approximately 100 million cups daily, which is almost 36 billion per year [Source: ITC].</dd>
-                            
-                                <dt>Does tea contain the same level of caffeine as coffee?</dt>
-                                <dd>No, at least half the level of coffee.</dd>
-                            
-                                <dt>How do you produce decaffeinated tea?</dt>
-                                <dd>Simply by "washing" the tea leaves towards the end of the production process in an organic solvent. The method is strictly governed by legal limits.</dd>
-                            
-                                <dt>How many varieties of tea are there?</dt>
-                                <dd>UK Tea & Infusions Association estimates about 1,500 varieties of Camellia sinensis.</dd>
-                            </dl>
-
+                    <div class="indented">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p>Great Fosters<br>
+                                Stroude Road<br>
+                                Egham<br>
+                                Surrey<br>
+                                <a href="https://goo.gl/maps/6yJDDgRfw6yG7qAH6" target="_blank">TW20 9UR</a></p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="links">
+                                    <p>T: <a href="tel:01784433822">01784 433822</a><br>
+                                    W: <a href="https://www.greatfosters.co.uk" target="_blank">www.greatfosters.co.uk</a><br>
+                                    E: <a href="mailto:reception@greatfosters.co.uk">reception@greatfosters.co.uk</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <img src="images/logo-great-fosters.jpg" alt="Great Fosters logo" />
+                            </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="sub-sub-section open">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon gallery">&nbsp;</span>
+                                        GALLERY            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                                <div class="sub-sub-section">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon intro">&nbsp;</span>
+                                        INTRODUCTION            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                                <div class="sub-sub-section">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon menu">&nbsp;</span>
+                                        TEA MENU            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                                <div class="sub-sub-section">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon afternoon">&nbsp;</span>
+                                        THE AFTERNOON TEA            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                                <div class="sub-sub-section">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon times">&nbsp;</span>
+                                        OPENING TIMES            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                                <div class="sub-sub-section">
+                                    <a href="#" class="trigger">    
+                                        <span class="icon notes">&nbsp;</span>
+                                        NOTES            
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="content">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                     </div>
+
+                    
 
                 </div>
             </div>

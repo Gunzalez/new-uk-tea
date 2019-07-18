@@ -25,7 +25,7 @@ body {
   color: #484c4f;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   background-color: white; }
 
 h2 {
@@ -79,7 +79,7 @@ a {
   color: #7a7250;
   border-bottom: 1px solid #f1f1ed;
   padding: 10px 0 15px 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 15px 0;
   font-weight: 500; }
   @media (max-width: 576px) {
     .title-large {
@@ -167,6 +167,9 @@ table td span {
 
 #nav-main {
   font-family: "nunito_sansregular" !important; }
+
+.divider {
+  margin: 0; }
 
 /* bootstrap overrides */
 .table thead th,
@@ -797,6 +800,12 @@ iframe {
       .filter li:first-child a {
         padding-left: 0; }
 
+.sub-section > .content {
+  padding-bottom: 30px; }
+
+.sub-section .indented {
+  padding-left: 40px; }
+
 .sub-section .trigger {
   text-transform: uppercase;
   color: #19737b;
@@ -830,8 +839,7 @@ iframe {
   display: none; }
 
 .sub-section .fa-plus {
-  display: inline-block;
-  transition: all 250ms; }
+  display: inline-block; }
 
 .sub-section.open .fa-minus {
   display: inline-block; }
@@ -852,8 +860,31 @@ iframe {
 .sub-section:nth-last-child {
   margin-bottom: 30px; }
 
-.divider {
-  margin: 0; }
+.sub-section .sub-sub-section .trigger {
+  margin-bottom: 0; }
+
+.sub-section .sub-sub-section a i {
+  padding-right: 0;
+  padding-left: 15px; }
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .icon.gallery {
+    background-image: url("../images/icon-gallery.png"); }
+  .icon.notes {
+    background-image: url("../images/icon-notes.png"); }
+  .icon.intro {
+    background-image: url("../images/icon-introduction.png"); }
+  .icon.menu {
+    background-image: url("../images/icon-tea-menu.png"); }
+  .icon.afternoon {
+    background-image: url("../images/icon-afternoon.png"); }
+  .icon.times {
+    background-image: url("../images/icon-opening-times.png"); }
 
 .giant-buttons {
   width: 100%;

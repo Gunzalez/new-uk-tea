@@ -704,6 +704,14 @@ iframe {
 
 .sub-section {
 
+  > .content {
+    padding-bottom: 30px;
+  }
+
+  .indented {
+    padding-left: 40px;
+  }
+
   .trigger {
     text-transform: uppercase;
     color: $brand-green;
@@ -748,7 +756,6 @@ iframe {
 
   .fa-plus {
     display: inline-block;
-        transition: all 250ms;
   }
 
   &.open {
@@ -766,7 +773,6 @@ iframe {
     }
 
     .trigger {      
-      // padding: 0 0 10px 0;
       border-bottom: 1px solid lighten($color: #000000, $amount: 97%);
       margin-bottom: 15px;
     }
@@ -782,10 +788,53 @@ iframe {
   &:nth-last-child {
     margin-bottom: 30px;
   }
+
+  .sub-sub-section {
+
+    .trigger {
+      margin-bottom: 0;
+    }
+
+    a {
+
+      i {
+        padding-right: 0;
+        padding-left: 15px;
+      }
+    }
+  }
 }
 
-.divider {
-  margin: 0;
+.icon {
+  display: inline-block;
+  width: 40px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.gallery {
+    background-image: url('../images/icon-gallery.png');
+  }
+
+  &.notes {
+    background-image: url('../images/icon-notes.png');
+  }
+
+  &.intro {
+    background-image: url('../images/icon-introduction.png');
+  }
+
+  &.menu {
+    background-image: url('../images/icon-tea-menu.png');
+  }
+
+  &.afternoon {
+    background-image: url('../images/icon-afternoon.png');
+  }
+
+  &.times {
+    background-image: url('../images/icon-opening-times.png');
+  }
 }
 
 .giant-buttons {

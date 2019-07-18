@@ -154,7 +154,9 @@
                </div>
             </div>
          </div>
+
          {% block content %} {% endblock %}
+         
          <div class="footer">
             <div class="container">
                <div class="row">
