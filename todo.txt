@@ -33,5 +33,6 @@ Starts About page - 30 mins
 Completes About page - 45 mins
 Starts History page - 1.5 hours
 Finishes History and FAQs - 2.5 hours
-Starts Category page - 0.5 hrs
+Starts Directory page - 30 mins
+Continues Directory page - 3 hrs
 
