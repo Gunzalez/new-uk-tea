@@ -145,6 +145,9 @@ a {
 .feed-item .date {
   color: #3786c1; }
 
+.feed-item:hover .date {
+  color: #0056b3; }
+
 table th {
   text-transform: uppercase; }
 
@@ -1001,7 +1004,8 @@ iframe {
 .hotel-photos {
   overflow-y: hidden;
   overflow-x: scroll;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch; }
   .hotel-photos ul {
     margin: 0;
     padding: 0;
@@ -1010,6 +1014,8 @@ iframe {
   .hotel-photos li {
     display: inline;
     padding-right: 15px; }
+    .hotel-photos li:last-child {
+      padding-right: 0; }
   .hotel-photos a {
     display: inline-block; }
     .hotel-photos a img {

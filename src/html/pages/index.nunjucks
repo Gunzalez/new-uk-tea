@@ -100,58 +100,60 @@
     <div class="container">
         <div class="row">
 
-        <div class="col-sm-6">
-            
-            <div id="carousel-mini">                        
-                <div class="stage-mini">
-                    <div class="slide">
-                        <img src="images/mini-slide-1.png" alt="" />
-                        <div class="text">
-                            <p>Apart from tourism, tea is the biggest industrial activity in India.</p>
+            <div class="col-sm-6">
+                
+                <div id="carousel-mini">                        
+                    <div class="stage-mini">
+                        <div class="slide">
+                            <img src="images/mini-slide-1.png" alt="" />
+                            <div class="text">
+                                <p>Apart from tourism, tea is the biggest industrial activity in India.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/mini-slide-3.png" alt="" />
+                            <div class="text">
+                                <p>======  ========================== =====.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/mini-slide-2.png" alt="" />
+                            <div class="text">
+                                <p>Cameroon played very poorly. High kick, elbows, spitting, sliding tackles all of it!</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/mini-slide-1.png" alt="" />
+                            <div class="text">
+                                <p>Amazing that England qualified, tought match.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/mini-slide-4.png" alt="" />
+                            <div class="text">
+                                <p>This is all so sureall, what am I doing?</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="images/mini-slide-3.png" alt="" />
-                        <div class="text">
-                            <p>======  ========================== =====.</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="images/mini-slide-2.png" alt="" />
-                        <div class="text">
-                            <p>Cameroon played very poorly. High kick, elbows, spitting, sliding tackles all of it!</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="images/mini-slide-1.png" alt="" />
-                        <div class="text">
-                            <p>Amazing that England qualified, tought match.</p>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="images/mini-slide-4.png" alt="" />
-                        <div class="text">
-                            <p>This is all so sureall, what am I doing?</p>
-                        </div>
-                    </div>
+                    <a href="#" class="controls prev"><i class="fas fa-caret-left"></i></a>
+                    <a href="#" class="controls next"><i class="fas fa-caret-right"></i></a>
                 </div>
-                <a href="#" class="controls prev"><i class="fas fa-caret-left"></i></a>
-                <a href="#" class="controls next"><i class="fas fa-caret-right"></i></a>
-            </div>
-        </div>
 
-        <div class="col-sm-6">
-            
-            <div id="profile" class="pod">
-                <a href="#">
-                    <img src="images/profile.jpg" alt="" />
-                    <div class="text">
-                        <h2 class="title">Brew knew that?</h2>
-                        <p><strong>Sally Watson</strong> CEO Birchall Tea</p>                    
-                    </div>
-                </a>
             </div>
-        </div>
+            <div class="col-sm-6">
+                
+                <div id="profile" class="pod">
+                    <a href="#">
+                        <img src="images/profile.jpg" alt="" />
+                        <div class="text">
+                            <h2 class="title">Brew knew that?</h2>
+                            <p><strong>Sally Watson</strong> CEO Birchall Tea</p>                    
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </div>
@@ -167,7 +169,7 @@
                         <div class="text">
                             <h2 class="title">Events</h2>
                             <p class="location">Manchester Tea Festival 19</p>
-                            <p class="date">10/06/19 - Manchester</p>                  
+                            <p class="date">10/06/19 - Manchester</p>
                         </div>
                     </a>
                 </div>

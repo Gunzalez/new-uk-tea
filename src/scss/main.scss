@@ -5,7 +5,6 @@
 @import "breakpoints";
 @import "fonts";
 
-
 .logo-link {
 
   a {
@@ -1025,6 +1024,7 @@ iframe {
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
 
   ul {
     margin: 0;
@@ -1037,6 +1037,10 @@ iframe {
   li {
     display: inline;
     padding-right: 15px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   a {

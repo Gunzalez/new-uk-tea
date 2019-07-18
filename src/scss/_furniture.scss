@@ -190,6 +190,13 @@ a {
     .date {
         color: $brand-blue;
     }
+
+    &:hover {
+        
+        .date {
+            color: #0056b3;
+        }
+    }
 }
 
 table {

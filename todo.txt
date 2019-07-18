@@ -1,6 +1,7 @@
 TODO
 ==================
 Twitter feed breaking out on mobile
+Select box styling on mobile
 Ask about validation
 Refactor bootstrap files to seperate file
 Fix homepage hero carousel headers
