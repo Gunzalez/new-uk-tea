@@ -401,6 +401,22 @@ DomReady.ready(function() {
             }                    
         }
     };
+
+    main.lightbox = {
+
+        init: function(){
+            document.querySelector('.hotel-photos').querySelectorAll('.lightbox').forEach(function($anchor){
+                $anchor.onclick = function(event){
+                    event.preventDefault();
+                    alert("Curle, do your Lightbox Magic here");
+                    // No jQuery in this project, add if you like
+                    // or use one of these guys 
+                    // - https://dbrekalo.github.io/simpleLightbox/
+                    // - http://jslightbox.felixhagspiel.de/
+                }
+            })
+        }
+    };
   
     // init calls
     main.carousel.init({ 
@@ -417,6 +433,8 @@ DomReady.ready(function() {
     main.sections.init({
         classNames: ['.sub-section', '.sub-sub-section']
     });
+
+    main.lightbox.init();
 
     // resize calls
     window.onresize = function() {
