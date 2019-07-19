@@ -67,7 +67,6 @@ a {
   border: 1px solid white;
   text-decoration: none;
   color: white;
-  border-radius: 2px;
   transition: background 500ms;
   margin: 10px 0;
   white-space: nowrap;
@@ -84,7 +83,7 @@ a {
   border-bottom: 1px solid #f1f1ed;
   padding: 10px 0 15px 0;
   margin: 0 0 15px 0;
-  font-weight: 500; }
+  font-weight: 400; }
   @media (max-width: 576px) {
     .title-large {
       font-size: 32px; } }
@@ -154,7 +153,6 @@ table th {
 table th, table td {
   white-space: nowrap;
   padding-right: 30px !important;
-  font-size: 0.9em;
   text-align: center; }
   table th:first-child, table td:first-child {
     text-align: left; }
@@ -191,7 +189,7 @@ table td span {
 /* bootstrap overrides */
 .table thead th,
 .table td, .table th {
-  border: none !important; }
+  border-color: white !important; }
 
 .table.table-striped tbody tr:nth-of-type(odd) {
   background-color: #f1f1ed !important; }
@@ -210,6 +208,10 @@ img.responsive {
 ol, ul {
   margin-left: 0;
   padding-left: 20px; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100% !important; } }
 
 /* ================================================================== */
 .shaker {
@@ -332,8 +334,7 @@ form {
       margin-bottom: 15px; } }
 
 label {
-  line-height: 35px;
-  font-size: 0.9em; }
+  line-height: 35px; }
 
 .form-group {
   margin-bottom: 10px; }
@@ -376,7 +377,8 @@ label {
   .slogan-animated P {
     padding: 0; }
   .slogan-animated .bottom {
-    font-size: 0.8em; }
+    font-size: 10px;
+    color: #b8b8b8; }
   @media (max-width: 576px) {
     .slogan-animated {
       display: none; } }
@@ -444,6 +446,9 @@ label {
     background-position: center center;
     background-size: cover;
     transition: background 250ms; }
+    @media (min-width: 960px) and (max-width: 1024px) {
+      #carousel-main .slide, .page-header .slide {
+        max-width: 94%; } }
     @media (max-width: 576px) {
       #carousel-main .slide, .page-header .slide {
         height: 300px; } }
@@ -480,13 +485,17 @@ label {
         font-weight: 500;
         font-size: 82px; }
         #carousel-main .slide .content .text .brand-font-1, .page-header .slide .content .text .brand-font-1 {
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
         #carousel-main .slide .content .text .brand-font-2, .page-header .slide .content .text .brand-font-2 {
-          font-family: 'Times New Roman', Times, serif;
+          font-family: "Times New Roman", Times, serif;
           font-style: italic; }
+        @media (max-width: 960px) {
+          #carousel-main .slide .content .text, .page-header .slide .content .text {
+            font-size: 55px; } }
         @media (max-width: 576px) {
           #carousel-main .slide .content .text, .page-header .slide .content .text {
-            font-size: 2.0em; } }
+            background: rgba(0, 0, 0, 0.65);
+            font-size: 35px; } }
 
 #carousel-main .slide .content a {
   margin: 10px 0 130px 0; }
@@ -513,9 +522,23 @@ label {
           padding-right: 30px; }
         .page-header .stage .slide .shout .logo img {
           max-width: 140px; }
+      @media (max-width: 960px) {
+        .page-header .stage .slide .shout {
+          font-size: 55px;
+          text-align: center;
+          line-height: 120%; }
+          .page-header .stage .slide .shout .text {
+            padding-right: 0;
+            padding-bottom: 15px; }
+          .page-header .stage .slide .shout .font-two {
+            display: block; }
+          .page-header .stage .slide .shout .logo {
+            display: block; }
+            .page-header .stage .slide .shout .logo img {
+              max-width: 70px; } }
       @media (max-width: 576px) {
         .page-header .stage .slide .shout {
-          font-size: 2.8rem;
+          font-size: 35px;
           text-align: center;
           line-height: 120%; }
           .page-header .stage .slide .shout .text {
@@ -686,7 +709,7 @@ iframe {
         display: inline-block;
         padding: 6px 12px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 100%;
         font-family: "nunito_sansregular"; }
     .footer .nav-footer .nav-trigger {
@@ -738,7 +761,6 @@ iframe {
     .footer .address .links a {
       display: inline-block; }
   .footer .address .text {
-    font-size: 0.8em;
     padding: 15px; }
   @media (max-width: 576px) {
     .footer .address {
@@ -911,7 +933,7 @@ iframe {
 
 .icon {
   display: inline-block;
-  width: 40px;
+  width: 32px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -956,7 +978,9 @@ iframe {
     .giant-buttons > a > * {
       margin: 0 auto; }
     .giant-buttons > a span span {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: "nunito_sanssemibold"; }
     .giant-buttons > a:hover {
       background: #f1f1ed;
       text-decoration: none; }
@@ -978,7 +1002,7 @@ iframe {
       .giant-buttons > a span i {
         font-size: 30px;
         transition: transform 250ms;
-        color: #7a7250; }
+        color: white; }
       .giant-buttons > a span.font-two {
         color: #7a7250;
         font-size: 28px; }

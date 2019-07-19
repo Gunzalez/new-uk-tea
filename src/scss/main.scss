@@ -39,7 +39,8 @@
   }
 
   .bottom {
-    font-size: 0.8em;
+    font-size: 10px;
+    color: $brand-grey;
   }
   
   @media (max-width: $breakpoint1){
@@ -94,6 +95,7 @@
 
 #carousel-main, .page-header {
   margin-bottom: 30px;
+
   @media (max-width: $breakpoint1){
     margin-bottom: 20px;
   }
@@ -128,6 +130,10 @@
     background-position: center center;
     background-size: cover;
     transition: background 250ms;
+
+    @media (min-width: $breakpoint3) and (max-width: $breakpoint4){
+      max-width: 94%;
+    }
 
     @media (max-width: $breakpoint1){
       height: 300px;
@@ -177,16 +183,21 @@
         font-size: 82px;
 
         .brand-font-1 {
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-family: $brandFont1;
         }
 
         .brand-font-2 {
-          font-family: 'Times New Roman', Times, serif;
+          font-family: $brandFont2;
           font-style: italic;
         }
 
+        @media (max-width: $breakpoint3){
+          font-size: 55px;
+        }
+
         @media (max-width: $breakpoint1){
-          font-size: 2.0em;
+          background: rgba(0,0,0,0.65);
+          font-size: 35px;
         }
       }      
     }
@@ -234,9 +245,34 @@
         }
       }      
         
+      @media (max-width: $breakpoint3){
+        .shout {
+          font-size: 55px;
+          text-align: center;
+          line-height: 120%;   
+
+          .text {
+            padding-right: 0;
+            padding-bottom: 15px;
+          }       
+
+          .font-two {
+            display: block;
+          }
+
+          .logo {
+            display: block;
+  
+            img {
+              max-width: 70px;
+            }
+          }
+        }
+      }      
+        
       @media (max-width: $breakpoint1){
         .shout {
-          font-size: 2.8rem;
+          font-size: 35px;
           text-align: center;
           line-height: 120%;   
 
@@ -483,7 +519,7 @@ iframe {
         display: inline-block;
         padding: 6px 12px;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 100%;
         font-family: $brandButton;
       }
@@ -574,7 +610,6 @@ iframe {
     }
 
     .text {
-      font-size: 0.8em;
       padding: 15px;
     }
 
@@ -853,7 +888,7 @@ iframe {
 
 .icon {
   display: inline-block;
-  width: 40px;
+  width: 32px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -919,6 +954,8 @@ iframe {
     span {
       span {
         text-transform: uppercase;
+        font-size: 18px;
+        font-family: $brandLinks;
       }
     }
 
@@ -981,7 +1018,7 @@ iframe {
       i {
         font-size: 30px;
         transition: transform 250ms;
-        color: $brand-brown;
+        color: white;
       }
 
       &.font-two {

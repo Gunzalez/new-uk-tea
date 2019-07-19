@@ -67,7 +67,6 @@ a {
     border: 1px solid white;
     text-decoration: none;
     color: white;
-    border-radius: 2px;
     transition: background 500ms;
     margin: 10px 0;
     white-space: nowrap;
@@ -87,7 +86,7 @@ a {
     border-bottom: 1px solid #f1f1ed;
     padding: 10px 0 15px 0;
     margin: 0 0 15px 0;
-    font-weight: 500;
+    font-weight: 400;
 
     @media (max-width: $breakpoint1){
         font-size: 32px;
@@ -208,7 +207,6 @@ table {
     th, td {
         white-space: nowrap;
         padding-right: 30px !important;
-        font-size: 0.9em;
         text-align: center;
 
         &:first-child {
@@ -265,7 +263,7 @@ table {
 /* bootstrap overrides */
 .table thead th,
 .table td, .table th {
-    border: none !important;
+    border-color: white !important
 }
 
 .table.table-striped tbody tr:nth-of-type(odd) {
@@ -295,6 +293,13 @@ ol, ul {
     margin-left: 0;
     padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+
 
 
 

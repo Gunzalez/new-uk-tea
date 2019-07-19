@@ -26,7 +26,9 @@
 
             <div class="giant-buttons">
                 <a href="#">
-                    <span>SELECT</span>
+                    <span>
+                        <span>SELECT</span>
+                    </span>
                     <span class="font-two">Teas</span>
                 </a>
                 <a href="#">
