@@ -236,11 +236,34 @@ DomReady.ready(function() {
                         }
                         carousel.setImage(newIndex);
                         event.target.blur();
-                    }
-                    if(carousel.timer){
-                        clearInterval(carousel.timer);
+                        if(carousel.timer){
+                            clearInterval(carousel.timer);
+                        }
                     }
                 };
+            });
+
+            var moveCarouselStopTimer = function(newIndex){               
+                carousel.setImage(newIndex);
+                if(carousel.timer){
+                    clearInterval(carousel.timer);
+                }
+            }
+
+            carousel.el.stage.addEventListener('swipeleft', function(e){
+                var newIndex = carousel.curIndex - 1;
+                if(newIndex < 0){
+                    newIndex = carousel.data.length - 1;
+                }                
+                moveCarouselStopTimer(newIndex);
+            });
+
+            carousel.el.stage.addEventListener('swiperight', function(e){
+                var newIndex = carousel.curIndex + 1;
+                if(newIndex > carousel.data.length - 1){
+                    newIndex = 0;
+                }
+                moveCarouselStopTimer(newIndex); 
             });
         },
 
