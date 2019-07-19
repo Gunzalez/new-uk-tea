@@ -15,7 +15,7 @@ Carousel flashes firs 3 slides
 
 Time spent (8 hrs/day)
 ==================
-3 days so far / 26 June 00:26 hours
+3 days so far / 26 June 00:26 hours (8x3 = 24)
 Footer - 3 hours for responsive list
 Scaffolding, footer, external feeds - 5 hours (10:33 am 27 of June)
 Shaker logo, twitter feed - 2 hours
@@ -37,5 +37,9 @@ Starts History page - 1.5 hours
 Finishes History and FAQs - 2.5 hours
 Starts Directory page - 30 mins
 Continues Directory page - 3 hrs
-Continues Directory page - 2 hrs
+Completes Directory page - 2 hrs
+Tweaks and Adjustments - 1 hr
+
+===
+75 hours and 15 mins
 
