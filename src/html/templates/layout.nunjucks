@@ -5,6 +5,8 @@
       <title>UK Tea & Infusions Association</title>
       <meta name="description" content="UK Tea & Infusions Association" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" href="css/normalize.css" />
       <link rel="stylesheet" href="js/vendor/bootstrap/4.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="js/vendor/simple-lightbox/simpleLightBox.min.css">
@@ -12,8 +14,6 @@
       <link rel="stylesheet" href="css/main.css" />
       <link rel="stylesheet" href="js/vendor/mmenu.css" />
       <link rel="stylesheet" href="js/vendor/mburger.css" />
-      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
    </head>
    <body>
       <!--[if IE]>
@@ -213,6 +213,7 @@
       <script src="js/vendor/domready.js"></script>
       <script src="js/vendor/mmenu.js"></script>
       <script src="js/vendor/siema.min.js"></script>
+      <script src="js/vendor/tocca.min.js"></script>      
       <script src="js/vendor/simple-lightbox/simpleLightBox.min.js"></script>      
       <script src="js/main.js"></script>
    </body>
