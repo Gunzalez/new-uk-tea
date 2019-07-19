@@ -430,7 +430,7 @@ label {
     @media (max-width: 576px) {
       #carousel-main .stage, .page-header .stage {
         height: 300px;
-        margin-bottom: 30px; } }
+        margin-bottom: 0; } }
   #carousel-main .cloak, .page-header .cloak {
     background: white;
     opacity: 0.7;
@@ -453,7 +453,9 @@ label {
         max-width: 94%; } }
     @media (max-width: 576px) {
       #carousel-main .slide, .page-header .slide {
-        height: 300px; } }
+        height: 300px; }
+        #carousel-main .slide .controls, .page-header .slide .controls {
+          display: none; } }
     #carousel-main .slide > a, .page-header .slide > a {
       position: absolute;
       top: 40%;
@@ -485,7 +487,8 @@ label {
         display: block;
         color: white;
         font-weight: 500;
-        font-size: 82px; }
+        font-size: 82px;
+        line-height: 1.1; }
         #carousel-main .slide .content .text .brand-font-1, .page-header .slide .content .text .brand-font-1 {
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
         #carousel-main .slide .content .text .brand-font-2, .page-header .slide .content .text .brand-font-2 {
@@ -504,7 +507,7 @@ label {
 
 @media (max-width: 576px) {
   #carousel-main .slide .content a {
-    margin: 18px 0 120px 0; } }
+    margin: 15px 0 30px 0; } }
 
 .page-header {
   margin-bottom: 30px; }
@@ -516,9 +519,12 @@ label {
       align-items: center;
       justify-content: center; }
       .page-header .stage .slide .shout {
+        width: 100%;
         font-size: 82px;
         color: white;
-        font-weight: 500; }
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: center; }
         .page-header .stage .slide .shout .text {
           display: inline-block;
           padding-right: 30px; }
@@ -527,8 +533,7 @@ label {
       @media (max-width: 960px) {
         .page-header .stage .slide .shout {
           font-size: 55px;
-          text-align: center;
-          line-height: 120%; }
+          text-align: center; }
           .page-header .stage .slide .shout .text {
             padding-right: 0;
             padding-bottom: 15px; }
@@ -541,8 +546,8 @@ label {
       @media (max-width: 576px) {
         .page-header .stage .slide .shout {
           font-size: 35px;
-          text-align: center;
-          line-height: 120%; }
+          background: rgba(0, 0, 0, 0.65);
+          padding: 5px 0; }
           .page-header .stage .slide .shout .text {
             padding-right: 0;
             padding-bottom: 15px; }
@@ -554,7 +559,9 @@ label {
               max-width: 70px; } }
   @media (max-width: 576px) {
     .page-header {
-      margin-bottom: 40px; } }
+      margin-bottom: 5px; }
+      .page-header .stage {
+        margin-bottom: 0; } }
 
 #carousel-main .items {
   display: none; }
