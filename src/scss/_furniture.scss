@@ -207,7 +207,9 @@ table {
     th, td {
         white-space: nowrap;
         padding-right: 30px !important;
+        font-size: 14px;
         text-align: center;
+        border-right: 1px solid white;
 
         &:first-child {
             text-align: left;
