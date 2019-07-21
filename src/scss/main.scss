@@ -324,7 +324,7 @@
 .introduction {
   background-color: $brand-beige;
 
-  @media (min-width: $breakpoint1){
+  @media (min-width: $breakpoint2){
     margin: 15px 0;
     padding: 30px 15px 0;      
     background: url('../images/bg-introduction.png') bottom center no-repeat,  url('../images/bg-introduction.gif') top center repeat-y $brand-beige;
@@ -637,6 +637,15 @@ iframe {
     display: flex;
     justify-content: space-between;
   }
+
+  .logo {
+
+    img {
+      @media (min-width: $breakpoint4){
+        margin-top: -33px;
+      }
+    }
+  }
 }
 
 .map-iframe {
@@ -794,7 +803,7 @@ iframe {
   }
 
   .title {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 15px;
     margin-bottom: 10px;
   }
@@ -955,7 +964,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
-    background: #f8f8f6;
+    background: $brand-beige;
     transition: background 250ms;
     text-align: center;
 
@@ -972,7 +981,7 @@ iframe {
     }
 
     &:hover {
-      background: $brand-beige;
+      background: #f8f8f6;
       text-decoration: none;
 
       span {
@@ -1029,8 +1038,8 @@ iframe {
 
       i {
         font-size: 30px;
-        transition: transform 250ms;
-        color: white;
+        transition: transform 50ms;
+        color: $brand-brown;
       }
 
       &.font-two {

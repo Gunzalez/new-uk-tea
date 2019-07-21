@@ -54,7 +54,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4">
             
             <div class="news pod">
                 <a href="#">
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4">
             
             <div class="news pod">
                 <a href="#">
@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4">
             
             <div class="news pod">
                 <a href="#">
@@ -100,7 +100,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 
                 <div id="carousel-mini">                        
                     <div class="stage-mini">
@@ -140,7 +140,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 
                 <div id="profile" class="pod">
                     <a href="#">
@@ -160,7 +160,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4">
             <div class="feed-item">
 
                 <div class="pod">
@@ -176,7 +176,7 @@
 
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">        
+        <div class="col-md-4">        
             <div class="feed-item">
                 <div class="two-by-two">
                     <a href="#" style="background-image: url('images/two-by-two-1.jpg')"></a>
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-md-4">
             <div class="feed-item">
                 <iframe class="iframe" src="content/twitter.html" width="100%" height="390"></iframe>
             </div>
