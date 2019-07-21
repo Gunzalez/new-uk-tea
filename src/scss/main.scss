@@ -791,7 +791,16 @@ iframe {
     }
   }
 
-  > .trigger {    
+  > .trigger {
+    position: relative;    
+    padding-left: 45px;
+    line-height: 120%;
+
+    i {
+      position: absolute;
+      left: 10px;
+      top: 16px;
+    }
 
     .fa-minus {
       display: none;

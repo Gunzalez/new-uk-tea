@@ -888,11 +888,18 @@ iframe {
     .sub-section .trigger {
       font-size: 16px; } }
 
-.sub-section > .trigger .fa-minus {
-  display: none; }
-
-.sub-section > .trigger .fa-plus {
-  display: inline-block; }
+.sub-section > .trigger {
+  position: relative;
+  padding-left: 45px;
+  line-height: 120%; }
+  .sub-section > .trigger i {
+    position: absolute;
+    left: 10px;
+    top: 16px; }
+  .sub-section > .trigger .fa-minus {
+    display: none; }
+  .sub-section > .trigger .fa-plus {
+    display: inline-block; }
 
 .sub-section .title {
   font-size: 14px;
