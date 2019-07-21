@@ -291,9 +291,16 @@ form {
   form input[type="number"].form-control,
   form input[type="password"].form-control,
   form textarea.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     height: inherit;
     outline: none;
     font-size: 14px; }
+  form select {
+    background: transparent;
+    background: url(../images/bg-select.png) right center no-repeat !important;
+    padding-right: 50px !important; }
   form .error-span {
     display: none; }
   form .error select.form-control,
