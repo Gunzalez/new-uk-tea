@@ -332,7 +332,12 @@ DomReady.ready(function() {
                 const $trigger = section.querySelectorAll('.trigger')[0];
                 $trigger.onclick = function(evnt){
                     evnt.preventDefault();
-                    var $parent = evnt.target.parentNode;
+                    var $parent;
+                    if(evnt.target.nodeName === 'A'){
+                        $parent = evnt.target.parentNode;
+                    } else if(evnt.target.nodeName === 'SPAN') {
+                        $parent = evnt.target.parentNode.parentNode;
+                    }
                     if($parent.classList.contains('open')){
                         $parent.classList.remove('open');
                     } else {

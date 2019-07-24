@@ -940,23 +940,29 @@ iframe {
 .sub-section .sub-sub-section .trigger {
   border-bottom: 1px solid #d6d2c2;
   margin-bottom: 0; }
-  .sub-section .sub-sub-section .trigger .fa-minus {
-    display: none; }
-  .sub-section .sub-sub-section .trigger .fa-plus {
-    display: inline-block; }
-  .sub-section .sub-sub-section .trigger i {
-    padding-right: 0;
-    padding-left: 15px; }
+  .sub-section .sub-sub-section .trigger .text {
+    padding-right: 30px;
+    display: inline-block;
+    position: relative; }
+    .sub-section .sub-sub-section .trigger .text:after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 18px;
+      height: 18px;
+      background: url("../images/tea_plus.svg") center center no-repeat; }
 
 .sub-section .sub-sub-section.open .content {
   display: block;
   padding: 15px 0; }
 
-.sub-section .sub-sub-section.open .trigger .fa-minus {
-  display: inline-block; }
-
-.sub-section .sub-sub-section.open .trigger .fa-plus {
-  display: none; }
+.sub-section .sub-sub-section.open .trigger .text {
+  padding-right: 30px;
+  display: inline-block;
+  position: relative; }
+  .sub-section .sub-sub-section.open .trigger .text:after {
+    background: url("../images/tea_minus.svg") center center no-repeat; }
 
 .sub-section .sub-sub-section:last-child .trigger {
   border-bottom: none; }

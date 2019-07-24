@@ -810,7 +810,6 @@ iframe {
       width: 18px;
       height: 18px;
       background: url('../images/tea_plus.svg') center center no-repeat;
-      // background-size: cover;
     }
   }
 
@@ -864,19 +863,22 @@ iframe {
 
     .trigger {
       border-bottom: 1px solid $brand-border;
-      margin-bottom: 0;    
+      margin-bottom: 0;
 
-      .fa-minus {
-        display: none;
-      }
-  
-      .fa-plus {
+      .text {
+        padding-right: 30px;
         display: inline-block;
-      }
+        position: relative;
 
-      i {
-        padding-right: 0;
-        padding-left: 15px;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 18px;
+          height: 18px;
+          background: url('../images/tea_plus.svg') center center no-repeat;
+        }
       }
     }
 
@@ -887,14 +889,16 @@ iframe {
         padding: 15px 0;
       }
 
-      .trigger {   
-  
-        .fa-minus {
+      .trigger {  
+
+        .text {
+          padding-right: 30px;
           display: inline-block;
-        }
-    
-        .fa-plus {
-          display: none;
+          position: relative;
+
+          &:after {
+            background: url('../images/tea_minus.svg') center center no-repeat;
+          }
         }
       }
     }       
