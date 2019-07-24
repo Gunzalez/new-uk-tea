@@ -15,7 +15,7 @@
                     <span class="brand-font-1">Unearth</span>
                     <span class="brand-font-2">Tea</span>
                 </span>
-                <a href="#" class="big-link">Growing & Production</a>
+                <a href="faqs.html" class="big-link">Growing & Production</a>
             </div>
         </div>
 
@@ -83,7 +83,7 @@
         <div class="col-md-4">
             
             <div class="news pod">
-                <a href="fags.html">
+                <a href="faqs.html">
                     <img src="images/news-item-3.jpg" alt="" />
                     <div class="text">
                         <h2 class="title">Latest News</h2>
