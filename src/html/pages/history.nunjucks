@@ -23,9 +23,7 @@
             <h2 class="title-large">A Brief History</h2>
             
             <div class="sub-section open">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE BIRTH OF TEA IN CHINA</a>
+                <a href="#" class="trigger">THE BIRTH OF TEA IN CHINA</a>
                 <div class="content">
 
                     <div class="row">
@@ -52,9 +50,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> TEA SMUGGLING AND TAXATIONS</a>
+                <a href="#" class="trigger">TEA SMUGGLING AND TAXATIONS</a>
                 <div class="content">
 
                     <div class="row">
@@ -74,9 +70,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE GROWTH OF TEA IN EUROPE</a>
+                <a href="#" class="trigger">THE GROWTH OF TEA IN EUROPE</a>
                 <div class="content">
 
                     <div class="row">
@@ -98,9 +92,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> EARLY DISCUSSIONS ABOUT TEA AND HEALTH</a>
+                <a href="#" class="trigger">EARLY DISCUSSIONS ABOUT TEA AND HEALTH</a>
                 <div class="content">
 
                     <div class="row">
@@ -119,9 +111,7 @@
             <hr class="divider" />             
 
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> MODERN DAY TEA DRINKING</a>
+                <a href="#" class="trigger">MODERN DAY TEA DRINKING</a>
                 <div class="content">
 
                     <div class="row">

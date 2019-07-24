@@ -38,9 +38,7 @@
             </div>
 
             <div class="sub-section open">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i> 
-                    <i class="fas fa-minus"></i> ROOIBOS (RED BUSH)</a>
+                <a href="#" class="trigger">ROOIBOS (RED BUSH)</a>
                 <div class="content">
 
                     <div class="row">
@@ -82,9 +80,7 @@
             <hr class="divider" />
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> FENNERL SEED TEA</a>
+                <a href="#" class="trigger">FENNERL SEED TEA</a>
                 <div class="content">
 
                     <div class="row">
@@ -122,9 +118,7 @@
             <hr class="divider" />
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> LIQUORICE TEA</a>
+                <a href="#" class="trigger">LIQUORICE TEA</a>
                 <div class="content">
 
                     <div class="row">

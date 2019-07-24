@@ -34,9 +34,7 @@
             <p>There are approximately 1,500 different varieties of tea, all offering interesting and varied style´s, taste and colour. The character of tea, like wine, is influenced by the elevation of the garden, the soil, wind conditions and temperature and, of course, the quality of the plucking. With so many teas to choose from there is a lifetime of enjoyable exploration ahead.</p>
 
         <div class="sub-section open">
-            <a href="#" class="trigger">
-                <i class="fas fa-minus"></i>
-                <i class="fas fa-plus"></i> China</a>
+            <a href="#" class="trigger">China</a>
             <div class="content">
                 <div class="row">
                     <div class="col-sm-6">
@@ -88,9 +86,7 @@
         <hr class="divider" />
         
         <div class="sub-section">
-            <a href="#" class="trigger">                
-                <i class="fas fa-plus"></i> 
-                <i class="fas fa-minus"></i> India and Sri Lanka</a>
+            <a href="#" class="trigger">India and Sri Lanka</a>
             <div class="content">
 
                 <div class="row">
@@ -123,9 +119,7 @@
         <hr class="divider" />
         
         <div class="sub-section">
-            <a href="#" class="trigger">                
-                <i class="fas fa-plus"></i>
-                <i class="fas fa-minus"></i> Kenya, Malawi & Zimbabwe</a>
+            <a href="#" class="trigger">Kenya, Malawi & Zimbabwe</a>
             <div class="content">
 
                 <div class="row">

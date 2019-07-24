@@ -23,10 +23,7 @@
             <h2 class="title-large">Tea Businesses, Member Companies and Venues</h2>
             
             <div class="sub-section open">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> PLEASE SELECT A CATEGORY
-                </a>
+                <a href="#" class="trigger">PLEASE SELECT A CATEGORY</a>
 
                 <div class="content">
 
@@ -88,9 +85,7 @@
             <h2 class="title-large">Hotels</h2>
             
             <div class="sub-section open">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> GREAT FOSTERS</a>
+                <a href="#" class="trigger">GREAT FOSTERS</a>
                 <div class="content">
 
                     <div class="indented">
@@ -290,9 +285,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> INTERCONTINENTAL LONDON PARK LANE</a>
+                <a href="#" class="trigger">INTERCONTINENTAL LONDON PARK LANE</a>
                 <div class="content">
 
                     <div class="row">
@@ -307,9 +300,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> MILLENNIUM HOTEL, LONDON MAYFAIR</a>
+                <a href="#" class="trigger">MILLENNIUM HOTEL, LONDON MAYFAIR</a>
                 <div class="content">
 
                     <div class="row">
@@ -324,9 +315,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE ANGEL HOTEL, ABERGAVENNY</a>
+                <a href="#" class="trigger">THE ANGEL HOTEL, ABERGAVENNY</a>
                 <div class="content">
 
                     <div class="row">
@@ -341,9 +330,7 @@
             <hr class="divider" /> 
             
             <div class="sub-section">
-                <a href="#" class="trigger">                
-                    <i class="fas fa-plus"></i>
-                    <i class="fas fa-minus"></i> THE GORING HOTEL</a>
+                <a href="#" class="trigger">THE GORING HOTEL</a>
                 <div class="content">
 
                     <div class="row">

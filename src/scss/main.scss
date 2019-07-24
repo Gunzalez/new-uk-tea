@@ -802,12 +802,15 @@ iframe {
       top: 16px;
     }
 
-    .fa-minus {
-      display: none;
-    }
-
-    .fa-plus {
-      display: inline-block;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 10px;
+      width: 18px;
+      height: 18px;
+      background: url('../images/tea_plus.svg') center center no-repeat;
+      // background-size: cover;
     }
   }
 
@@ -833,14 +836,10 @@ iframe {
 
     > .trigger {      
       border-bottom: 1px solid lighten($color: #000000, $amount: 97%);
-      margin-bottom: 15px;      
+      margin-bottom: 15px;   
 
-      .fa-minus {
-        display: inline-block;
-      }
-    
-      .fa-plus {
-        display: none;
+      &:before {
+        background: url('../images/tea_minus.svg') center center no-repeat;
       }
 
     }

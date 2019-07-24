@@ -899,10 +899,14 @@ iframe {
     position: absolute;
     left: 10px;
     top: 16px; }
-  .sub-section > .trigger .fa-minus {
-    display: none; }
-  .sub-section > .trigger .fa-plus {
-    display: inline-block; }
+  .sub-section > .trigger:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/tea_plus.svg") center center no-repeat; }
 
 .sub-section .title {
   font-size: 14px;
@@ -921,10 +925,8 @@ iframe {
 .sub-section.open > .trigger {
   border-bottom: 1px solid #f7f7f7;
   margin-bottom: 15px; }
-  .sub-section.open > .trigger .fa-minus {
-    display: inline-block; }
-  .sub-section.open > .trigger .fa-plus {
-    display: none; }
+  .sub-section.open > .trigger:before {
+    background: url("../images/tea_minus.svg") center center no-repeat; }
 
 .sub-section.open:hover .trigger {
   background: none; }
