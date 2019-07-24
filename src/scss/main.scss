@@ -833,9 +833,8 @@ iframe {
       display: block;
     }
 
-    > .trigger {      
-      border-bottom: 1px solid lighten($color: #000000, $amount: 97%);
-      margin-bottom: 15px;   
+    > .trigger {     
+      margin-bottom: 5px;   
 
       &:before {
         background: url('../images/tea_minus.svg') center center no-repeat;

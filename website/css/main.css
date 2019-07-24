@@ -98,7 +98,7 @@ a {
 .heading .title-large {
   text-align: center;
   border-bottom: none;
-  border-top: 1px solid #d6d2c2;
+  border-top: 1px solid #353336;
   padding-top: 25px; }
 
 .pod {
@@ -923,8 +923,7 @@ iframe {
   display: block; }
 
 .sub-section.open > .trigger {
-  border-bottom: 1px solid #f7f7f7;
-  margin-bottom: 15px; }
+  margin-bottom: 5px; }
   .sub-section.open > .trigger:before {
     background: url("../images/tea_minus.svg") center center no-repeat; }
 
