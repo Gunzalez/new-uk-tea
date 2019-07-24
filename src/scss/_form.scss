@@ -121,7 +121,7 @@ form {
 
 .form-news {
     padding-bottom: 30px;
-    border-bottom: 1px solid lighten($color: $brand-brown, $amount: 40%);
+    border-bottom: 1px solid $brand-border;
     
     input {
         margin-right: 15px;
