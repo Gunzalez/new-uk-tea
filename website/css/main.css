@@ -109,16 +109,16 @@ a {
     text-decoration: none;
     color: #484c4f;
     display: block; }
-  .pod .title {
+  .pod img {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px; }
+  .pod h2 {
     text-transform: uppercase;
     color: #19737b;
     font-size: 18px;
     margin: 0;
     padding: 0 0 6px 0; }
-  .pod img {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 15px; }
   @media (max-width: 768px) {
     .pod.news p {
       padding-bottom: 10px;
@@ -808,7 +808,7 @@ iframe {
   .masters-category {
     border-bottom: 1px solid #d6d2c0;
     margin-bottom: 15px; }
-    .masters-category .title {
+    .masters-category h3 {
       margin-bottom: 10px; }
     .masters-category img {
       margin-bottom: 15px; } }
@@ -827,7 +827,7 @@ iframe {
   width: 100%;
   margin-bottom: 30px; }
 
-.result .title {
+.result h2 {
   text-transform: uppercase;
   color: #19737b;
   font-size: 18px;
@@ -907,7 +907,7 @@ iframe {
     height: 18px;
     background: url("../images/tea_plus.svg") center center no-repeat; }
 
-.sub-section .title {
+.sub-section > .content h3, .sub-section > .content h3, .sub-section > .content h4 {
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 10px; }

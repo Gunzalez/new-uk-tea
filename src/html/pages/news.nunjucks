@@ -47,7 +47,7 @@
                         <img src="images/news-item-1.jpg" class="image" alt="" />
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="title">Latest News</h2>
+                        <h2>Latest News</h2>
                         <p><strong>University of Aberdeen Study Covers Tea Authentication</strong></p>
                         <p>Duis sodales enim nulla, sed cursus justo dapibus eu. Fusce porta cursus leo quis facilisis. Nulla feugiat, metus non posuere tincidunt, libero justo malesuada dui, nec scelerisque risus elit in massa. Sed turpis velit, aliquet et elementum at, laoreet sit amet dui.</p> 
                         <p> Vivamus in eros non mi sagittis eleifend et non erat. Maecenas rutrum non ligula nec fermentum.</p>
@@ -60,7 +60,7 @@
                         <img src="images/profile.jpg" class="image" alt="" />
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="title">Brew Knew That?</h2>
+                        <h2>Brew Knew That?</h2>
                         <p><strong>Sally Watson</strong> CEO Birchall Tea</p>        
                         <p>Vestibulum in viverra metus. Nam scelerisque turpis vel ante ullamcorper, sed elementum risus luctus. Suspendisse sit amet nisl accumsan, blandit ante in, viverra justo. Cras gravida efficitur massa ac vehicula. In nec ligula tellus. Ut ac purus ligula.</p> 
                         <p><a href="contact.html" class="link">please contact us with your question.</a></p>
@@ -72,7 +72,7 @@
                         <img src="images/events.jpg" class="image" alt="" />
                     </div>
                     <div class="col-sm-8">
-                        <h2 class="title">Events</h2>
+                        <h2>Events</h2>
                         <p class="location">Manchester Tea Festival 19</p>
                         <p class="date"><a href="#">10/06/19 - Manchester</a></p>      
                         <p>With 84% of the British population drinking tea and herbal infusions every day, there is an understandable thirst for knowledge on all aspects of tea. Here are a few answers to some of the most popular questions asked about tea.</p>
