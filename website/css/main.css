@@ -378,8 +378,7 @@ label {
         width: 200px; } }
 
 .slogan-animated {
-  color: #7a7250;
-  letter-spacing: 1px; }
+  color: #7a7250; }
   .slogan-animated .top {
     font-size: 37px;
     line-height: 40px;
@@ -933,41 +932,33 @@ iframe {
 .sub-section:nth-last-child {
   margin-bottom: 30px; }
 
-.sub-section .sub-sub-section .content {
-  display: none; }
-
-.sub-section .sub-sub-section .trigger {
-  border-bottom: 1px solid #e0ddd1;
-  margin-bottom: 0; }
-  .sub-section .sub-sub-section .trigger .text {
+.sub-section .sub-sub-section {
+  border-bottom: 1px solid #eae8e0; }
+  .sub-section .sub-sub-section .content {
+    display: none; }
+  .sub-section .sub-sub-section .trigger {
+    margin-bottom: 0; }
+    .sub-section .sub-sub-section .trigger .text {
+      padding-right: 30px;
+      display: inline-block;
+      position: relative; }
+      .sub-section .sub-sub-section .trigger .text:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 18px;
+        height: 18px;
+        background: url("../images/tea_plus.svg") center center no-repeat; }
+  .sub-section .sub-sub-section.open .content {
+    display: block;
+    padding: 15px 0; }
+  .sub-section .sub-sub-section.open .trigger .text {
     padding-right: 30px;
     display: inline-block;
     position: relative; }
-    .sub-section .sub-sub-section .trigger .text:after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      right: 0;
-      width: 18px;
-      height: 18px;
-      background: url("../images/tea_plus.svg") center center no-repeat; }
-
-.sub-section .sub-sub-section.open .content {
-  display: block;
-  padding: 15px 0; }
-
-.sub-section .sub-sub-section.open .trigger .text {
-  padding-right: 30px;
-  display: inline-block;
-  position: relative; }
-  .sub-section .sub-sub-section.open .trigger .text:after {
-    background: url("../images/tea_minus.svg") center center no-repeat; }
-
-.sub-section .sub-sub-section:last-child .trigger {
-  border-bottom: none; }
-
-.sub-section .sub-sub-section:last-child.open .trigger {
-  border-bottom: 1px solid #f7f7f7; }
+    .sub-section .sub-sub-section.open .trigger .text:after {
+      background: url("../images/tea_minus.svg") center center no-repeat; }
 
 .icon {
   display: inline-block;

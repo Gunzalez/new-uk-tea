@@ -24,7 +24,6 @@
 
 .slogan-animated {
   color: $brand-brown;
-  letter-spacing: 1px;
   
   .top {
     font-size: 37px;
@@ -855,13 +854,13 @@ iframe {
   }
 
   .sub-sub-section { 
+    border-bottom: 1px solid #eae8e0;
 
     .content {
       display: none;
     }
 
     .trigger {
-      border-bottom: 1px solid lighten($color: $brand-border, $amount: 5%) ;
       margin-bottom: 0;
 
       .text {
@@ -900,21 +899,7 @@ iframe {
           }
         }
       }
-    }       
-
-    &:last-child {
-
-      .trigger {
-        border-bottom: none;
-      }
-
-      &.open {
-
-        .trigger { 
-          border-bottom: 1px solid lighten($color: #000000, $amount: 97%);
-        }
-      } 
-    }
+    } 
   }
 }
 
