@@ -8,6 +8,13 @@ DomReady.ready(function() {
     };
 
     var utils = {
+        getHeight: function (elem) {
+            elem.style.display = 'block'; // Make it visible
+            var height = elem.scrollHeight + 'px'; // Get it's height
+            elem.style.display = ''; //  Hide it again
+            return height;
+        },
+
         show: function(el) {
             el.classList.add("enter");
             var timer = setTimeout(function() {
@@ -337,11 +344,35 @@ DomReady.ready(function() {
                         $parent = evnt.target.parentNode;
                     } else if(evnt.target.nodeName === 'SPAN') {
                         $parent = evnt.target.parentNode.parentNode;
-                    }
+                    }                    
+                    var elem = $parent.querySelectorAll('.content')[0];
                     if($parent.classList.contains('open')){
-                        $parent.classList.remove('open');
+
+                        // Give the element a height to change from
+                        elem.style.height = elem.scrollHeight + 'px';
+
+                        // Set the height back to 0
+                        window.setTimeout(function () {
+                            elem.style.height = '0';
+                        }, 1);
+
+                        // When the transition is complete, hide it
+                        window.setTimeout(function () {
+                            elem.classList.remove('is-visible');
+                            $parent.classList.remove('open');
+                        }, 350);
+
                     } else {
+
                         $parent.classList.add('open');
+                        var height = utils.getHeight(elem); // Get the natural height
+                        elem.classList.add('is-visible'); // Make the element visible
+                        elem.style.height = height; // Update the max-height
+
+                        /* Once the transition is complete, remove the inline max-height so the content can scale responsively */                        
+                        window.setTimeout(function () {
+                            elem.style.height = '';
+                        }, 350);
                     }
                 }
             })

@@ -758,12 +758,8 @@ iframe {
 
 .sub-section {
 
-  > .content {
-    padding-bottom: 30px;
-  }
-
   .indented {
-    padding-left: 40px;
+    padding-left: 35px;
   }
 
   .trigger {
@@ -821,28 +817,17 @@ iframe {
     }
   }
 
-
   .filter {
     padding: 0;
   }
 
-  .content {
-    display: none;
-  }
-
   &.open {
 
-    .content {
-      display: block;
-    }
-
-    > .trigger {     
-      margin-bottom: 5px;   
+    > .trigger {    
 
       &:before {
         background: url('../images/tea_minus.svg') center center no-repeat;
       }
-
     }
 
     &:hover {
@@ -860,8 +845,8 @@ iframe {
   .sub-sub-section { 
     border-bottom: 1px solid #eae8e0;
 
-    .content {
-      display: none;
+    &:last-child {
+      border-bottom: none;
     }
 
     .trigger {
@@ -885,11 +870,6 @@ iframe {
     }
 
     &.open {
-
-      .content {
-        display: block;
-        padding: 15px 0;
-      }
 
       .trigger {  
 

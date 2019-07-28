@@ -351,6 +351,21 @@ ol, ul {
 }
 
 .font-two {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $brandFont2;
     font-style: italic;
-  }
+}
+
+
+/* show/hide css */
+.content {
+	display: none;
+	height: 0;
+	overflow: hidden;
+    transition: height 350ms ease-in-out;
+    padding-left: 10px;
+}
+
+.content.is-visible {
+	display: block;
+	height: auto;
+}

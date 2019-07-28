@@ -25,7 +25,7 @@
             <div class="sub-section open">
                 <a href="#" class="trigger">PLEASE SELECT A CATEGORY</a>
 
-                <div class="content">
+                <div class="content is-visible">
 
                     <div class="row">
                         <div class="col-sm-12">                            
@@ -86,7 +86,7 @@
             
             <div class="sub-section open">
                 <a href="#" class="trigger">GREAT FOSTERS</a>
-                <div class="content">
+                <div class="content is-visible">
 
                     <div class="indented">
                         <div class="row">
@@ -117,7 +117,7 @@
                                         <span class="icon gallery">&nbsp;</span>
                                         <span class="text">GALLERY</span> 
                                     </a>
-                                    <div class="content">
+                                    <div class="content is-visible">
                                     
                                         <div class="hotel-photos">
                                             <ul>

@@ -243,8 +243,20 @@ ol, ul {
       text-decoration: underline; }
 
 .font-two {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic; }
+
+/* show/hide css */
+.content {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 350ms ease-in-out;
+  padding-left: 10px; }
+
+.content.is-visible {
+  display: block;
+  height: auto; }
 
 @font-face {
   font-family: 'nunito_sansregular';
@@ -866,11 +878,8 @@ iframe {
       .filter li:first-child a {
         padding-left: 0; }
 
-.sub-section > .content {
-  padding-bottom: 30px; }
-
 .sub-section .indented {
-  padding-left: 40px; }
+  padding-left: 35px; }
 
 .sub-section .trigger {
   text-transform: uppercase;
@@ -915,16 +924,8 @@ iframe {
 .sub-section .filter {
   padding: 0; }
 
-.sub-section .content {
-  display: none; }
-
-.sub-section.open .content {
-  display: block; }
-
-.sub-section.open > .trigger {
-  margin-bottom: 5px; }
-  .sub-section.open > .trigger:before {
-    background: url("../images/tea_minus.svg") center center no-repeat; }
+.sub-section.open > .trigger:before {
+  background: url("../images/tea_minus.svg") center center no-repeat; }
 
 .sub-section.open:hover .trigger {
   background: none; }
@@ -934,8 +935,8 @@ iframe {
 
 .sub-section .sub-sub-section {
   border-bottom: 1px solid #eae8e0; }
-  .sub-section .sub-sub-section .content {
-    display: none; }
+  .sub-section .sub-sub-section:last-child {
+    border-bottom: none; }
   .sub-section .sub-sub-section .trigger {
     margin-bottom: 0; }
     .sub-section .sub-sub-section .trigger .text {
@@ -950,9 +951,6 @@ iframe {
         width: 18px;
         height: 18px;
         background: url("../images/tea_plus.svg") center center no-repeat; }
-  .sub-section .sub-sub-section.open .content {
-    display: block;
-    padding: 15px 0; }
   .sub-section .sub-sub-section.open .trigger .text {
     padding-right: 30px;
     display: inline-block;
