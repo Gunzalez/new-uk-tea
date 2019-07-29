@@ -357,15 +357,18 @@ ol, ul {
 
 
 /* show/hide css */
-.content {
-	display: none;
-	height: 0;
-	overflow: hidden;
-    transition: height 350ms ease-in-out;
-    padding-left: 10px;
-}
+.sub-section {
 
-.content.is-visible {
-	display: block;
-	height: auto;
+    .content {
+        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: height 350ms ease-in-out;
+        padding-left: 10px;
+    }
+    
+    .content.is-visible {
+        display: block;
+        height: auto;
+    }
 }
