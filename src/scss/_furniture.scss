@@ -304,7 +304,7 @@ ol, ul {
     padding-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint2) {
     .container {
         max-width: 100% !important;
     }
@@ -370,5 +370,31 @@ ol, ul {
     .content.is-visible {
         display: block;
         height: auto;
+    }
+}
+
+
+/* cms content */
+.cms-content {
+
+    img {
+            
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 15px auto;
+
+        @media (min-width: $breakpoint2) {   
+
+            max-width: 32%;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            &.image-right {                
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }                
+        }
     }
 }

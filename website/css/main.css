@@ -258,6 +258,22 @@ ol, ul {
   display: block;
   height: auto; }
 
+/* cms content */
+.cms-content img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 15px auto; }
+  @media (min-width: 768px) {
+    .cms-content img {
+      max-width: 32%;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px; }
+      .cms-content img.image-right {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 20px; } }
+
 @font-face {
   font-family: 'nunito_sansregular';
   src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
