@@ -162,12 +162,23 @@ DomReady.ready(function() {
 
             var api = menu.API;
 
-            document.querySelector( "#open-nav")
+            document.querySelector("#open-nav")
                 .addEventListener(
                     "click", function(evnt){
                         evnt.preventDefault();
                         api.open();
                 });
+
+            document.addEventListener('click', function (event) {
+                if (event.target.matches('.mm-listitem__btn')) {
+                    var bgClr = window.getComputedStyle(event.target, null).getPropertyValue("background-color");
+                    var $target = document.querySelector(event.target.getAttribute('href'));
+                    $target.style.backgroundColor = bgClr;
+                    $target.querySelectorAll('.mm-listitem__btn').forEach(function(anchor){
+                        anchor.style.backgroundColor = bgClr;
+                    });
+                }
+            }, false);
 
             this.footerInit();
         },
@@ -255,7 +266,7 @@ DomReady.ready(function() {
                 if(carousel.timer){
                     clearInterval(carousel.timer);
                 }
-            }
+            };
 
             carousel.el.stage.addEventListener('swipeleft', function(e){
                 var newIndex = carousel.curIndex - 1;
@@ -336,7 +347,7 @@ DomReady.ready(function() {
 
         setUpLinks: function(){
             this.el.sections.forEach(function(section){
-                const $trigger = section.querySelectorAll('.trigger')[0];
+                var $trigger = section.querySelectorAll('.trigger')[0];
                 $trigger.onclick = function(evnt){
                     evnt.preventDefault();
                     var $parent;
@@ -374,8 +385,8 @@ DomReady.ready(function() {
                             elem.style.height = '';
                         }, 350);
                     }
-                }
-            })
+                };
+            });
         },
 
         init: function(options) {
@@ -384,9 +395,9 @@ DomReady.ready(function() {
                 document.querySelectorAll(className).forEach(function(item){
                     that.el.sections.push(item);    
                 });
-            })
+            });
             if(this.el.sections.length){
-                this.setUpLinks()
+                this.setUpLinks();
             }
         }
     };

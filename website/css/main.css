@@ -274,6 +274,25 @@ ol, ul {
         margin-left: 20px;
         margin-bottom: 20px; } }
 
+/* coloured navigation */
+.mm-panels .btn-clr-1, .mm-panels .btn-clr-1 + .mm-listitem__btn {
+  background: #96A92B; }
+
+.mm-panels .btn-clr-2, .mm-panels .btn-clr-2 + .mm-listitem__btn {
+  background: #DA8A4A; }
+
+.mm-panels .btn-clr-3, .mm-panels .btn-clr-3 + .mm-listitem__btn {
+  background: #916083; }
+
+.mm-panels .btn-clr-4, .mm-panels .btn-clr-4 + .mm-listitem__btn {
+  background: #CC2D46; }
+
+.mm-panels .btn-clr-5, .mm-panels .btn-clr-5 + .mm-listitem__btn {
+  background: #A37301; }
+
+.mm-panels .btn-clr-6, .mm-panels .btn-clr-6 + .mm-listitem__btn {
+  background: #BCC140; }
+
 @font-face {
   font-family: 'nunito_sansregular';
   src: url("webfonts/nunitosans-regular-webfont.woff2") format("woff2"), url("webfonts/nunitosans-regular-webfont.woff") format("woff");
