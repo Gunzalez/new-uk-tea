@@ -275,23 +275,29 @@ ol, ul {
         margin-bottom: 20px; } }
 
 /* coloured navigation */
-.mm-panels .btn-clr-1, .mm-panels .btn-clr-1 + .mm-listitem__btn {
-  background: #96A92B; }
+.mm-panels .btn-clr-1 + .mm-listitem__btn {
+  background: #96A92B;
+  color: white; }
 
-.mm-panels .btn-clr-2, .mm-panels .btn-clr-2 + .mm-listitem__btn {
-  background: #DA8A4A; }
+.mm-panels .btn-clr-2 + .mm-listitem__btn {
+  background: #BCC140;
+  color: white; }
 
-.mm-panels .btn-clr-3, .mm-panels .btn-clr-3 + .mm-listitem__btn {
-  background: #916083; }
+.mm-panels .btn-clr-3 + .mm-listitem__btn {
+  background: #DA8A4A;
+  color: white; }
 
-.mm-panels .btn-clr-4, .mm-panels .btn-clr-4 + .mm-listitem__btn {
-  background: #CC2D46; }
+.mm-panels .btn-clr-4 + .mm-listitem__btn {
+  background: #A37301;
+  color: white; }
 
-.mm-panels .btn-clr-5, .mm-panels .btn-clr-5 + .mm-listitem__btn {
-  background: #A37301; }
+.mm-panels .btn-clr-5 + .mm-listitem__btn {
+  background: #916083;
+  color: white; }
 
-.mm-panels .btn-clr-6, .mm-panels .btn-clr-6 + .mm-listitem__btn {
-  background: #BCC140; }
+.mm-panels .btn-clr-6 + .mm-listitem__btn {
+  background: #CC2D46;
+  color: white; }
 
 @font-face {
   font-family: 'nunito_sansregular';

@@ -401,22 +401,28 @@ ol, ul {
 
 /* coloured navigation */
 .mm-panels {
-    .btn-clr-1, .btn-clr-1+.mm-listitem__btn {
+    .btn-clr-1+.mm-listitem__btn {
         background: #96A92B;
+        color: white;
     }
-    .btn-clr-2, .btn-clr-2+.mm-listitem__btn {
-        background: #DA8A4A;
-    }
-    .btn-clr-3, .btn-clr-3+.mm-listitem__btn {
-        background: #916083;
-    }
-    .btn-clr-4, .btn-clr-4+.mm-listitem__btn {
-        background: #CC2D46;
-    }
-    .btn-clr-5, .btn-clr-5+.mm-listitem__btn {
-        background: #A37301;
-    }
-    .btn-clr-6, .btn-clr-6+.mm-listitem__btn {
+    .btn-clr-2+.mm-listitem__btn {
         background: #BCC140;
+        color: white;
+    }
+    .btn-clr-3+.mm-listitem__btn {
+        background: #DA8A4A;
+        color: white;
+    }
+    .btn-clr-4+.mm-listitem__btn {
+        background: #A37301;
+        color: white;
+    }
+    .btn-clr-5+.mm-listitem__btn {
+        background: #916083;
+        color: white;
+    }
+    .btn-clr-6+.mm-listitem__btn {
+        background: #CC2D46;
+        color: white;
     }
 }
