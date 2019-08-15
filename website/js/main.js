@@ -14,7 +14,7 @@ DomReady.ready(function() {
             elem.style.display = ''; //  Hide it again
             return height;
         },
-
+        
         show: function(el) {
             el.classList.add("enter");
             var timer = setTimeout(function() {
@@ -147,7 +147,7 @@ DomReady.ready(function() {
                     //    "shadow-page",
                        "theme-dark"
                     ],
-                    // "counters": true,
+                    "iconPanels": true,
                     "navbars": [
                         {
                            "position": "bottom",
