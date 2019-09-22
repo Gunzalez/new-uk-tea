@@ -210,12 +210,12 @@ DomReady.ready(function() {
                 } else if( scrollPosY <= triggerHeight ) {
                     $stickyHeader.classList.remove('scrolled');
                 }
-            }
+            };
             
             window.onscroll = function(){
                 scrollPosY = window.pageYOffset | document.body.scrollTop;
                 checkForSticky();
-            }
+            };
             checkForSticky();
         },
 
