@@ -145,7 +145,8 @@ DomReady.ready(function() {
                     "extensions": [
                        "position-right",
                     //    "shadow-page",
-                       "theme-dark"
+                       "theme-dark",
+                       "position-front"
                     ],
                     "iconPanels": true,
                     "navbars": [
@@ -162,7 +163,7 @@ DomReady.ready(function() {
 
             var api = menu.API;
 
-            document.querySelector("#open-nav")
+            document.querySelector(".open-nav")
                 .addEventListener(
                     "click", function(evnt){
                         evnt.preventDefault();
@@ -181,6 +182,7 @@ DomReady.ready(function() {
             }, false);
 
             this.footerInit();
+            this.stickyNavInit();
         },
 
         footerInit: function(){
@@ -196,6 +198,25 @@ DomReady.ready(function() {
                         }
                         
                 });
+        },
+
+        stickyNavInit: function(){
+            var scrollPosY = window.pageYOffset | document.body.scrollTop;            
+            var $stickyHeader = document.querySelector('#sticky-header');
+            var triggerHeight = $stickyHeader.style.height * 2;
+            var checkForSticky = function(){
+                if(scrollPosY > triggerHeight){
+                    $stickyHeader.classList.add('scrolled');
+                } else if( scrollPosY <= triggerHeight ) {
+                    $stickyHeader.classList.remove('scrolled');
+                }
+            }
+            
+            window.onscroll = function(){
+                scrollPosY = window.pageYOffset | document.body.scrollTop;
+                checkForSticky();
+            }
+            checkForSticky();
         },
 
         resize: function(){

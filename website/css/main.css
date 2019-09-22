@@ -1123,3 +1123,30 @@ iframe {
 
 .hours dd {
   margin-bottom: 2px; }
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  -webkit-box-shadow: 0px 3px 9px -6px #000000;
+  -moz-box-shadow: 0px 3px 9px -6px #000000;
+  box-shadow: 0px 3px 9px -6px #000000;
+  transform: translateY(-90px);
+  transition: transform 250ms; }
+  .sticky-header .sticky-menu {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sticky-header .logo {
+    display: inline-block; }
+    .sticky-header .logo img {
+      width: 160px; }
+  .sticky-header .nav-social {
+    margin-top: 18px; }
+  .sticky-header.scrolled {
+    transform: translateY(0); }
