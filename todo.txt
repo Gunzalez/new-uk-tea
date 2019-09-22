@@ -40,7 +40,7 @@ Continues Directory page - 3 hrs
 Completes Directory page - 2 hrs
 Tweaks and Adjustments - 1 hr 45 mins
 Enhances open/close feature - 1 hr
-
+StickyHeader - 2 hours
 ===
-77 hours
+79 hours
 
