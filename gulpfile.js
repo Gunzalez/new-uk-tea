@@ -1,78 +1,119 @@
-// grab our gulp packages
-var gulp = require("gulp");
-var jshint = require("gulp-jshint");
-var sass = require("gulp-sass");
-var browserSync = require("browser-sync").create();
-var nunjucksRender = require("gulp-nunjucks-render");
-var babel = require("gulp-babel");
-var data = require('gulp-data');
+"use strict";
+const gulp = require("gulp");
+const { src, dest, series, parallel, watch } = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const browserSync = require("browser-sync").create();
+const concat = require("gulp-concat");
+const autoprefixer = require("autoprefixer");
+const postcss = require("gulp-postcss");
+const replace = require("gulp-replace");
+const uglify = require("gulp-uglify");
+const sourcemaps = require("gulp-sourcemaps");
+const nunjucksRender = require("gulp-nunjucks-render");
+const cssnano = require("cssnano");
+const jshint = require("gulp-jshint");
+const data = require("gulp-data");
+const babel = require("gulp-babel");
 
-// building the html task
-gulp.task("nunjucks", function() {
-  return gulp
-    .src(['src/html/pages/*.+(html|nunjucks)'])
-      .pipe(data(function() {
-          return require('./src/data/data.json')
-      }))
-    .pipe(
-      nunjucksRender({
-        path: ["src/html/templates"]
-      })
-    )
-    .pipe(gulp.dest("website/"))
-    .pipe(
-      browserSync.reload({
-        stream: true
-      })
-    );
-});
+/* variables ================================== */
+const files = {
+  scssPath: "src/scss/*.scss",
+  jsPath: "src/js/*.js",
+  nunjuck: "src/html/pages/*.+(html|nunjucks)",
+  data: "./src/data/data.json",
+  templates: "src/html/templates",
+};
 
-// configure the jshint task
-gulp.task("jshint", function() {
-  return gulp
-    .src(["src/js/*.js"])
-    .pipe(jshint())
-    .pipe(jshint.reporter("jshint-stylish"))
-    .pipe(gulp.dest("website/js"))
-    .pipe(
-      browserSync.reload({
-        stream: true
-      })
-    );
-});
+/* tasks ====================================== */
+// css
+function scssTask() {
+  return src(files.scssPath)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("website/css"));
+}
 
-// configure sass task
-gulp.task("sass", function() {
-  return gulp
-    .src("src/scss/**/*.scss")
-    .pipe(sass())
-    .pipe(gulp.dest("website/css"))
-    .pipe(
-      browserSync.reload({
-        stream: true
-      })
-    );
-});
+// js
+function jsTask() {
+  return (
+    src(files.jsPath)
+      .pipe(concat("scripts.js"))
+      // .pipe(uglify())
+      .pipe(dest("website/js"))
+  );
+}
 
-// start web server
-gulp.task("browserSync", function() {
+// html
+function htmlTask() {
+  return (
+    src([files.nunjuck])
+      // .pipe(
+      //   data(function () {
+      //     return require(files.data);
+      //   })
+      // )
+      .pipe(
+        nunjucksRender({
+          path: [files.templates],
+        })
+      )
+      .pipe(gulp.dest("website"))
+  );
+}
+
+// jshint
+function jshintTask() {
+  return (
+    src(["website/js/scripts.js"])
+      // .pipe(
+      //   babel({
+      //     presets: ["@babel/env"],
+      //   })
+      // )
+      .pipe(jshint())
+      .pipe(jshint.reporter("jshint-stylish"))
+  );
+}
+
+// browserSync
+function browserSyncServe(cb) {
   browserSync.init({
     server: {
-      baseDir: "website"
-    }
+      baseDir: "website",
+    },
   });
-});
+  cb();
+}
 
-// watch changes to HTML, CSS and JS,
-gulp.task(
-  "watch",
-  gulp.parallel("browserSync", function() {
-    gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
-    gulp.watch("src/js/*.js", gulp.series("jshint"));
-    gulp.watch(['src/html/**/*.+(html|nunjucks)'], gulp.series("nunjucks"));
-    gulp.watch("website/*.html", browserSync.reload);
-  })
+// browserSyncReload
+function browserSyncReload(cb) {
+  browserSync.reload();
+  cb();
+}
+
+// cache buster
+const cbString = new Date().getTime();
+function cacheBusterTask() {
+  return src(["website/*.html"])
+    .pipe(replace(/cb=\d+/g, "cb=" + cbString))
+    .pipe(dest("website"));
+}
+
+// watch
+function watchTask() {
+  watch([files.scssPath, files.jsPath], parallel(scssTask, jsTask, htmlTask));
+  watch(["website/js/scripts.js"], jshintTask);
+  watch(["website/*.html"], browserSyncReload);
+  watch(["src/html/**/*.+(html|nunjucks)"], htmlTask);
+}
+
+// Default task
+exports.default = series(
+  browserSyncServe,
+  parallel(scssTask, jsTask, htmlTask),
+  jshintTask,
+  cacheBusterTask,
+  watchTask
 );
-
-// define the default task and add the watch task to it
-gulp.task("default", gulp.parallel('watch','nunjucks','sass','jshint'));
